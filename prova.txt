@@ -1,0 +1,77 @@
+n_evts = df.Filter(path).Count().GetValue()
+eff = n_evt*float(lumiTrigger_dict[path]["eff_lumi"])/59.96)
+
+best_paths = []
+best_eff = []
+
+N_orig = df_withAccCuts..Count().GetValue()
+
+
+for n_path in range (10):
+  path_perf = []
+  for new_path in all_paths:
+    if new_path in best_paths: continue
+    current_paths = [ new_path ]
+    current_paths.extend(best_paths)
+    # [ C, A, B ]
+    current_paths = [ (p, lumiTrigger_dict[p]["eff_lumi"])/59.96) for p in current_paths ]
+    # [ (C, wC), (A, wA), (B, wB) ]
+    current_paths = sorted(current_paths, lambda p: -p[1])
+    numerator = 0
+    for n in range(len(current_paths)):
+      filter_str = ''
+      if n > 0:
+        filter_str += ' && '.join([ ' ({} == 0) '.format(p[0]) for p in current_paths[:n] ])
+        filter_str += ' && '
+      filter_str += '({} == 1)'.format(current_paths[n][0])
+      n_evt = df.Filter(filter_str).Count().GetValue()
+      numerator += n_evt * current_paths[n][1]
+    efficiency = numerator / N_orig
+    path_perf.append((new_path, efficiency))
+  path_perf = stored(path_perf, lambda p: -efficiency)
+  best_paths.append(path_perf[0][0])
+  best_eff.append(path_perf[0][1])
+  delta_best_eff < 0.001
+    for path, path_w in current_paths:
+path = A OR B OR C
+w(A) = lumiTrigger_dict[A]["eff_lumi"])/59.96
+w(B) = lumiTrigger_dict[B]["eff_lumi"])/59.96
+w(C) = lumiTrigger_dict[C]["eff_lumi"])/59.96
+
+df = df.Filter(path).Define(w) =  max(w(A), w(B))
+eff = sum( w_i )/ N_orig for i in events
+
+
+# preselection
+def GetGenChannel(df, channel='tauTau'):
+    # 0. there must not be more than two had taus in signal sample
+    events_moretwotaus = df.Filter("nGenVisTau>2").Count().GetValue()
+    if(events_moretwotaus > 0):
+        print("there are events with more than 2 taus!! ")
+        print(("{} events").format(events_moretwotaus))
+        df.Filter("nGenVisTau>2").Display("event").Print()
+        #return
+
+    return df
+
+  def GetEfficiencyForPath(df, path):
+    n_evts = df.Filter(path).Count().GetValue()
+    eff = n_evt*float(lumiTrigger_dict[path]["eff_lumi"])/float(lumiTrigger_dict[path]["act_lumi"])
+    #print(("path = {}, \t eff = {} ").format(path, eff))
+    return eff
+
+def GetBestEfficiencyForSingleTrigger():
+#print(hlt_columns)
+best_eff = 0.
+best_path = ""
+for hlt_col in hlt_columns:
+    current_eff = GetEfficiencyForPath(df, hlt_col)
+    if(current_eff>best_eff):
+        best_eff= current_eff
+        best_path = hlt_col
+print(("best path = {}, best eff = {}").format(best_path, best_eff))
+hlt_columns.remove(best_path)
+
+
+
+df_tauTau = GetGenChannel(df,'tauTau')

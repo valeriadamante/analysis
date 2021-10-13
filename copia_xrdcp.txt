@@ -1,0 +1,1 @@
+  xrdcp root://xrootd-cms.infn.it:///store/mc/RunIIAutumn18MiniAOD/GluGluToRadionToHHTo2B2Tau_M-900_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/270000/8BDBE159-5FAD-7A44-B617-3382203731DC.root signalRadionTest900.root

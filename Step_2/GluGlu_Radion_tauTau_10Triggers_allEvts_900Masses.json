@@ -1,0 +1,31 @@
+{
+    "M-900": {
+        "best_paths": [
+            "HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4",
+            "HLT_RsqMR300_Rsq0p09_MR200",
+            "HLT_PFHT330PT30_QuadPFJet_75_60_45_40_TriplePFBTagDeepCSV_4p5",
+            "HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1",
+            "HLT_HT650_DisplacedDijet60_Inclusive",
+            "HLT_Mu50",
+            "HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET100"
+        ],
+        "best_eff": [
+            0.8607957322131611,
+            0.8722479310074327,
+            0.8826393094905316,
+            0.889126829110833,
+            0.8948889367972519,
+            0.9001736751810083,
+            0.903948970550859
+        ],
+        "best_eff_err": [
+            0.005453160396547081,
+            0.005489315509114796,
+            0.005521916716185628,
+            0.0055421729842225625,
+            0.0055601023866173925,
+            0.005576495724274927,
+            0.005588177298310643
+        ]
+    }
+}

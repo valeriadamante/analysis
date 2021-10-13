@@ -1,0 +1,40 @@
+{
+    "M-300": {
+        "best_paths": [
+            "HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4",
+            "HLT_DiEle27_WPTightCaloOnly_L1DoubleEG",
+            "HLT_AK8PFJet400_TrimMass30",
+            "HLT_DiEle27_WPTightCaloOnly_L1DoubleEG",
+            "HLT_DiEle27_WPTightCaloOnly_L1DoubleEG",
+            "HLT_DiEle27_WPTightCaloOnly_L1DoubleEG",
+            "HLT_DiEle27_WPTightCaloOnly_L1DoubleEG",
+            "HLT_DiEle27_WPTightCaloOnly_L1DoubleEG",
+            "HLT_DiEle27_WPTightCaloOnly_L1DoubleEG",
+            "HLT_DiEle27_WPTightCaloOnly_L1DoubleEG"
+        ],
+        "best_eff": [
+            0.009116224779056197,
+            0.012115724528931136,
+            0.013644822411205605,
+            0.014635150908787729,
+            0.014635150908787729,
+            0.014635150908787729,
+            0.014635150908787729,
+            0.014635150908787729,
+            0.014635150908787729,
+            0.014635150908787729
+        ],
+        "best_eff_err": [
+            0.003019308659123177,
+            0.0034807649344549448,
+            0.003693889875348967,
+            0.003825591576317018,
+            0.003825591576317018,
+            0.003825591576317018,
+            0.003825591576317018,
+            0.003825591576317018,
+            0.003825591576317018,
+            0.003825591576317018
+        ]
+    }
+}

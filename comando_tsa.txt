@@ -1,0 +1,4 @@
+python3 triggerStudiesAnalysis.py  --machine gridui --nTriggers 10 --verbose 1 --sample Radion --prodMode VBF
+python3 triggerStudiesAnalysis.py  --machine gridui --nTriggers 10 --verbose 1 --sample BulkGraviton --prodMode VBF
+python3 triggerStudiesAnalysis.py  --machine gridui --nTriggers 10 --verbose 1 --sample Radion --prodMode GluGlu
+python3 triggerStudiesAnalysis.py  --machine gridui --nTriggers 10 --verbose 1 --sample BulkGraviton --prodMode GluGlu

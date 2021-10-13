@@ -1,0 +1,33 @@
+Ciao Konstantin. I computed the following efficiencies/Rates (with plots that I am putting in a dedicated google directory I created):
+
+Efficiencies - VBF sample (from Event-Tuples):
+
+1. Absolute efficiency :
+
+denominator requirements :
+genLepton_vis_pt >= 15. GeV && absolute value of genLepton_vis_eta =< 2.1
+
+numerator requirements :
+genLepton_vis_pt >= 15. GeV && absolute value of genLepton_vis_eta =< 2.1 && match (1:1, of course) between genlepton and l1 taus tha have l1Tau_pt >= 32. GeV && (l1Tau_hwIso > 0 || l1Tau_pt >= 70. GeV) && passing last_module_index+1 (*)
+
+denominator = number of events with 2 hadronic True taus with denominator requirements
+numerator = number of events with 2 hadronic True taus with numerator requirements
+
+(*) last module index = hltL1sDoubleTauBigOR
+
+total numerator =  17129.0
+total denominator =  63075
+total efficiency =  0.271565596512
+
+(*) last module index = hltDoubleL2IsoTau26eta2p2
+
+2. Algorithmic efficiency :
+
+denominator requirements :
+genLepton_vis_pt >= 15. GeV && absolute value of genLepton_vis_eta =< 2.1 && match (1:1, of course) between genlepton and l1 taus tha have l1Tau_pt >= 32. GeV && (l1Tau_hwIso > 0 || l1Tau_pt >= 70. GeV) && passing hltL1sDoubleTauBigOR
+
+numerator requirements :
+genLepton_vis_pt >= 15. GeV && absolute value of genLepton_vis_eta =< 2.1 && match (1:1, of course) between genlepton and l1 taus tha have l1Tau_pt >= 32. GeV && (l1Tau_hwIso > 0 || l1Tau_pt >= 70. GeV) && passing hltDoubleL2IsoTau26eta2p2
+
+denominator = number of events with 2 hadronic True taus with denominator requirements
+numerator = number of events with 2 hadronic True taus with numerator requirements
