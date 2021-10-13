@@ -60,6 +60,7 @@ ROOT.gInterpreter.Declare(
     double muon_mass = particleMasses.at(13);
     double electron_mass = particleMasses.at(11);
     using vec_i = ROOT::VecOps::RVec<int>;
+    using vec_s = ROOT::VecOps::RVec<size_t>;
     using vec_f = ROOT::VecOps::RVec<float>;
     using vec_b = ROOT::VecOps::RVec<bool>;
     using vec_uc = ROOT::VecOps::RVec<unsigned char>;
@@ -536,7 +537,7 @@ ROOT.gInterpreter.Declare(
     }
 
 
-    vec_i RecoTauSelectedIndices(int event, EvtInfo& evt_info, const vec_f& Tau_dz, const vec_f& Tau_eta, const vec_f& Tau_phi, const vec_f& Tau_pt, const vec_uc& Tau_idDeepTau2017v2p1VSjet, const vec_uc&  Tau_idDeepTau2017v2p1VSmu, const vec_uc& Tau_idDeepTau2017v2p1Vse, const vec_f& Tau_rawDeepTau2017v2p1VSJet){
+    vec_s RecoTauSelectedIndices(int event, EvtInfo& evt_info, const vec_f& Tau_dz, const vec_f& Tau_eta, const vec_f& Tau_phi, const vec_f& Tau_pt, const vec_uc& Tau_idDeepTau2017v2p1VSjet, const vec_uc&  Tau_idDeepTau2017v2p1VSmu, const vec_uc& Tau_idDeepTau2017v2p1Vse, const vec_f& Tau_rawDeepTau2017v2p1VSJet){
           if (evt_info.channel != Channel::tauTau){
               throw std::runtime_error("channel is not TauTau");
           }
@@ -551,39 +552,46 @@ ROOT.gInterpreter.Declare(
                   }
               }
           }
-
-          int best_idx1 = -100;
-          int best_idx2 = -100;
-          float previous_dR = 0. ;
-          // find taus with highest dR, and dR > 0.5
+          std::vector<std::pair<size_t, size_t>> tau_pairs;
+          // find taus with dR > 0.5 and compare pairs
           for(size_t i=0; i< indices.size(); i++ ){
             for(size_t j=0; j< indices.size(); j++ ){
                 int firstTau = indices.at(i);
                 int secondTau = indices.at(j);
                 float current_dR = DeltaR(Tau_phi[firstTau], Tau_eta[firstTau],Tau_phi[secondTau], Tau_eta[secondTau]);
                 //std::cout<<"current_dR = " << current_dR << std::endl;
-                if(i<j && current_dR > 0.5 && current_dR > previous_dR){
-                  best_idx1 = firstTau;
-                  best_idx2 = secondTau;
-                  previous_dR = current_dR;
+                if(i!=j && current_dR > 0.5){
+                  tau_pairs.push_back(std::make_pair(i, j));
                   }
-                }
-            }
-            //std::cout<<"event = " << event<< std::endl;
-            if(best_idx1 >=0 && best_idx2 >=0 ) {
-              int temp_1 = best_idx1;
-              int temp_2 = best_idx2 ;
-              // order by Tau_rawDeepTau2017v2p1VSJet
-              if(Tau_rawDeepTau2017v2p1VSJet.at(temp_1)<Tau_rawDeepTau2017v2p1VSJet.at(temp_2)){
-                best_idx1 = temp_2 ;
-                best_idx2 = temp_1 ;
               }
-              final_indices.push_back(best_idx1);
-              final_indices.push_back(best_idx2);
             }
-            return final_indices;
+            const auto Comparitor = [&](std::pair<size_t, size_t> tau_pair_1, std::pair<size_t, size_t> tau_pair_2) -> bool
+            {
+                if(tau_pair_1 == tau_pair_2) return false;
+                for(size_t leg_id = 0; leg_id < 2; ++leg_id) {
+                    const size_t h1_leg_id = leg_id == 0 ? tau_pair_1.first : tau_pair_1.second;
+                    const size_t h2_leg_id = leg_id == 0 ? tau_pair_2.first : tau_pair_2.second;
+
+                    if(h1_leg_id != h2_leg_id) {
+                        // per ora lo faccio solo per i tau ma poi va aggiustato!!
+                        auto iso_tau_1 = Tau_rawDeepTau2017v2p1VSJet.at(h1_leg_id);
+                        auto iso_tau_2 = Tau_rawDeepTau2017v2p1VSJet.at(h2_leg_id);
+                        int iso_cmp;
+                        if(iso1 == iso2) iso_cmp= 0;
+        `               else iso_cmp =  iso_tau_1 > iso_tau_2 ? 1 : -1;
+                        if(iso_cmp != 0) return iso_cmp == 1;
+                        if(Tau_pt.at(h1_leg_id) != Tau_pt.at(h2_leg_id))
+                            return Tau_pt.at(h1_leg_id) > Tau_pt.at(h2_leg_id);
+                    }
+                }
+                throw exception("not found a good criteria for best tau pair for %1%") % EventIdentifier(event);
+            };
+            if(tau_pairs.empty()) return {};
+            const auto best_pair = *std::min_element(tau_pairs.begin(), tau_pairs.end(), Comparitor);
+            return { best_pair.first, bast_pair.second };
 
       }
+
       vec_f ReorderVSJet(const vec_i& reco_tau_indices, const vec_f& Tau_rawDeepTau2017v2p1VSjet){
         vec_f reordered_vs_jet ;
         for(auto& i : reco_tau_indices){
@@ -592,41 +600,21 @@ ROOT.gInterpreter.Declare(
         return reordered_vs_jet;
       }
 
-      bool JetFilter(const vec_i& indices, const vec_f&  Tau_phi, const vec_f&  Tau_eta, const vec_f&  FatJet_pt, const vec_f&  FatJet_eta, const vec_f&  FatJet_phi, const vec_f& FatJet_msoftdrop, const vec_f&  Jet_eta, const vec_f&  Jet_phi, const vec_f&  Jet_pt, const vec_i&  Jet_jetId, bool isVBF){
+      bool JetFilter(const vec_i& indices, const vec_f&  Tau_phi, const vec_f&  Tau_eta, const vec_f&  FatJet_pt, const vec_f&  FatJet_eta, const vec_f&  FatJet_phi, const vec_f& FatJet_msoftdrop, const vec_f&  Jet_eta, const vec_f&  Jet_phi, const vec_f&  Jet_pt, const vec_i&  Jet_jetId){
         int nFatJetsAdd=0;
         int nJetsAdd=0;
-        std::vector<int> JetIndices;
-        int nAdditionalJetsAdd=0;
         for (size_t jet_idx =0 ; jet_idx < Jet_pt.size(); jet_idx++){
             if(Jet_pt.at(jet_idx)>20 && std::abs(Jet_eta.at(jet_idx)) < 2.5 && (Jet_jetId.at(jet_idx))&(1<<1)  ) {
                 for(auto & tau_idx : indices ){
                     float current_dR = DeltaR(Tau_phi[tau_idx], Tau_eta[tau_idx],Jet_phi[jet_idx], Jet_eta[jet_idx]);
                     if(current_dR > 0.5 ){
                         nJetsAdd +=1;
-                        JetIndices.push_back(jet_idx);
                       }
                       //std::cout <<"current dr with jet " << jet_idx << " = " << current_dR << std::endl;
                      //std::cout<<"nJetsAdd == " <<nJetsAdd<<std::endl;
                 }
             }
         }
-        for (size_t jet_idx =0 ; jet_idx < Jet_pt.size(); jet_idx++){
-            if(Jet_pt.at(jet_idx)>20 && std::abs(Jet_eta.at(jet_idx)) < 5 && (Jet_jetId.at(jet_idx))&(1<<1)  ) {
-                for(auto & tau_idx : indices ){
-                    float current_dR_withTau = DeltaR(Tau_phi[tau_idx], Tau_eta[tau_idx],Jet_phi[jet_idx], Jet_eta[jet_idx]);
-                    for(auto & otherJet_idx : JetIndices){
-                        float current_dR_withTau = DeltaR(Tau_phi[tau_idx], Tau_eta[tau_idx],Jet_phi[jet_idx], Jet_eta[jet_idx]);
-                        float current_dR_withJet = DeltaR(Jet_phi[otherJet_idx], Jet_eta[otherJet_idx],Jet_phi[jet_idx], Jet_eta[jet_idx]);
-                        if(current_dR_withTau > 0.5 && current_dR_withJet >0.5 ){
-                            nAdditionalJetsAdd +=1;
-                        }     // closes if
-                          //std::cout <<"current dr with jet " << jet_idx << " = " << current_dR << std::endl;
-                         //std::cout<<"nJetsAdd == " <<nJetsAdd<<std::endl;
-                    } // closes for other jet idx
-                } // closes for loop on taus
-            } // closes if Jet_pt ..
-        } // closes for loop on jets
-
         for (size_t fatjet_idx =0 ; fatjet_idx < FatJet_pt.size(); fatjet_idx++){
             if(FatJet_msoftdrop.at(fatjet_idx)>30 && std::abs(FatJet_eta.at(fatjet_idx)) < 2.5) {
                 for(auto & tau_idx : indices ){
@@ -639,17 +627,8 @@ ROOT.gInterpreter.Declare(
                 }
             }
         }
-        //   aggiusta la logica qui
         //std::cout << nFatJetsAdd << "\t" <<nJetsAdd << std::endl;
         if(nFatJetsAdd>=1 || nJetsAdd>=2){
-            if(isVBF){
-                if(nAdditionalJetsAdd>=2){
-                return true;
-                }
-                else {
-                    return false;
-                }
-            }
             return true;
         }
         return false;
