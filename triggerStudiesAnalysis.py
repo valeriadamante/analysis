@@ -546,7 +546,8 @@ ROOT.gInterpreter.Declare(
 
       for(size_t i=0; i< Tau_dz.size(); i++ ){
           if(std::abs(Tau_dz[i])>0.2) continue;
-          if(Tau_DecayMode[i]!=0 || Tau_DecayMode[i]!=1 || Tau_DecayMode[i]!=10 || Tau_DecayMode[i]!=11) continue;
+          //std::cout<< "decayMode [" << i << "] = "<<Tau_DecayMode[i] <<std::endl;
+          if(Tau_DecayMode[i]!=0 && Tau_DecayMode[i]!=1 && Tau_DecayMode[i]!=10 && Tau_DecayMode[i]!=11) continue;
           if( ((Tau_idDeepTau2017v2p1VSjet[i])&(1<<3)) &&  ((Tau_idDeepTau2017v2p1VSmu[i])&(1<<2)) && ((Tau_idDeepTau2017v2p1Vse[i])&(1<<1)) ){
               if(Tau_pt[i] > 20 && std::abs(Tau_eta[i])<2.3){
                   indices.push_back(i);
@@ -566,6 +567,7 @@ ROOT.gInterpreter.Declare(
               }
           }
         }
+        //std::cout << "size tau pairs = " << tau_pairs.size()<< std::endl;
         const auto Comparitor = [&](std::pair<size_t, size_t> tau_pair_1, std::pair<size_t, size_t> tau_pair_2) -> bool
         {
             if(tau_pair_1 == tau_pair_2) return false;
@@ -590,6 +592,7 @@ ROOT.gInterpreter.Declare(
         };
         if(!tau_pairs.empty()){
             const auto best_pair = *std::min_element(tau_pairs.begin(), tau_pairs.end(), Comparitor);
+            //std::cout <<"Tau_charge[best_pair.first] = " << Tau_charge[best_pair.first]<< "\t Tau_charge[best_pair.second] = "<<Tau_charge[best_pair.second]<<std::endl;
             if(Tau_charge[best_pair.first]!=Tau_charge[best_pair.second]){
                 final_indices.push_back(best_pair.first);
                 final_indices.push_back(best_pair.second);
