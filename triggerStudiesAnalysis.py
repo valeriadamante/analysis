@@ -538,59 +538,63 @@ ROOT.gInterpreter.Declare(
 
 
     vec_s RecoTauSelectedIndices(int event, EvtInfo& evt_info, const vec_f& Tau_dz, const vec_f& Tau_eta, const vec_f& Tau_phi, const vec_f& Tau_pt, const vec_uc& Tau_idDeepTau2017v2p1VSjet, const vec_uc&  Tau_idDeepTau2017v2p1VSmu, const vec_uc& Tau_idDeepTau2017v2p1Vse, const vec_f& Tau_rawDeepTau2017v2p1VSJet){
-          if (evt_info.channel != Channel::tauTau){
-              throw std::runtime_error("channel is not TauTau");
-          }
-          vec_i indices;
-          vec_i final_indices ;
-
-          for(size_t i=0; i< Tau_dz.size(); i++ ){
-              if(std::abs(Tau_dz[i])>0.2) continue;
-              if( ((Tau_idDeepTau2017v2p1VSjet[i])&(1<<3)) &&  ((Tau_idDeepTau2017v2p1VSmu[i])&(1<<2)) && ((Tau_idDeepTau2017v2p1Vse[i])&(1<<1)) ){
-                  if(Tau_pt[i] > 20 && std::abs(Tau_eta[i])<2.3){
-                      indices.push_back(i);
-                  }
-              }
-          }
-          std::vector<std::pair<size_t, size_t>> tau_pairs;
-          // find taus with dR > 0.5 and compare pairs
-          for(size_t i=0; i< indices.size(); i++ ){
-            for(size_t j=0; j< indices.size(); j++ ){
-                int firstTau = indices.at(i);
-                int secondTau = indices.at(j);
-                float current_dR = DeltaR(Tau_phi[firstTau], Tau_eta[firstTau],Tau_phi[secondTau], Tau_eta[secondTau]);
-                //std::cout<<"current_dR = " << current_dR << std::endl;
-                if(i!=j && current_dR > 0.5){
-                  tau_pairs.push_back(std::make_pair(i, j));
-                  }
-              }
-            }
-            const auto Comparitor = [&](std::pair<size_t, size_t> tau_pair_1, std::pair<size_t, size_t> tau_pair_2) -> bool
-            {
-                if(tau_pair_1 == tau_pair_2) return false;
-                for(size_t leg_id = 0; leg_id < 2; ++leg_id) {
-                    const size_t h1_leg_id = leg_id == 0 ? tau_pair_1.first : tau_pair_1.second;
-                    const size_t h2_leg_id = leg_id == 0 ? tau_pair_2.first : tau_pair_2.second;
-
-                    if(h1_leg_id != h2_leg_id) {
-                        // per ora lo faccio solo per i tau ma poi va aggiustato!!
-                        auto iso_tau_1 = Tau_rawDeepTau2017v2p1VSJet.at(h1_leg_id);
-                        auto iso_tau_2 = Tau_rawDeepTau2017v2p1VSJet.at(h2_leg_id);
-                        int iso_cmp;
-                        if(iso1 == iso2) iso_cmp= 0;
-        `               else iso_cmp =  iso_tau_1 > iso_tau_2 ? 1 : -1;
-                        if(iso_cmp != 0) return iso_cmp == 1;
-                        if(Tau_pt.at(h1_leg_id) != Tau_pt.at(h2_leg_id))
-                            return Tau_pt.at(h1_leg_id) > Tau_pt.at(h2_leg_id);
-                    }
-                }
-                throw exception("not found a good criteria for best tau pair for %1%") % EventIdentifier(event);
-            };
-            if(tau_pairs.empty()) return {};
-            const auto best_pair = *std::min_element(tau_pairs.begin(), tau_pairs.end(), Comparitor);
-            return { best_pair.first, bast_pair.second };
-
+      if (evt_info.channel != Channel::tauTau){
+          throw std::runtime_error("channel is not TauTau");
       }
+      vec_s indices;
+      vec_s final_indices ;
+
+      for(size_t i=0; i< Tau_dz.size(); i++ ){
+          if(std::abs(Tau_dz[i])>0.2) continue;
+          if( ((Tau_idDeepTau2017v2p1VSjet[i])&(1<<3)) &&  ((Tau_idDeepTau2017v2p1VSmu[i])&(1<<2)) && ((Tau_idDeepTau2017v2p1Vse[i])&(1<<1)) ){
+              if(Tau_pt[i] > 20 && std::abs(Tau_eta[i])<2.3){
+                  indices.push_back(i);
+              }
+          }
+      }
+      std::vector<std::pair<size_t, size_t>> tau_pairs;
+      // find taus with dR > 0.5 and compare pairs
+      for(size_t i=0; i< indices.size(); i++ ){
+        for(size_t j=0; j< indices.size(); j++ ){
+            size_t firstTau = indices.at(i);
+            size_t secondTau = indices.at(j);
+            float current_dR = DeltaR(Tau_phi[firstTau], Tau_eta[firstTau],Tau_phi[secondTau], Tau_eta[secondTau]);
+            //std::cout<<"current_dR = " << current_dR << std::endl;
+            if(i!=j && current_dR > 0.5){
+              tau_pairs.push_back(std::make_pair(firstTau, secondTau));
+              }
+          }
+        }
+        const auto Comparitor = [&](std::pair<size_t, size_t> tau_pair_1, std::pair<size_t, size_t> tau_pair_2) -> bool
+        {
+            if(tau_pair_1 == tau_pair_2) return false;
+            for(size_t leg_id = 0; leg_id < 2; ++leg_id) {
+                const size_t h1_leg_id = leg_id == 0 ? tau_pair_1.first : tau_pair_1.second;
+                const size_t h2_leg_id = leg_id == 0 ? tau_pair_2.first : tau_pair_2.second;
+
+                if(h1_leg_id != h2_leg_id) {
+                    // per ora lo faccio solo per i tau ma poi va aggiustato!!
+                    auto iso_tau_1 = Tau_rawDeepTau2017v2p1VSJet.at(h1_leg_id);
+                    auto iso_tau_2 = Tau_rawDeepTau2017v2p1VSJet.at(h2_leg_id);
+                    int iso_cmp;
+                    if(iso_tau_1 == iso_tau_2){ iso_cmp= 0;}
+                    else {iso_cmp =  iso_tau_1 > iso_tau_2 ? 1 : -1; }
+                    if(iso_cmp != 0) return iso_cmp == 1;
+                    if(Tau_pt.at(h1_leg_id) != Tau_pt.at(h2_leg_id))
+                        return Tau_pt.at(h1_leg_id) > Tau_pt.at(h2_leg_id);
+                }
+            }
+            std::cout << event << std::endl;
+            throw std::runtime_error("not found a good criteria for best tau pair");
+        };
+        if(!tau_pairs.empty()){
+            const auto best_pair = *std::min_element(tau_pairs.begin(), tau_pairs.end(), Comparitor);
+            final_indices.push_back(best_pair.first);
+            final_indices.push_back(best_pair.second);
+        }
+        return final_indices;
+
+  }
 
       vec_f ReorderVSJet(const vec_i& reco_tau_indices, const vec_f& Tau_rawDeepTau2017v2p1VSjet){
         vec_f reordered_vs_jet ;
@@ -610,6 +614,7 @@ ROOT.gInterpreter.Declare(
                     if(current_dR > 0.5 ){
                         nJetsAdd +=1;
                       }
+
                       //std::cout <<"current dr with jet " << jet_idx << " = " << current_dR << std::endl;
                      //std::cout<<"nJetsAdd == " <<nJetsAdd<<std::endl;
                 }
