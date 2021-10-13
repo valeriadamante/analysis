@@ -537,7 +537,7 @@ ROOT.gInterpreter.Declare(
     }
 
 
-    vec_s RecoTauSelectedIndices(int event, EvtInfo& evt_info, const vec_f& Tau_dz, const vec_f& Tau_eta, const vec_f& Tau_phi, const vec_f& Tau_pt, const vec_uc& Tau_idDeepTau2017v2p1VSjet, const vec_uc&  Tau_idDeepTau2017v2p1VSmu, const vec_uc& Tau_idDeepTau2017v2p1Vse, const vec_f& Tau_rawDeepTau2017v2p1VSJet){
+    vec_s RecoTauSelectedIndices(int event, EvtInfo& evt_info, const vec_f& Tau_dz, const vec_f& Tau_eta, const vec_f& Tau_phi, const vec_f& Tau_pt, const vec_uc& Tau_idDeepTau2017v2p1VSjet, const vec_uc&  Tau_idDeepTau2017v2p1VSmu, const vec_uc& Tau_idDeepTau2017v2p1Vse, const vec_f& Tau_rawDeepTau2017v2p1VSJet, const vec_i Tau_DecayMode, const vec_i Tau_Charge){
       if (evt_info.channel != Channel::tauTau){
           throw std::runtime_error("channel is not TauTau");
       }
@@ -546,6 +546,7 @@ ROOT.gInterpreter.Declare(
 
       for(size_t i=0; i< Tau_dz.size(); i++ ){
           if(std::abs(Tau_dz[i])>0.2) continue;
+          if(Tau_DecayMode[i]!=0 || Tau_DecayMode[i]!=1 || Tau_DecayMode[i]!=10 || Tau_DecayMode[i]!=11) continue;
           if( ((Tau_idDeepTau2017v2p1VSjet[i])&(1<<3)) &&  ((Tau_idDeepTau2017v2p1VSmu[i])&(1<<2)) && ((Tau_idDeepTau2017v2p1Vse[i])&(1<<1)) ){
               if(Tau_pt[i] > 20 && std::abs(Tau_eta[i])<2.3){
                   indices.push_back(i);
@@ -589,8 +590,10 @@ ROOT.gInterpreter.Declare(
         };
         if(!tau_pairs.empty()){
             const auto best_pair = *std::min_element(tau_pairs.begin(), tau_pairs.end(), Comparitor);
-            final_indices.push_back(best_pair.first);
-            final_indices.push_back(best_pair.second);
+            if(Tau_charge[best_pais.first]!=Tau_charge[best_pair.second]){
+                final_indices.push_back(best_pair.first);
+                final_indices.push_back(best_pair.second);
+            }
         }
         return final_indices;
 
