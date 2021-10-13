@@ -537,7 +537,7 @@ ROOT.gInterpreter.Declare(
     }
 
 
-    vec_s RecoTauSelectedIndices(int event, EvtInfo& evt_info, const vec_f& Tau_dz, const vec_f& Tau_eta, const vec_f& Tau_phi, const vec_f& Tau_pt, const vec_uc& Tau_idDeepTau2017v2p1VSjet, const vec_uc&  Tau_idDeepTau2017v2p1VSmu, const vec_uc& Tau_idDeepTau2017v2p1Vse, const vec_f& Tau_rawDeepTau2017v2p1VSJet, const vec_i Tau_DecayMode, const vec_i Tau_Charge){
+    vec_s RecoTauSelectedIndices(int event, EvtInfo& evt_info, const vec_f& Tau_dz, const vec_f& Tau_eta, const vec_f& Tau_phi, const vec_f& Tau_pt, const vec_uc& Tau_idDeepTau2017v2p1VSjet, const vec_uc&  Tau_idDeepTau2017v2p1VSmu, const vec_uc& Tau_idDeepTau2017v2p1Vse, const vec_f& Tau_rawDeepTau2017v2p1VSJet, const vec_i Tau_DecayMode, const vec_i Tau_charge){
       if (evt_info.channel != Channel::tauTau){
           throw std::runtime_error("channel is not TauTau");
       }
@@ -590,7 +590,7 @@ ROOT.gInterpreter.Declare(
         };
         if(!tau_pairs.empty()){
             const auto best_pair = *std::min_element(tau_pairs.begin(), tau_pairs.end(), Comparitor);
-            if(Tau_charge[best_pais.first]!=Tau_charge[best_pair.second]){
+            if(Tau_charge[best_pair.first]!=Tau_charge[best_pair.second]){
                 final_indices.push_back(best_pair.first);
                 final_indices.push_back(best_pair.second);
             }
@@ -948,7 +948,7 @@ for mass in all_masses:
         # this was for debugging
         #df_channel = df_initial.Filter("nGenVisTau >= 2")
         #df_channel = df_initial#.Filter("nGenVisTau >= 2")
-        df_channel = df_channel.Define('reco_tau_indices', 'RecoTauSelectedIndices(event, evt_info, Tau_dz, Tau_eta, Tau_phi, Tau_pt,Tau_idDeepTau2017v2p1VSjet,  Tau_idDeepTau2017v2p1VSmu, Tau_idDeepTau2017v2p1VSe, Tau_rawDeepTau2017v2p1VSjet)').Filter('reco_tau_indices.size()==2')
+        df_channel = df_channel.Define('reco_tau_indices', 'RecoTauSelectedIndices(event, evt_info, Tau_dz, Tau_eta, Tau_phi, Tau_pt,Tau_idDeepTau2017v2p1VSjet,  Tau_idDeepTau2017v2p1VSmu, Tau_idDeepTau2017v2p1VSe, Tau_rawDeepTau2017v2p1VSjet, Tau_decayMode, Tau_charge)').Filter('reco_tau_indices.size()==2')
         #print(("after 2 reco tau indices cut there are {} events").format(df_channel.Count().GetValue()))
         df_channel = df_channel.Define('reorderedVsJet', 'ReorderVSJet(reco_tau_indices, Tau_rawDeepTau2017v2p1VSjet)')
         df_channel = df_channel.Filter(' JetFilter( reco_tau_indices,  Tau_phi,  Tau_eta,  FatJet_pt,  FatJet_eta,  FatJet_phi, FatJet_msoftdrop,  Jet_eta,  Jet_phi, Jet_pt,  Jet_jetId)')
