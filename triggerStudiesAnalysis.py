@@ -548,7 +548,7 @@ ROOT.gInterpreter.Declare(
           if(std::abs(Tau_dz[i])>0.2) continue;
           //std::cout<< "decayMode [" << i << "] = "<<Tau_DecayMode[i] <<std::endl;
           if(Tau_DecayMode[i]!=0 && Tau_DecayMode[i]!=1 && Tau_DecayMode[i]!=10 && Tau_DecayMode[i]!=11) continue;
-          if( ((Tau_idDeepTau2017v2p1VSjet[i])&(1<<3)) &&  ((Tau_idDeepTau2017v2p1VSmu[i])&(1<<2)) && ((Tau_idDeepTau2017v2p1Vse[i])&(1<<1)) ){
+          if( ((Tau_idDeepTau2017v2p1VSjet[i])&(1<<3)) &&  ((Tau_idDeepTau2017v2p1VSmu[i])&(1<<0)) && ((Tau_idDeepTau2017v2p1Vse[i])&(1<<0)) ){
               if(Tau_pt[i] > 20 && std::abs(Tau_eta[i])<2.3){
                   indices.push_back(i);
               }
@@ -893,7 +893,7 @@ def getWeight(df_channel, best_paths):
         #    print("current min is zero !!")
         for l1_path in l1_seeds:
             if(l1Prescale_dict[l1_path]>0):
-                weight_def += "w.push_back({} * {}); ".format(l1_path, current_min / l1Prescale_dict[l1_path])
+                weight_def += "w.push_back({} * {}); ".format(l1_path, (1 / (l1Prescale_dict[l1_path]*current_min)))
         #weight_def += "};"
         #print(weight_def)
         weight_def += ("path_weight.push_back((*std::max_element(w.begin(), w.end()))*{}*{}); w.clear();").format(col[0],col[1])
@@ -982,6 +982,7 @@ for mass in all_masses:
     if(args.best_path_baseline!=''):
         best_paths_baseline = args.best_path_baseline.split(',')
 
+
     if(args.Louis == True):
         best_paths_baseline = ['HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1',  'HLT_MediumChargedIsoPFTau200HighPtRelaxedIso_Trk50_eta2p1', 'HLT_MediumChargedIsoPFTau220HighPtRelaxedIso_Trk50_eta2p1',  'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1_1pr', 'HLT_PFMETNoMu120_PFMHTNoMu120_IDTight', 'HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60', 'HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET100', 'HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET110', 'HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET130','HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg']
 
@@ -1011,7 +1012,7 @@ for mass in all_masses:
 
 
     # start iteration over all paths for general case
-    n_paths = len(best_paths_baseline)
+    n_paths = 0
     best_paths.extend(best_paths_baseline)
     if (best_paths_baseline):
         current_paths = [ ]

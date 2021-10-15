@@ -26,7 +26,7 @@ args = parser.parse_args()
 
 masses = {
     "GluGlu":{
-        "Radion":[250, 260, 270, 280, 300, 320, 340, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 1000, 1250, 1500, 1750, 2000, 2500, 3000],
+        "Radion": [250, 260, 270, 280, 300, 320, 340, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 1000, 1250, 1500, 1750, 2000, 2500, 3000],
         "BulkGraviton":[250, 260, 270, 280, 300, 320, 340, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 1000, 1250, 1500, 1750, 2000, 2500, 3000 ]
     },
     "VBF": {
@@ -50,13 +50,14 @@ masses_used = '_'.join(str(mass) for mass in all_masses) # if args.mass_points!=
 has_Louis = '' if args.Louis == False else '_Louis'
 has_AllOR= '' if args.allOR == False else '_allOR'
 for mass in all_masses:
-    if(args.allOR==True):
-        continue
+    #if(args.allOR==True):
+    #    continue
     #outDir = ("{}/output/{}_{}_{}/Step_0").format(os.getcwd(), args.prodMode, args.sample, args.channel)
     dictName = ("{}/{}_{}_{}_{}Triggers_{}Evts_{}Masses{}{}.json").format(args.parentDir,args.prodMode, args.sample, args.channel, args.nTriggers, nEvts_used, mass, has_Louis, has_AllOR)
     #print(dictName)
     #dictName = ("{}/{}_{}_{}_{}Triggers_{}Evts_{}Masses{}{}.json").format(outDir,args.prodMode, args.sample, args.channel, nTriggers, nEvts_used, mass, has_Louis, has_AllOR)
     #print(dictName)
+
     with open(dictName, 'r') as fp:
         lines = fp.read().replace('}{\"M', ', \"M')
         #print(lines)
@@ -68,26 +69,53 @@ for mass in all_masses:
     for k in data:
         all_data[k] = data[k]
 
-    #print(all_data)
 
 
-if(args.allOR == False):
+
+if(args.allOR == False and args.Louis == False):
     for massValue in all_data:
         prev_eff = all_data[massValue]["best_eff"][0]
         print(("{}").format(massValue))
-        print("\n\n\n\n")
+        #print("\n\n")
+        #j=0
         for path,eff,err in zip(all_data[massValue]["best_paths"], all_data[massValue]["best_eff"], all_data[massValue]["best_eff_err"]):
-            if(prev_eff>0):
-                print(("{} \t {} \t {} \t {}").format(str(path), str(eff).replace('.',','), str(err).replace('.',','), str(eff-prev_eff).replace('.',',')))
+            #if(prev_eff>0):
+                #print(("\t {} \t {} \t {} \t {}").format(str(path), str(eff).replace('.',','), str(err).replace('.',','), str(eff-prev_eff).replace('.',',')))
+            #else:
+            #print(("\t {} \t {} \t {}").format(str(path), str(eff).replace('.',','), str(err).replace('.',',')))
+            #if(j==0):
+            #    print(("baseline \t {} \t {}").format(str(eff).replace('.',','), str(err).replace('.',',')))
+            #else:
+            print(("\t {} \t {} \t {}").format(str(path), str(eff).replace('.',','), str(err).replace('.',',')))
+            #j=j+1
+        print()
+elif (args.allOR==True and args.Louis == False):
+    #dictName = ("{}/{}_{}_{}_{}Triggers_{}Evts_allMasses{}{}.json").format(args.parentDir,args.prodMode, args.sample, args.channel, args.nTriggers, nEvts_used, has_Louis, has_AllOR)
+    #with open(dictName, 'r') as fp:
+    #    all_data=json.load(fp)
+    #    print(dictName)
+    for massValue in all_data:
+        print(("{}").format(massValue))
+        #for path,eff,err in zip(all_data[massValue]["best_paths"], all_data[massValue]["best_eff"], all_data[massValue]["best_eff_err"]):
+        print("\n\n\n\n\n\n\n\n")
+        print(("{} \t {}").format(str(all_data[massValue]["best_eff"][0]).replace('.',','), str(all_data[massValue]["best_eff_err"][0]).replace('.',',')))
+        print()
+elif (args.Louis == True and args.allOR == False):
+    #dictName = ("{}/{}_{}_{}_{}Triggers_{}Evts_allMasses{}{}.json").format(args.parentDir,args.prodMode, args.sample, args.channel, args.nTriggers, nEvts_used, has_Louis, has_AllOR)
+    #with open(dictName, 'r') as fp:
+    #    all_data=json.load(fp)
+    #    print(dictName)
+    for massValue in all_data:
+        print(("{}").format(massValue))
+        best_paths = all_data[massValue]["best_paths"][0].split(" == 1  ||  ")
+        #print(len(best_paths))
+        for k in range(0, len(best_paths)):
+            if(k ==(len(best_paths)-1)):
+                print(("{} \t {} \t {} ").format(best_paths[k], str(all_data[massValue]["best_eff"][0]).replace('.',','), str(all_data[massValue]["best_eff_err"][0]).replace('.',',')))
             else:
-                print(("{} \t {} \t {}").format(str(path), str(eff).replace('.',','), str(err).replace('.',',')))
+                print(("{}").format(best_paths[k]))
+        #    print(("{} \t {}").format(str(eff).replace('.',','), str(err).replace('.',',')))
+        #    print("\n\n\n\n\n\n\n\n\n\n")
         print()
 else:
-    dictName = ("{}/{}_{}_{}_{}Triggers_{}Evts_allMasses{}{}.json").format(args.parentDir,args.prodMode, args.sample, args.channel, args.nTriggers, nEvts_used, has_Louis, has_AllOR)
-    with open(dictName, 'r') as fp:
-        all_data=json.load(fp)
-        print(dictName)
-    for massValue in all_data:
-        for path,eff,err in zip(all_data[massValue]["best_paths"], all_data[massValue]["best_eff"], all_data[massValue]["best_eff_err"]):
-            print(("{} \t {}").format(str(eff).replace('.',','), str(err).replace('.',',')))
-            print("\n\n\n\n\n\n\n\n\n\n")
+    print("louis and allor true is not possible")
