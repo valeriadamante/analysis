@@ -1503,7 +1503,7 @@ for mass in all_masses:
       current_paths = [ ]
       if(args.verbose>VerbosityLevel.low):
           print(n_paths, best_paths)
-      for new_path in hlt_columns[:10]:
+      for new_path in hlt_columns:
           if(args.verbose>VerbosityLevel.high):
               print(("new path = {}").format(new_path))
           if new_path in best_path_string:
