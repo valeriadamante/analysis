@@ -1,4 +1,0 @@
-  File "/afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py", line 1310
-    baseline_paths_dict['2017']['eTau']['iter_2'].extend('HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET90', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1'])
-                                                                                                                                                                          ^
-SyntaxError: closing parenthesis ']' does not match opening parenthesis '('

@@ -1,4 +1,0 @@
-  File "/afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py", line 1314
-    baseline_paths_dict['2016']['eTau']['iter_1'].extend([baseline_paths_dict['2016']['eTau']['baseline'])
-                                                                                                         ^
-SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
