@@ -1,0 +1,40 @@
+{
+    "M-900": {
+        "best_paths": [
+            "HLT_Ele27_eta2p1_WPLoose_Gsf_HT200",
+            "HLT_Ele45_CaloIdVT_GsfTrkIdT_PFJet200_PFJet50",
+            "HLT_MonoCentralPFJet80_PFMETNoMu110_PFMHTNoMu110_IDTight",
+            "HLT_DoubleEle8_CaloIdM_TrackIdM_Mass8_PFHT300",
+            "HLT_Ele115_CaloIdVT_GsfTrkIdT",
+            "HLT_AK4CaloJet100",
+            "HLT_AK4CaloJet80",
+            "HLT_AK4PFJet100",
+            "HLT_AK4PFJet80",
+            "HLT_AK8DiPFJet250_200_TrimMass30"
+        ],
+        "best_eff": [
+            0.8333333333333334,
+            0.9444444444444444,
+            0.9861111111111112,
+            0.9930555555555556,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+        ],
+        "best_eff_err": [
+            0.07607257743127308,
+            0.08098544298396251,
+            0.08275260616536795,
+            0.0830434773826486,
+            0.08333333333333333,
+            0.08333333333333333,
+            0.08333333333333333,
+            0.08333333333333333,
+            0.08333333333333333,
+            0.08333333333333333
+        ]
+    }
+}

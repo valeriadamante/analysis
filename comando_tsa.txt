@@ -2,3 +2,106 @@ python3 triggerStudiesAnalysis.py  --machine gridui --nTriggers 10 --verbose 1 -
 python3 triggerStudiesAnalysis.py  --machine gridui --nTriggers 10 --verbose 1 --sample BulkGraviton --prodMode VBF
 python3 triggerStudiesAnalysis.py  --machine gridui --nTriggers 10 --verbose 1 --sample Radion --prodMode GluGlu
 python3 triggerStudiesAnalysis.py  --machine gridui --nTriggers 10 --verbose 1 --sample BulkGraviton --prodMode GluGlu
+
+time python3 triggerStudiesAnalysis.py --machine gridui  --channel tauTau --nTriggers 10 --sample Radion --prodMode GluGlu --reco True  --verbose 2 --mode w --masses_values 250,260,270,280,300,320,340,350,400,450,500
+
+python3 GetPaths.py --machine lxplus --channel tauTau --nTriggers 10 --sample Radion --prodMode GluGlu --reco True  --verbose 1 --mass_points 17 --parentDir '/afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_tauTau/With_0_paths/'
+python3 GetPaths.py --machine local --channel tauTau --nTriggers 525 --sample Radion --prodMode GluGlu --reco True  --verbose 1  --parentDir '/afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_tauTau/With_allOR/'
+
+
+time python3 triggerStudiesAnalysis.py --machine gridui  --channel tauTau --nTriggers 2 --sample Radion --prodMode GluGlu --reco True  --verbose 2 --mode w  --mass_points 5
+/usr/bin/time python3 triggerStudiesAnalysis.py --machine lxplus  --channel tauTau --nTriggers 10 --sample Radion --prodMode GluGlu --reco True  --verbose 2 --mode w  --mass_points 25
+
+/usr/bin/time python3 triggerStudiesAnalysis.py --machine lxplus  --channel muTau --year --iter iter_0 --nTriggers 3 --sample Radion --prodMode GluGlu --reco True  --verbose 2 --mode n  --mass_points 0
+
+
+parser.add_argument('--channel', required=False, type=str, default="tauTau", choices=["eTau","muTau", "tauTau", "eE", "muMu", "eMu"])
+parser.add_argument('--year', required=False, type=int, default=2018, choices=[2016, 2017, 2018])
+parser.add_argument('--nTriggers', required=False, type=int, default=-1)
+parser.add_argument('--iter', required=False, type=str, default='iter_0', choices=['iter_0', 'iter_1','iter_2','iter_2Ext', 'allOR', 'Louis'])
+parser.add_argument('--nEvts', required=False, type=int, default=-1)
+parser.add_argument('--mass_points', required=False, type=str, default='0')
+parser.add_argument('--best_path_baseline', required=False, type=str, default='') #insert path separated by comma
+parser.add_argument('--verbose', required=False, type=int, default=1)
+parser.add_argument('--machine', required=False,type=str, default="gridui", choices=["local", "lxplus", "gridui"])
+parser.add_argument('--prodMode', required=False, type=str, default="GluGlu", choices = ["GluGlu", "VBF"])
+parser.add_argument('--mode', required=False, type=str, default="w", choices = ["w", "a"])
+parser.add_argument('--sample', required=False, type=str, default="Radion", choices = ["Radion", "BulkGraviton"])
+parser.add_argument('--reco', required=False, type=bool, default=False)
+
+hltGetConfiguration /dev/CMSSW_12_0_0/GRun/V6 --paths HLTriggerFirstPath,HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg_v4,HLT_VBF_DoubleTightChargedIsoPFTauHPS20_Trk1_eta2p1_v1,HLTriggerFinalPath,HLTAnalyzerEndpath  --unprescale --cff > HLT_User_cff_2.py
+
+
+crab_submit.py --workArea L2Tuple –cfg TauMLTools/Production/python/L2TauNNTagTupleProd.py --site T2_IT_Pisa --output L2TauNNTagTuple  TauMLTools/Production/crab/configs/Run3L2/HTauTau_Winter21.txt
+
+crab_submit.py --workArea L2Tuple –cfg TauMLTools/Production/python/L2TauNNTagTupleProd.py --site T2_IT_Pisa --output L2TauNNTagTuple  TauMLTools/Production/crab/configs/Run3L2/HTauTau_Winter21.txt
+
+/store/mc/Run3Winter21DRMiniAOD/VBFHToTauTau_M125_TuneCP5_14TeV-powheg-pythia8/GEN-SIM-DIGI-RAW/FlatPU30to80FEVT_112X_mcRun3_2021_realistic_v16-v1/270000/d83c4204-e975-4b02-a1fb-95231f6c8065.root
+
+python3 /afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py --machine lxplus --channel muTau --nTriggers -1 --sample Radion --prodMode GluGlu --reco True  --verbose 0 --mode w  --year 2017 --iter baseline  --mass_points all
+
+python3 /afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py --machine lxplus --channel muTau --nTriggers -1 --sample Radion --prodMode GluGlu --reco True  --verbose 0 --mode w  --year 2018 --iter baseline  --mass_points 11
+
+python3 create_job.py --channel eTau --year 2017 --prodMode GluGlu --iter Louis --sample Radion --mass_points all --max-runtime 2
+python3 create_job.py --channel muTau --year 2017 --prodMode GluGlu --iter Louis --sample Radion --mass_points all --max-runtime 2
+python3 create_job.py --channel tauTau --year 2017 --prodMode GluGlu --iter Louis --sample Radion --mass_points all --max-runtime 2
+
+python3 create_job.py --channel eTau --year 2017 --prodMode GluGlu --iter baseline --sample Radion --mass_points all --max-runtime 1
+python3 create_job.py --channel muTau --year 2017 --prodMode GluGlu --iter baseline --sample Radion --mass_points all --max-runtime 1
+python3 create_job.py --channel tauTau --year 2017 --prodMode GluGlu --iter baseline --sample Radion --mass_points all --max-runtime 1
+
+
+python3 create_job.py --channel eTau --year 2017 --prodMode GluGlu --iter iter_0 --sample Radion --mass_points all --max-runtime 10
+python3 create_job.py --channel muTau --year 2017 --prodMode GluGlu --iter iter_0 --sample Radion --mass_points all --max-runtime 10
+python3 create_job.py --channel tauTau --year 2017 --prodMode GluGlu --iter iter_0 --sample Radion --mass_points all --max-runtime 10
+
+python3 create_job.py --channel eTau --year 2018 --prodMode GluGlu --iter recomLouis --sample Radion --mass_points all --max-runtime 2
+python3 create_job.py --channel muTau --year 2018 --prodMode GluGlu --iter recomLouis --sample Radion --mass_points all --max-runtime 2
+python3 create_job.py --channel tauTau --year 2018 --prodMode GluGlu --iter recomLouis --sample Radion --mass_points all --max-runtime 2
+
+
+python3 create_job.py --channel eTau --year 2018 --prodMode GluGlu --iter baseline --sample Radion --mass_points all --max-runtime 2
+python3 create_job.py --channel muTau --year 2018 --prodMode GluGlu --iter baseline --sample Radion --mass_points all --max-runtime 2
+python3 create_job.py --channel tauTau --year 2018 --prodMode GluGlu --iter baseline --sample Radion --mass_points all --max-runtime 2
+
+
+python3 /afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py --machine lxplus --channel tauTau --nTriggers 2 --sample Radion --prodMode GluGlu --reco True  --verbose 0 --mode n  --year 2017 --iter iter_0  --mass_points 11 --nEvts 100
+
+
+
+
+
+python3 create_job.py --channel eTau --year 2017 --prodMode GluGlu --iter iter_0 --sample Radion --nTriggers 10 --mass_points 11 --max-runtime 6 --mass_ordered True
+
+python3 create_job.py --channel muTau --year 2017 --prodMode GluGlu --iter iter_0 --sample Radion --nTriggers 10 --mass_points 3 --max-runtime 6 --mass_ordered True
+
+python3 create_job.py --channel tauTau --year 2017 --prodMode GluGlu --iter iter_0 --sample Radion --nTriggers 10 --mass_points 2,3,8 --max-runtime 6 --mass_ordered True
+
+
+python3 create_job.py --channel eTau --year 2018 --prodMode GluGlu --iter Louis --sample Radion --mass_points all --max-runtime 2
+
+python3 create_job.py --channel muTau --year 2018 --prodMode GluGlu --iter Louis --sample Radion --mass_points all --max-runtime 2
+
+python3 create_job.py --channel tauTau --year 2018 --prodMode GluGlu --iter Louis --sample Radion --mass_points all --max-runtime 2
+
+
+for i in 250 260 270 280 300 320 340 350 400 450 500 550 600 650 700 750 800 850 900 1000 1250 1500 1750 2000 2500 3000 ; do ls -F output/GluGlu_Radion_muTau_2018/With_allOR/GluGlu_Radion_muTau_allEvts_$i\Masses.json ; done
+
+for i in 250 260 270 280 300 320 340 350 400 450 500 550 600 650 700 750 800 850 900 1000 1250 1500 1750 2000 2500 3000 ; do ls -F output/GluGlu_Radion_muTau_2018/With_iter_0/GluGlu_Radion_muTau_allEvts_$i\Masses.json ; done
+
+for i in 250 260 270 280 300 320 340 350 400 450 500 550 600 650 700 750 800 850 900 1000 1250 1500 1750 2000 2500 3000 ; do ls -F output/GluGlu_Radion_tauTau_2018/With_allOR/GluGlu_Radion_tauTau_allEvts_$i\Masses.json ; done
+
+for i in 250 260 270 280 300 320 340 350 400 450 500 550 600 650 700 750 800 850 900 1000 1250 1500 1750 2000 2500 3000 ; do ls -F output/GluGlu_Radion_tauTau_2018/With_iter_0/GluGlu_Radion_tauTau_allEvts_$i\Masses.json ; done
+
+/usr/bin/time python3 triggerStudiesAnalysis.py --machine lxplus  --channel muTau --year --iter iter_0 --nTriggers 5 --mass_points 19 --sample Radion --prodMode GluGlu --reco True  --verbose 2 --mode n
+
+
+python3 create_jobs.py --channel tauTau --nTriggers 10 --sample Radion --prodMode GluGlu --allOR True --mass_points 25 --max-runtime 6
+
+
+ for i in  11 12 13 14 15 ; do   echo python3 triggerStudiesAnalysis.py --machine gridui  --channel tauTau --nTriggers 10 --sample Radion --prodMode GluGlu --reco True  --verbose 1  --mode w --mass_points $i --allOR True  &   python3 triggerStudiesAnalysis.py --machine gridui  --channel tauTau --nTriggers 10 --sample Radion --prodMode GluGlu --reco True  --verbose 1  --mode w --mass_points $i --allOR True  & done
+
+
+python3 GetPaths.py --channel eTau --year 2017 --iter iter_0 --mass_points all --machine lxplus --prodMode GluGlu --sample Radion > eTau_2017_iter0.txt
+
+for i in 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 ; do python3 GetPaths.py --channel eTau --year 2018 --iter recommended --mass_points $i --machine lxplus --prodMode GluGlu --sample Radion ; done

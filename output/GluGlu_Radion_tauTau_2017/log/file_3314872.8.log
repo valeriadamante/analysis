@@ -1,0 +1,43 @@
+000 (3314872.008.000) 01/12 10:12:21 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3314872.008.000) 01/12 10:51:45 Started transferring input files
+	Transferring to host: <188.184.163.84:9618?addrs=188.184.163.84-9618+[2001-1458-301-4d--100-4e]-9618&alias=b7s12p7045.cern.ch&noUDP&sock=slot1_39_3683_c1af_23726>
+...
+040 (3314872.008.000) 01/12 10:51:45 Finished transferring input files
+...
+001 (3314872.008.000) 01/12 10:51:46 Job executing on host: <188.184.163.84:9618?addrs=188.184.163.84-9618+[2001-1458-301-4d--100-4e]-9618&alias=b7s12p7045.cern.ch&noUDP&sock=startd_3204_4187>
+...
+006 (3314872.008.000) 01/12 10:51:55 Image size of job updated: 320132
+	155  -  MemoryUsage of job (MB)
+	157828  -  ResidentSetSize of job (KB)
+...
+006 (3314872.008.000) 01/12 10:56:56 Image size of job updated: 2478616
+	978  -  MemoryUsage of job (MB)
+	1001448  -  ResidentSetSize of job (KB)
+...
+006 (3314872.008.000) 01/12 11:01:56 Image size of job updated: 2495000
+	978  -  MemoryUsage of job (MB)
+	1001448  -  ResidentSetSize of job (KB)
+...
+006 (3314872.008.000) 01/12 11:06:56 Image size of job updated: 2732916
+	978  -  MemoryUsage of job (MB)
+	1001448  -  ResidentSetSize of job (KB)
+...
+040 (3314872.008.000) 01/12 11:18:14 Started transferring output files
+...
+040 (3314872.008.000) 01/12 11:18:14 Finished transferring output files
+...
+004 (3314872.008.000) 01/12 11:18:15 Job was evicted.
+	(0) CPU times
+		Usr 0 00:24:39, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	6494291  -  Run Bytes Sent By Job
+	10523  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        4         4 
+	   Disk (KB)            :  6373           1   2884840 
+	   Memory (MB)          :   978        8000      8000 
+...
+009 (3314872.008.000) 01/12 11:18:15 Job was aborted.
+	via condor_rm (by user vdamante)
+...

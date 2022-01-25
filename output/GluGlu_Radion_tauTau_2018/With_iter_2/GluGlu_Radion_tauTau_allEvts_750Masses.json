@@ -1,0 +1,13 @@
+{
+    "M-750": {
+        "best_paths": [
+            " HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1  ||  HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1 == 1  ||  HLT_PFMETNoMu120_PFMHTNoMu120_IDTight == 1  ||  HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET100 == 1  ||  HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1 == 1  ||  HLT_VBF_DoubleLooseChargedIsoPFTauHPS20_Trk1_eta2p1 == 1  ||  HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4 == 1 "
+        ],
+        "best_eff": [
+            0.7772208163458326
+        ],
+        "best_eff_err": [
+            0.005696767825165492
+        ]
+    }
+}

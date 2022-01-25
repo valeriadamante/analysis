@@ -1,0 +1,9 @@
+TClass::Init:0: RuntimeWarning: no dictionary for class edm::Hash<1> is available
+TClass::Init:0: RuntimeWarning: no dictionary for class edm::ProcessHistory is available
+TClass::Init:0: RuntimeWarning: no dictionary for class edm::ProcessConfiguration is available
+TClass::Init:0: RuntimeWarning: no dictionary for class edm::ParameterSetBlob is available
+TClass::Init:0: RuntimeWarning: no dictionary for class pair<edm::Hash<1>,edm::ParameterSetBlob> is available
+Traceback (most recent call last):
+  File "/afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py", line 1452, in <module>
+    best_paths.append(path_perf_withEff[0][0])
+IndexError: list index out of range

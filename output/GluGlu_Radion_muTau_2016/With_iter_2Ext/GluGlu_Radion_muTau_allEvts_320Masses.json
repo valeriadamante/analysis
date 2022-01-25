@@ -1,0 +1,13 @@
+{
+    "M-320": {
+        "best_paths": [
+            " HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1  ||  HLT_Mu30_TkMu11 == 1  ||  HLT_IsoMu24 == 1  ||  HLT_DoubleMu8_Mass8_PFHT300 == 1  ||  HLT_PFMET90_PFMHT90_IDTight == 1  ||  HLT_Mu17 == 1  ||  HLT_AK4CaloJet100 == 1  ||  HLT_Mu17_Mu8_SameSign_DZ == 1  ||  HLT_DoubleMu8_Mass8_PFHT300 == 1  ||  HLT_PFMET90_PFMHT90_IDTight == 1  ||  HLT_Mu17 == 1  ||  HLT_MonoCentralPFJet80_PFMETNoMu110_PFMHTNoMu110_IDTight == 1 "
+        ],
+        "best_eff": [
+            0.9313086807295556
+        ],
+        "best_eff_err": [
+            0.1792040525182123
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "M-250": {
+        "best_paths": [
+            "HLT_Ele32_WPTight_Gsf",
+            "HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTauHPS30_eta2p1_CrossL1",
+            "HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ",
+            "HLT_Diphoton30_22_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90",
+            "HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg",
+            "HLT_Ele28_eta2p1_WPTight_Gsf_HT150",
+            "HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165",
+            "HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight",
+            "HLT_Mu12_DoublePhoton20",
+            "HLT_HT430_DisplacedDijet40_DisplacedTrack"
+        ],
+        "best_eff": [
+            0.4420315420868334,
+            0.5014015779819739,
+            0.532975259559605,
+            0.554024380611359,
+            0.5707555532152048,
+            0.5843834197800661,
+            0.5949079803059432,
+            0.6054325408318201,
+            0.6159571013576971,
+            0.6264799066199774
+        ],
+        "best_eff_err": [
+            0.0682126351998956,
+            0.07264923500752553,
+            0.07490170819214409,
+            0.07636645589120086,
+            0.07751098755492022,
+            0.07843088944247374,
+            0.07913399564269676,
+            0.07983090951516937,
+            0.08052179184332629,
+            0.08120668280900205
+        ]
+    }
+}

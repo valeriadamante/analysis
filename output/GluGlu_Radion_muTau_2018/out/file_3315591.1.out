@@ -1,0 +1,85 @@
+Running with following options: 
+ channel = muTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2018 
+ nTriggers = 9 
+ iter = iter_0Baseline 
+ nEvts = -1 
+ mass_points = [260] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 260
+['root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/70000/292D004A-77D4-614F-9F2E-8C42FF933D98.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/260000/F589E17D-BE73-CC4A-856C-BB9091312D2D.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/60000/F5742936-A966-5D43-959D-A92196D21091.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/70000/B956A7B3-D3C6-5044-9E9A-4BD571D1383C.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/100000/1760B3A1-5243-6E49-BDCF-CAA817A6C84C.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/100000/C2C94964-CC65-1049-AF47-F541C393C1B0.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/70000/1BE23506-AD03-BB42-8C45-4067148DE4F6.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/70000/B0E9DFA9-1DA1-2441-A09B-00E533F130DE.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/60000/1524E2F3-3F5B-4F4D-B238-2643682D59B0.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/110000/4D37AED4-991B-164D-8412-07D8ED4496BB.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/110000/8A4092AB-6338-8F40-84B8-303DF5623A04.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/260000/8FF2BFC2-06A6-724F-A71C-B492B7BB0001.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/70000/E4DCB0E4-9C32-4A42-B632-90D7E3F6020E.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/130000/58905D7D-EBF8-6A4C-89EB-DBE54F46A84B.root']
+filtering for channel muTau
+filtered for channel muTau
+before any filling, baseline path are [] 
+
+['HLT_Ele32_WPTight_Gsf', 'HLT_Ele35_WPTight_Gsf', 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTauHPS30_eta2p1_CrossL1']
+current baseline path are ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1'] 
+
+nTriggers=9, best_paths_baseline=['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1'], best_paths=['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1'] 
+
+current paths = [('HLT_IsoMu24', 0.999666499916625), ('HLT_IsoMu27', 0.9998332499583126), ('HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1', 0.9998332499583126)] 
+ HLT_IsoMu24 == 1 
+ HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1 
+ HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 
+[(' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 0.6223392308399107, 0.05634891442917497), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 0.6223392308399107, 0.05634891442917497), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 0.6223392308399107, 0.05634891442917497)]
+nPaths = 3 
+entro in while 
+3 ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+4 ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1', 'HLT_Mu18_Mu9_SameSign']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+5 ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1', 'HLT_Mu18_Mu9_SameSign', 'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+6 ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1', 'HLT_Mu18_Mu9_SameSign', 'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed', 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+7 ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1', 'HLT_Mu18_Mu9_SameSign', 'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed', 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8', 'HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+8 ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1', 'HLT_Mu18_Mu9_SameSign', 'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed', 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8', 'HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight', 'HLT_DoubleMu3_DCA_PFMET50_PFMHT60']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+best_paths_dict 
+ {'M-260': {'best_paths': [' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 'HLT_Mu18_Mu9_SameSign', 'HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed', 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8', 'HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight', 'HLT_DoubleMu3_DCA_PFMET50_PFMHT60', 'HLT_DoubleL2Mu23NoVtx_2Cha'], 'best_eff': [0.6223392308399107, 0.7447686428248137, 0.7957813940984091, 0.8314897244540627, 0.8569956747081009, 0.8721537639568068, 0.8772549540076143], 'best_eff_err': [0.05634891442917497, 0.06164284236156145, 0.06371898581712764, 0.0651328988493582, 0.06612432919717239, 0.06670655216558896, 0.06690134962518696]}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_muTau_2018//With_iter_0Baseline//GluGlu_Radion_muTau_allEvts_260Masses.json

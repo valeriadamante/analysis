@@ -1,0 +1,40 @@
+{
+    "M-450": {
+        "best_paths": [
+            "HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1",
+            "HLT_DoubleL2Mu23NoVtx_2Cha",
+            "HLT_Mu18_Mu9_SameSign",
+            "HLT_Mu50",
+            "HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8",
+            "HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg",
+            "HLT_DoubleMu4_Mass3p8_DZ_PFHT350",
+            "HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight",
+            "HLT_IsoMu24",
+            "HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed"
+        ],
+        "best_eff": [
+            0.6445003547525364,
+            0.8307438032741858,
+            0.8944586672421185,
+            0.9214149558439363,
+            0.9312172426082336,
+            0.9385689576814565,
+            0.9452708380333974,
+            0.9501719814155462,
+            0.9550723073955296,
+            0.9577394906603647
+        ],
+        "best_eff_err": [
+            0.03974490825548109,
+            0.045123572251439134,
+            0.046822010369111586,
+            0.04752231044271279,
+            0.04777441995954698,
+            0.04796263245448851,
+            0.04813356717819221,
+            0.04825818993317444,
+            0.04838247098400881,
+            0.04844998155214153
+        ]
+    }
+}

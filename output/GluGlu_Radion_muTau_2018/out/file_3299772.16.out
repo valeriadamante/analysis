@@ -1,0 +1,31 @@
+Running with following options: 
+ channel = muTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2018 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [800] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 800
+['root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/260000/60D612A1-78A7-0A42-8114-670659850F11.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/110000/7E7F6F5C-5D2C-8D4E-9E1C-28F920712084.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/60000/388D4B00-A41D-E64D-BE8C-3BE31796E91D.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/270000/5D4DBDEB-E0FA-A44F-BED6-D8044C21A097.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/110000/A1DC864A-F842-B247-9874-67FE41A88AEB.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/70000/322C745D-9F05-854F-A517-2ECC4EFA2A3E.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/130000/40ADE062-F6FC-0D4D-9728-EF73CF2AEB22.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/110000/77F1FFF1-578D-ED4B-BC67-92CC87C80D94.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/120000/9C179E10-A38A-0F4B-96B2-EDDE2278AE1B.root']
+filtering for channel muTau
+filtered for channel muTau
+current baseline path are ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1']
+nTriggers=3, best_paths_baseline=['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1'], best_paths=['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1'] 
+
+current paths = [('HLT_IsoMu24', 0.999666499916625), ('HLT_IsoMu27', 0.9998332499583126), ('HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1', 0.9998332499583126)] 
+ HLT_IsoMu24 == 1 
+ HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1 
+ HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 
+[(' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 0.8067925601964933, 0.03648754388020732), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 0.8067925601964933, 0.03648754388020732), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 0.8067925601964933, 0.03648754388020732)]
+[(' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 0.8067925601964933, 0.03648754388020732), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 0.8067925601964933, 0.03648754388020732), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ', 0.8067925601964933, 0.03648754388020732)]
+nPaths = 3 
+best_paths_dict 
+ {'M-800': {'best_paths': [' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 '], 'best_eff': [0.8067925601964933], 'best_eff_err': [0.03648754388020732]}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_muTau_2018//With_baseline//GluGlu_Radion_muTau_allEvts_800Masses.json

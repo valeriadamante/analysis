@@ -1,0 +1,42 @@
+000 (3315601.010.000) 01/12 18:55:42 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3315601.010.000) 01/13 01:53:34 Started transferring input files
+	Transferring to host: <188.184.165.118:9618?addrs=188.184.165.118-9618&alias=b7s14p4344.cern.ch&noUDP&sock=slot1_9_4513_9111_27191>
+...
+040 (3315601.010.000) 01/13 01:53:34 Finished transferring input files
+...
+001 (3315601.010.000) 01/13 01:53:35 Job executing on host: <188.184.165.118:9618?addrs=188.184.165.118-9618&alias=b7s14p4344.cern.ch&noUDP&sock=startd_4275_df76>
+...
+006 (3315601.010.000) 01/13 01:53:43 Image size of job updated: 206100
+	192  -  MemoryUsage of job (MB)
+	196012  -  ResidentSetSize of job (KB)
+...
+006 (3315601.010.000) 01/13 01:58:43 Image size of job updated: 2499704
+	1001  -  MemoryUsage of job (MB)
+	1024100  -  ResidentSetSize of job (KB)
+...
+006 (3315601.010.000) 01/13 02:03:44 Image size of job updated: 2753984
+	1001  -  MemoryUsage of job (MB)
+	1024100  -  ResidentSetSize of job (KB)
+...
+040 (3315601.010.000) 01/13 02:17:04 Started transferring output files
+...
+040 (3315601.010.000) 01/13 02:17:05 Finished transferring output files
+...
+005 (3315601.010.000) 01/13 02:17:05 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:11:03, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:11:03, Sys 0 00:00:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	16960158  -  Run Bytes Sent By Job
+	10521  -  Run Bytes Received By Job
+	16960158  -  Total Bytes Sent By Job
+	10521  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.01        4         4 
+	   Disk (KB)            : 16596           1   2950572 
+	   Memory (MB)          :  1001        8000      8000 
+
+	Job terminated of its own accord at 2022-01-13T01:17:04Z.
+...

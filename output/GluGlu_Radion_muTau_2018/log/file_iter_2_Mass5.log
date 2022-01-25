@@ -1,0 +1,97 @@
+000 (3335533.000.000) 01/19 08:44:58 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+022 (3335533.000.000) 01/19 08:52:31 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_16@b7s09p8936.cern.ch <188.184.160.66:9618?addrs=188.184.160.66-9618+[2001-1458-301-48--100-3c]-9618&alias=b7s09p8936.cern.ch&noUDP&sock=startd_3076_7568>
+...
+024 (3335533.000.000) 01/19 08:52:31 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_16@b7s09p8936.cern.ch, rescheduling job
+...
+040 (3335533.000.000) 01/19 08:56:51 Started transferring input files
+	Transferring to host: <188.184.160.47:9618?addrs=188.184.160.47-9618+[2001-1458-301-48--100-29]-9618&alias=b7s09p6288.cern.ch&noUDP&sock=slot1_12_3775_9433_35014>
+...
+040 (3335533.000.000) 01/19 08:56:51 Finished transferring input files
+...
+001 (3335533.000.000) 01/19 08:56:52 Job executing on host: <188.184.160.47:9618?addrs=188.184.160.47-9618+[2001-1458-301-48--100-29]-9618&alias=b7s09p6288.cern.ch&noUDP&sock=startd_3050_9ff2>
+...
+006 (3335533.000.000) 01/19 08:57:01 Image size of job updated: 217208
+	156  -  MemoryUsage of job (MB)
+	159420  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 09:02:02 Image size of job updated: 1773448
+	311  -  MemoryUsage of job (MB)
+	318304  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 09:07:02 Image size of job updated: 2971496
+	790  -  MemoryUsage of job (MB)
+	808784  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 09:22:04 Image size of job updated: 2971496
+	790  -  MemoryUsage of job (MB)
+	808840  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 09:27:04 Image size of job updated: 3105208
+	1589  -  MemoryUsage of job (MB)
+	1626980  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 09:47:06 Image size of job updated: 3578572
+	1872  -  MemoryUsage of job (MB)
+	1916020  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 09:57:07 Image size of job updated: 3578572
+	1872  -  MemoryUsage of job (MB)
+	1916024  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 10:12:08 Image size of job updated: 4091424
+	2118  -  MemoryUsage of job (MB)
+	2168524  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 10:37:11 Image size of job updated: 4091424
+	2118  -  MemoryUsage of job (MB)
+	2168604  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 10:42:12 Image size of job updated: 4532540
+	2507  -  MemoryUsage of job (MB)
+	2566752  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 10:47:12 Image size of job updated: 4532540
+	2507  -  MemoryUsage of job (MB)
+	2566756  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 11:07:14 Image size of job updated: 4532540
+	2509  -  MemoryUsage of job (MB)
+	2568352  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 11:12:15 Image size of job updated: 5034980
+	2975  -  MemoryUsage of job (MB)
+	3045848  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 11:37:17 Image size of job updated: 5034980
+	2977  -  MemoryUsage of job (MB)
+	3048380  -  ResidentSetSize of job (KB)
+...
+006 (3335533.000.000) 01/19 11:42:18 Image size of job updated: 5599268
+	3517  -  MemoryUsage of job (MB)
+	3600692  -  ResidentSetSize of job (KB)
+...
+040 (3335533.000.000) 01/19 11:47:37 Entered queue to transfer output files
+...
+040 (3335533.000.000) 01/19 11:47:49 Started transferring output files
+...
+040 (3335533.000.000) 01/19 11:47:53 Finished transferring output files
+...
+004 (3335533.000.000) 01/19 11:47:56 Job was evicted.
+	(0) CPU times
+		Usr 0 00:47:26, Sys 0 00:00:49  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	11206  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.25        4         4 
+	   Disk (KB)            :    35           1   1355272 
+	   Memory (MB)          :  3517        8000      8000 
+...
+009 (3335533.000.000) 01/19 11:48:00 Job was aborted.
+	via condor_rm (by user vdamante)
+...

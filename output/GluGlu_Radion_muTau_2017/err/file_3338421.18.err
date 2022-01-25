@@ -1,0 +1,185 @@
+Error in <TNetXNGFile::ReadBuffer>: [ERROR] Invalid session
+Error in <TBranch::GetBasket>: File: root://xrootd-cms.infn.it//store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-1000_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/E55ECC94-6C2E-CD40-9862-EFEEBD607E9F.root at byte:50929161, branch:HLT_PFHT300PT30_QuadPFJet_75_60_45_40_TriplePFBTagCSV_3p0, entry:23074, badread=1, nerrors=1, basketnumber=7
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 6 (Thread 0x2b80ac394700 (LWP 521) "python3"):
+#0  0x00002b806e04bb3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b806e04bbcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b806e04bc6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b80abb31c66 in XrdSysSemaphore::Wait (this=0xa2cf740) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0xa2d1e78) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0xa2d1e60) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b80abb31d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2b80ac193700 (LWP 520) "python3"):
+#0  0x00002b806e04bb3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b806e04bbcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b806e04bc6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b80abb31c66 in XrdSysSemaphore::Wait (this=0xa2cf740) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0xa2d1e78) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0xa2d1e60) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b80abb31d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2b8091bb1700 (LWP 519) "python3"):
+#0  0x00002b806e04bb3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b806e04bbcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b806e04bc6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b80abb31c66 in XrdSysSemaphore::Wait (this=0xa2cf740) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0xa2d1e78) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0xa2d1e60) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b80abb31d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2b8091db2700 (LWP 518) "python3"):
+#0  0x00002b806e04ce9d in nanosleep () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b80ab9aa960 in XrdSysTimer::Wait (mills=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002b80abacadb6 in XrdCl::TaskManager::RunTasks (this=0xa2d2d20) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClTaskManager.cc:246
+#3  0x00002b80abacaea9 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClTaskManager.cc:38
+#4  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#5  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2b8091fb3700 (LWP 517) "python3"):
+#0  0x00002b806ea620e3 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b80ab9a5102 in XrdSys::IOEvents::PollE::Begin (this=0xa2d5050, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysIOEventsPollE.icc:212
+#2  0x00002b80ab9a1bad in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffc134ce450) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002b80ab9aa148 in XrdSysThread_Xeq (myargs=0xa2c0c90) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#5  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2b806d8ac540 (LWP 491) "python3"):
+#0  0x00002b806ea28659 in waitpid () from /lib64/libc.so.6
+#1  0x00002b806e9a5f62 in do_system () from /lib64/libc.so.6
+#2  0x00002b806e9a6311 in system () from /lib64/libc.so.6
+#3  0x00002b807669700c in TUnixSystem::StackTrace() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libCore.so
+#4  0x00002b8076234cd2 in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libcppyy_backend3_8.so
+#5  0x00002b8076694491 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libCore.so
+#6  <signal handler called>
+#7  0x00002b80ade608b5 in ?? ()
+#8  0x00000000104eb220 in ?? ()
+#9  0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum https://root.cern.ch/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern.ch/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#7  0x00002b80ade608b5 in ?? ()
+#8  0x00000000104eb220 in ?? ()
+#9  0x0000000000000000 in ?? ()
+===========================================================
+
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 6 (Thread 0x2b80ac394700 (LWP 521) "python3"):
+#0  0x00002b806e04bb3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b806e04bbcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b806e04bc6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b80abb31c66 in XrdSysSemaphore::Wait (this=0xa2cf740) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0xa2d1e78) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0xa2d1e60) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b80abb31d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2b80ac193700 (LWP 520) "python3"):
+#0  0x00002b806e04bb3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b806e04bbcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b806e04bc6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b80abb31c66 in XrdSysSemaphore::Wait (this=0xa2cf740) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0xa2d1e78) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0xa2d1e60) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b80abb31d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2b8091bb1700 (LWP 519) "python3"):
+#0  0x00002b806e04bb3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b806e04bbcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b806e04bc6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b80abb31c66 in XrdSysSemaphore::Wait (this=0xa2cf740) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0xa2d1e78) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0xa2d1e60) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b80abb31d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2b8091db2700 (LWP 518) "python3"):
+#0  0x00002b806e04ce9d in nanosleep () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b80ab9aa960 in XrdSysTimer::Wait (mills=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002b80abacadb6 in XrdCl::TaskManager::RunTasks (this=0xa2d2d20) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClTaskManager.cc:246
+#3  0x00002b80abacaea9 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClTaskManager.cc:38
+#4  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#5  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2b8091fb3700 (LWP 517) "python3"):
+#0  0x00002b806ea620e3 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b80ab9a5102 in XrdSys::IOEvents::PollE::Begin (this=0xa2d5050, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysIOEventsPollE.icc:212
+#2  0x00002b80ab9a1bad in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffc134ce450) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002b80ab9aa148 in XrdSysThread_Xeq (myargs=0xa2c0c90) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002b806e045ea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#5  0x00002b806ea61b0d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2b806d8ac540 (LWP 491) "python3"):
+#0  0x00002b806ea28659 in waitpid () from /lib64/libc.so.6
+#1  0x00002b806e9a5f62 in do_system () from /lib64/libc.so.6
+#2  0x00002b806e9a6311 in system () from /lib64/libc.so.6
+#3  0x00002b807669700c in TUnixSystem::StackTrace() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libCore.so
+#4  0x00002b8076234b5a in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libcppyy_backend3_8.so
+#5  0x00002b8076694491 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libCore.so
+#6  <signal handler called>
+#7  0x00002b80ade608b5 in ?? ()
+#8  0x00000000104eb220 in ?? ()
+#9  0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum https://root.cern.ch/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern.ch/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#7  0x00002b80ade608b5 in ?? ()
+#8  0x00000000104eb220 in ?? ()
+#9  0x0000000000000000 in ?? ()
+===========================================================
+
+
+Error in <TNetXNGFile::Close>: [ERROR] Invalid session

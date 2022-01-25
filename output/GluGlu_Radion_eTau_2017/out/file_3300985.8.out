@@ -1,0 +1,25 @@
+Running with following options: 
+ channel = eTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2017 
+ nTriggers = -1 
+ iter = iter_0 
+ nEvts = -1 
+ mass_points = [450] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 450
+['root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-450_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v2/230000/7BC8577F-3CF2-404E-A5F8-9265BE33AAF1.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-450_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v2/240000/7B711DE8-89AB-A845-8735-7826E30CC8A2.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-450_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v2/240000/7B868324-124D-4E45-98E5-40C478DDDD50.root']
+filtering for channel eTau
+filtered for channel eTau
+current baseline path are []
+nTriggers=0, best_paths_baseline=[], best_paths=[] 
+
+nPaths = 0 
+best_paths_dict 
+ {'M-450': {'best_paths': [], 'best_eff': [], 'best_eff_err': []}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_eTau_2017//With_iter_0//GluGlu_Radion_eTau_allEvts_450Masses.json

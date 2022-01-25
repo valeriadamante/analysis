@@ -1,0 +1,13 @@
+{
+    "M-2000": {
+        "best_paths": [
+            " HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg == 1 "
+        ],
+        "best_eff": [
+            0.45065440396179696
+        ],
+        "best_eff_err": [
+            0.012625799998284223
+        ]
+    }
+}

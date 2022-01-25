@@ -1,0 +1,27 @@
+Running with following options: 
+ channel = tauTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2017 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [800] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 800
+['root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/B0376E5E-A542-4C42-BBD7-924E20A70830.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/BC923287-4974-5649-B853-A4A337814E2E.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/F818A11F-5504-DA4E-A190-5A3B2F1962AE.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/98F784E8-FD39-2748-A658-E8662879F160.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/60000/3F47B5D3-277F-1043-AEC1-468F3545BF02.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/427072FD-B944-AE41-A254-C6A045F3A5F4.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/ACE0AC88-9166-874B-9819-4FF5B138A0EE.root']
+filtering for channel tauTau
+filtered for channel tauTau
+current baseline path are ['HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg']
+nTriggers=3, best_paths_baseline=['HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg'], best_paths=['HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg']
+current paths = [('HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg', 1.0), ('HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg', 1.0), ('HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg', 1.0)] 
+ HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1 
+ HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1 
+ HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg == 1 
+[(' HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg == 1 ', 0.5750605807809955, 0.004779575336334972), (' HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg == 1 ', 0.5750605807809955, 0.004779575336334972), (' HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg == 1 ', 0.5750605807809955, 0.004779575336334972)]
+[(' HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg == 1 ', 0.5750605807809955, 0.004779575336334972), (' HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg == 1 ', 0.5750605807809955, 0.004779575336334972), (' HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg == 1 ', 0.5750605807809955, 0.004779575336334972)]
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_tauTau_2017//With_baseline//GluGlu_Radion_tauTau_allEvts_800Masses.json

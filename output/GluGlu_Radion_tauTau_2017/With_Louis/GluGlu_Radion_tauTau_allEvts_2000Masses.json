@@ -1,0 +1,13 @@
+{
+    "M-2000": {
+        "best_paths": [
+            " HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1 == 1  ||  HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1_1pr == 1  ||  HLT_PFMETNoMu120_PFMHTNoMu120_IDTight == 1  ||  HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60 == 1  ||  HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET100 == 1  ||  HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET110 == 1  ||  HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET130 == 1 "
+        ],
+        "best_eff": [
+            0.8141202030969338
+        ],
+        "best_eff_err": [
+            0.016969981227363477
+        ]
+    }
+}

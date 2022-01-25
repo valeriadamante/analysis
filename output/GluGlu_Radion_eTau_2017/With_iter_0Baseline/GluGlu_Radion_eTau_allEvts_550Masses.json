@@ -1,0 +1,40 @@
+{
+    "M-550": {
+        "best_paths": [
+            " HLT_Ele32_WPTight_Gsf == 1  ||  HLT_Ele35_WPTight_Gsf == 1  ||  HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1 == 1  ||  HLT_Ele32_WPTight_Gsf_L1DoubleEG == 1 ",
+            "HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg",
+            "HLT_PFMETTypeOne120_PFMHT120_IDTight",
+            "HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165",
+            "HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ",
+            "HLT_PFMET100_PFMHT100_IDTight_CaloBTagCSV_3p1",
+            "HLT_DiEle27_WPTightCaloOnly_L1DoubleEG",
+            "HLT_Ele115_CaloIdVT_GsfTrkIdT",
+            "HLT_Mu8_Ele8_CaloIdM_TrackIdM_Mass8_PFHT350_DZ",
+            "HLT_RsqMR300_Rsq0p09_MR200_4jet"
+        ],
+        "best_eff": [
+            0.6070353526165787,
+            0.73255836516888,
+            0.78572879322834,
+            0.8116401998878483,
+            0.8202712919642459,
+            0.8288228115964802,
+            0.836226070642054,
+            0.8436293296876278,
+            0.8510325887332016,
+            0.8584358477787756
+        ],
+        "best_eff_err": [
+            0.050397389544228524,
+            0.055363325064639014,
+            0.05733731919529823,
+            0.05827507271509111,
+            0.05858410583014259,
+            0.05888869053382508,
+            0.059151110319746354,
+            0.05941237102934865,
+            0.059672487886790596,
+            0.059931475785845234
+        ]
+    }
+}

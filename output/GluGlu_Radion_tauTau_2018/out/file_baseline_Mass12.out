@@ -1,0 +1,20 @@
+Running with following options: 
+ channel = tauTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2018 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [600] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 600
+filtering for channel tauTau
+filtered for channel tauTau
+current baseline path are ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg'] 
+
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_tauTau_2018//With_baseline//GluGlu_Radion_tauTau_allEvts_600Masses.json

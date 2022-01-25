@@ -1,0 +1,94 @@
+000 (3319730.023.000) 01/17 11:19:48 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3319730.023.000) 01/17 11:27:28 Entered queue to transfer input files
+	Transferring to host: <128.142.56.130:9618?addrs=128.142.56.130-9618+[2001-1458-301-6--100-81]-9618&alias=b7s01p5277.cern.ch&noUDP&sock=slot1_11_4778_487b_32450>
+...
+040 (3319730.023.000) 01/17 11:28:22 Started transferring input files
+	Seconds spent in queue: 54
+...
+040 (3319730.023.000) 01/17 11:28:22 Finished transferring input files
+...
+001 (3319730.023.000) 01/17 11:28:23 Job executing on host: <128.142.56.130:9618?addrs=128.142.56.130-9618+[2001-1458-301-6--100-81]-9618&alias=b7s01p5277.cern.ch&noUDP&sock=startd_4398_3d9c>
+...
+006 (3319730.023.000) 01/17 11:28:31 Image size of job updated: 395520
+	155  -  MemoryUsage of job (MB)
+	157860  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 11:33:31 Image size of job updated: 2262824
+	603  -  MemoryUsage of job (MB)
+	617252  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 11:43:33 Image size of job updated: 2574360
+	882  -  MemoryUsage of job (MB)
+	902752  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 11:58:35 Image size of job updated: 2691336
+	1145  -  MemoryUsage of job (MB)
+	1171928  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 12:08:36 Image size of job updated: 3170900
+	1395  -  MemoryUsage of job (MB)
+	1428304  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 12:18:37 Image size of job updated: 3170900
+	1395  -  MemoryUsage of job (MB)
+	1428312  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 12:23:37 Image size of job updated: 3255896
+	1679  -  MemoryUsage of job (MB)
+	1719028  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 12:33:39 Image size of job updated: 3255896
+	1683  -  MemoryUsage of job (MB)
+	1723300  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 12:38:39 Image size of job updated: 3513536
+	1930  -  MemoryUsage of job (MB)
+	1976188  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 12:43:40 Image size of job updated: 3513536
+	1930  -  MemoryUsage of job (MB)
+	1976232  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 12:48:41 Image size of job updated: 4127380
+	2418  -  MemoryUsage of job (MB)
+	2475208  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 12:58:41 Image size of job updated: 4127380
+	2418  -  MemoryUsage of job (MB)
+	2475212  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 13:03:42 Image size of job updated: 4127380
+	2432  -  MemoryUsage of job (MB)
+	2489532  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 13:08:42 Image size of job updated: 4127380
+	2432  -  MemoryUsage of job (MB)
+	2489544  -  ResidentSetSize of job (KB)
+...
+006 (3319730.023.000) 01/17 13:13:42 Image size of job updated: 4956084
+	2991  -  MemoryUsage of job (MB)
+	3061840  -  ResidentSetSize of job (KB)
+...
+040 (3319730.023.000) 01/17 13:25:02 Started transferring output files
+	Seconds spent in queue: 7054
+...
+040 (3319730.023.000) 01/17 13:25:02 Finished transferring output files
+...
+005 (3319730.023.000) 01/17 13:25:02 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:16:04, Sys 0 00:00:36  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:16:04, Sys 0 00:00:36  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1176  -  Run Bytes Sent By Job
+	10522  -  Run Bytes Received By Job
+	1176  -  Total Bytes Sent By Job
+	10522  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.06        4         4 
+	   Disk (KB)            :    35           1   1344579 
+	   Memory (MB)          :  2991        8000      8000 
+
+	Job terminated of its own accord at 2022-01-17T12:25:02Z.
+...

@@ -1,0 +1,13 @@
+{
+    "M-900": {
+        "best_paths": [
+            " HLT_Ele32_WPTight_Gsf == 1  ||  HLT_Ele35_WPTight_Gsf == 1  ||  HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1 == 1  ||  HLT_Ele32_WPTight_Gsf_L1DoubleEG == 1 "
+        ],
+        "best_eff": [
+            0.6598992128301331
+        ],
+        "best_eff_err": [
+            0.05787695739331219
+        ]
+    }
+}

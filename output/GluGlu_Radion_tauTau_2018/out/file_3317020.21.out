@@ -1,0 +1,138 @@
+Running with following options: 
+ channel = tauTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2018 
+ nTriggers = 9 
+ iter = iter_0Baseline 
+ nEvts = -1 
+ mass_points = [1500] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 1500
+['root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/100000/D925580B-7275-EB46-957F-C832CDED0739.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/270000/39E47EAE-042A-9047-A14E-F7282A6CDA3A.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/60000/DCC2CA5B-A939-AE44-8F0E-4988A8EBCD5C.root', 'root://xrootd-cms.infn.it///store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-1500_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/130000/EE9FF161-F1DB-1B47-AF7E-BE9E090E2DD2.root']
+filtering for channel tauTau
+filtered for channel tauTau
+before any filling, baseline path are [] 
+
+['HLT_Ele32_WPTight_Gsf', 'HLT_Ele35_WPTight_Gsf', 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTauHPS30_eta2p1_CrossL1']
+current baseline path are ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg'] 
+
+nTriggers=9, best_paths_baseline=['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg'], best_paths=['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg'] 
+
+current paths = [('HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 0.705019176254794), ('HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 0.705019176254794), ('HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 0.705019176254794), ('HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 0.9998332499583126)] 
+('HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 0.705019176254794)
+ HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1 
+('HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 0.705019176254794)
+ HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1 
+('HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 0.705019176254794)
+ HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1 
+('HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 0.9998332499583126)
+ HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1 
+[(' HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1 ', 0.46747390292654456, 0.00880846351705998), (' HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1 ', 0.46747390292654456, 0.00880846351705998), (' HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1 ', 0.46747390292654456, 0.00880846351705998), (' HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1 ', 0.46747390292654456, 0.00880846351705998)]
+nPaths = 4 
+entro in while 
+0 ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+1 ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 'HLT_AK8PFJet400_TrimMass30']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+2 ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 'HLT_AK8PFJet400_TrimMass30', 'HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+3 ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 'HLT_AK8PFJet400_TrimMass30', 'HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4', 'HLT_PFMET120_PFMHT120_IDTight']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+4 ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 'HLT_AK8PFJet400_TrimMass30', 'HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4', 'HLT_PFMET120_PFMHT120_IDTight', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+5 ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 'HLT_AK8PFJet400_TrimMass30', 'HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4', 'HLT_PFMET120_PFMHT120_IDTight', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1', 'HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+6 ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 'HLT_AK8PFJet400_TrimMass30', 'HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4', 'HLT_PFMET120_PFMHT120_IDTight', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1', 'HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1', 'HLT_DiJet110_35_Mjj650_PFMET110']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+7 ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 'HLT_AK8PFJet400_TrimMass30', 'HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4', 'HLT_PFMET120_PFMHT120_IDTight', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1', 'HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1', 'HLT_DiJet110_35_Mjj650_PFMET110', 'HLT_VBF_DoubleMediumChargedIsoPFTauHPS20_Trk1_eta2p1']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+entro in while 
+8 ['HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 'HLT_AK8PFJet400_TrimMass30', 'HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4', 'HLT_PFMET120_PFMHT120_IDTight', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1', 'HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1', 'HLT_DiJet110_35_Mjj650_PFMET110', 'HLT_VBF_DoubleMediumChargedIsoPFTauHPS20_Trk1_eta2p1', 'HLT_Mu50']
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+all l1 seeds are 0 for the path HLT_Dimuon0_Upsilon_Muon_L1_TM0
+best_paths_dict 
+ {'M-1500': {'best_paths': [' HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1 ', 'HLT_AK8PFJet400_TrimMass30', 'HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4', 'HLT_PFMET120_PFMHT120_IDTight', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1', 'HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1', 'HLT_DiJet110_35_Mjj650_PFMET110', 'HLT_VBF_DoubleMediumChargedIsoPFTauHPS20_Trk1_eta2p1', 'HLT_Mu50', 'HLT_Photon200'], 'best_eff': [0.46747390292654456, 0.862096885233659, 0.9000748507032467, 0.9214526765456238, 0.9376031307492088, 0.942898862986004, 0.9475066717313163, 0.9511341562896389, 0.9541129901048861, 0.9564752777493994], 'best_eff_err': [0.00880846351705998, 0.01196188195710834, 0.012222520882135232, 0.012366818652185255, 0.01247472552354702, 0.012509905539019364, 0.012540435324568245, 0.012564417625005217, 0.012584077340315221, 0.012599646163439818]}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_tauTau_2018//With_iter_0Baseline//GluGlu_Radion_tauTau_allEvts_1500Masses.json

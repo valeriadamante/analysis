@@ -1,0 +1,42 @@
+000 (3315602.001.000) 01/12 18:56:18 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3315602.001.000) 01/13 02:05:05 Started transferring input files
+	Transferring to host: <188.184.165.129:9618?addrs=188.184.165.129-9618&alias=b7s14p7406.cern.ch&noUDP&sock=slot1_32_4248_d9a6_26846>
+...
+040 (3315602.001.000) 01/13 02:05:05 Finished transferring input files
+...
+001 (3315602.001.000) 01/13 02:05:06 Job executing on host: <188.184.165.129:9618?addrs=188.184.165.129-9618&alias=b7s14p7406.cern.ch&noUDP&sock=startd_4019_4737>
+...
+006 (3315602.001.000) 01/13 02:05:15 Image size of job updated: 319680
+	184  -  MemoryUsage of job (MB)
+	188208  -  ResidentSetSize of job (KB)
+...
+006 (3315602.001.000) 01/13 02:10:15 Image size of job updated: 2535296
+	1032  -  MemoryUsage of job (MB)
+	1056668  -  ResidentSetSize of job (KB)
+...
+006 (3315602.001.000) 01/13 02:20:16 Image size of job updated: 2860644
+	1032  -  MemoryUsage of job (MB)
+	1056668  -  ResidentSetSize of job (KB)
+...
+040 (3315602.001.000) 01/13 02:20:55 Started transferring output files
+...
+040 (3315602.001.000) 01/13 02:20:58 Finished transferring output files
+...
+005 (3315602.001.000) 01/13 02:20:59 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:14:13, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:14:13, Sys 0 00:00:07  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	19514026  -  Run Bytes Sent By Job
+	10521  -  Run Bytes Received By Job
+	19514026  -  Total Bytes Sent By Job
+	10521  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        4         4 
+	   Disk (KB)            : 19091           1   3092099 
+	   Memory (MB)          :  1032        8000      8000 
+
+	Job terminated of its own accord at 2022-01-13T01:20:55Z.
+...

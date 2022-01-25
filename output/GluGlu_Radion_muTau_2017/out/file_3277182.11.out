@@ -1,0 +1,21 @@
+Running with following options: 
+ channel = muTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2017 
+ nTriggers = -1 
+ iter = recommended 
+ nEvts = -1 
+ mass_points = [600] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 600
+['root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-600_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/B04EC737-FF88-E84F-AAED-63FD5D0AF203.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-600_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/5B951EFE-7B62-B642-A496-9B1AF63FC2F3.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-600_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/270000/4E2CA7B5-CF96-C343-A880-5B201FCC505F.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-600_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/100000/25ACB34C-CEB2-1A46-8D97-B6ADB06EC8DE.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-600_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/743DE3D1-8A9F-9342-87D0-28FB27A12CA5.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-600_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/1183F108-A359-F041-877E-81746F7F3B0B.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-600_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/130000/673E04B9-A900-D64D-8E0A-4437BEDBA8C9.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-600_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/0546B7E3-0164-7C47-99A6-4CB92A880B6B.root']
+filtering for channel muTau
+filtered for channel muTau
+current baseline path are ['HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1']
+[(' HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1 == 1 ', 0.7024608501118568, 0.039642159164808385)]
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_muTau_2017//With_recommended//GluGlu_Radion_muTau_allEvts_600Masses.json

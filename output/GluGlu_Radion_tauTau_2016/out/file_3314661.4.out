@@ -1,0 +1,29 @@
+Running with following options: 
+ channel = tauTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2016 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [300] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 300
+['root://xrootd-cms.infn.it///store/mc/RunIISummer16NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-300_narrow_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext1-v1/110000/860DC6B9-D4C5-114C-A7B7-C742285BFCD2.root', 'root://xrootd-cms.infn.it///store/mc/RunIISummer16NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-300_narrow_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext1-v1/110000/B9699414-BD90-B446-81D5-C26E951EF7CB.root']
+filtering for channel tauTau
+filtered for channel tauTau
+current baseline path are ['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg']
+nTriggers=2, best_paths_baseline=['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg'], best_paths=['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg'] 
+
+current paths = [('HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 0.7598025774609268), ('HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg', 0.24019742253907322)] 
+column not found HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg
+ HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 
+[(' HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 ', 0.04931469676121058, 0.0014137076327766808)]
+nPaths = 2 
+best_paths_dict 
+ {'M-300': {'best_paths': [' HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 '], 'best_eff': [0.04931469676121058], 'best_eff_err': [0.0014137076327766808]}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_tauTau_2016//With_baseline//GluGlu_Radion_tauTau_allEvts_300Masses.json

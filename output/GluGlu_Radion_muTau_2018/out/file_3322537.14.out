@@ -1,0 +1,20 @@
+Running with following options: 
+ channel = muTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2018 
+ nTriggers = -1 
+ iter = iter_2Ext 
+ nEvts = -1 
+ mass_points = [700] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 700
+filtering for channel muTau
+filtered for channel muTau
+current baseline path are ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1', 'HLT_Mu50', 'HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1', 'HLT_DoubleL2Mu23NoVtx_2Cha', 'HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8', 'HLT_Mu17_Photon30_IsoCaloId', 'HLT_Mu18_Mu9_SameSign', 'HLT_Mu23_Mu12_DZ', 'HLT_Mu37_TkMu27', 'HLT_DoubleMu4_Mass3p8_DZ_PFHT350'] 
+
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_muTau_2018//With_iter_2Ext//GluGlu_Radion_muTau_allEvts_700Masses.json

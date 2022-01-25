@@ -1,0 +1,46 @@
+000 (3277184.011.000) 12/25 15:18:23 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_2095_9300>
+...
+022 (3277184.011.000) 12/25 15:20:22 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_19@b7s13p8640.cern.ch <188.184.164.96:9618?addrs=188.184.164.96-9618&alias=b7s13p8640.cern.ch&noUDP&sock=startd_3037_b536>
+...
+024 (3277184.011.000) 12/25 15:20:30 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_19@b7s13p8640.cern.ch, rescheduling job
+...
+040 (3277184.011.000) 12/25 15:21:20 Started transferring input files
+	Transferring to host: <128.142.58.94:9618?addrs=128.142.58.94-9618&alias=b7s03p3766.cern.ch&noUDP&sock=slot1_2_3543_1d29_8532>
+...
+040 (3277184.011.000) 12/25 15:21:20 Finished transferring input files
+...
+001 (3277184.011.000) 12/25 15:21:21 Job executing on host: <128.142.58.94:9618?addrs=128.142.58.94-9618&alias=b7s03p3766.cern.ch&noUDP&sock=startd_2571_1214>
+...
+006 (3277184.011.000) 12/25 15:21:30 Image size of job updated: 291272
+	199  -  MemoryUsage of job (MB)
+	203504  -  ResidentSetSize of job (KB)
+...
+006 (3277184.011.000) 12/25 15:26:22 Image size of job updated: 1733064
+	199  -  MemoryUsage of job (MB)
+	203600  -  ResidentSetSize of job (KB)
+...
+040 (3277184.011.000) 12/25 15:26:22 Started transferring output files
+...
+040 (3277184.011.000) 12/25 15:26:22 Finished transferring output files
+...
+005 (3277184.011.000) 12/25 15:26:22 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:26, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:26, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	24894  -  Run Bytes Sent By Job
+	11213  -  Run Bytes Received By Job
+	24894  -  Total Bytes Sent By Job
+	11213  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.06        4         4 
+	   Disk (KB)            :    59           1   1293431 
+	   Memory (MB)          :   199        8000      8000 
+
+	Job terminated of its own accord at 2021-12-25T14:26:22Z.
+...

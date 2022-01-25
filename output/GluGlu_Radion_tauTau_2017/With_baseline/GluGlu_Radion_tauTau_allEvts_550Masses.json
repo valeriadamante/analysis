@@ -1,0 +1,13 @@
+{
+    "M-550": {
+        "best_paths": [
+            " HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg == 1 "
+        ],
+        "best_eff": [
+            0.44843929528916127
+        ],
+        "best_eff_err": [
+            0.0046334384821847385
+        ]
+    }
+}

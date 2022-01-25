@@ -1,0 +1,30 @@
+Running with following options: 
+ channel = muTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2017 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [700] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 700
+['root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-700_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/C0044463-4C02-6C49-99E6-AB04AD48FE49.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-700_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/9DE19F40-3E96-624D-AFCC-9FFD2B938860.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-700_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/60000/82862B79-7A38-0049-BEC4-61BD3B96BD3C.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-700_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/260000/D09EFEDF-D648-5041-B442-7DBEB63625A8.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-700_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/70000/6FF88367-AA8D-4348-A88E-6AAF0444AC84.root', 'root://xrootd-cms.infn.it///store/mc/RunIIFall17NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-700_narrow_13TeV-madgraph_correctedcfg/NANOAODSIM/PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/120000/D1D5AAC2-F4A7-E346-BAE5-8C8E42BF1304.root']
+filtering for channel muTau
+filtered for channel muTau
+current baseline path are ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1']
+nTriggers=3, best_paths_baseline=['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1'], best_paths=['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1']
+current paths = [('HLT_IsoMu24', 0.9162253249879635), ('HLT_IsoMu27', 1.0), ('HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1', 1.0)] 
+all l1 seeds are 0
+ HLT_IsoMu24 == 1 
+all l1 seeds are 0
+ HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1 
+all l1 seeds are 0
+ HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1 == 1 
+[(' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1 == 1 ', 0.8007889546351085, 0.039742488519940604), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1 == 1 ', 0.8007889546351085, 0.039742488519940604), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1 == 1 ', 0.8007889546351085, 0.039742488519940604)]
+[(' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1 == 1 ', 0.8007889546351085, 0.039742488519940604), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1 == 1 ', 0.8007889546351085, 0.039742488519940604), (' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1 == 1 ', 0.8007889546351085, 0.039742488519940604)]
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_muTau_2017//With_baseline//GluGlu_Radion_muTau_allEvts_700Masses.json

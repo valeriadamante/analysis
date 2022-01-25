@@ -1,0 +1,40 @@
+{
+    "M-350": {
+        "best_paths": [
+            " HLT_Ele25_eta2p1_WPTight_Gsf == 1 ",
+            "HLT_HT550to650",
+            "HLT_DiMu9_Ele9_CaloIdL_TrackIdL",
+            "HLT_VBF_DisplacedJet40_TightID_Hadronic",
+            "HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg",
+            "HLT_Ele17_CaloIdL_TrackIdL_IsoVL_PFJet30",
+            "HLT_IsoTrackHE",
+            "HLT_Ele17_CaloIdM_TrackIdM_PFJet30",
+            "HLT_Ele23_CaloIdL_TrackIdL_IsoVL_PFJet30",
+            "HLT_AK4CaloJet100"
+        ],
+        "best_eff": [
+            0.6923076923076923,
+            0.7692307692307693,
+            0.8076923076923077,
+            0.8344371559342769,
+            0.8436755183396258,
+            0.8438650313218452,
+            0.8438867562380038,
+            0.843895404020164,
+            0.8438955094809221,
+            0.8438955094809221
+        ],
+        "best_eff_err": [
+            0.16317848796612633,
+            0.17200522903844537,
+            0.17625291134445537,
+            0.17914724883933594,
+            0.18013622178140054,
+            0.18015645244767814,
+            0.18015877145515538,
+            0.18015969454691322,
+            0.18015970580410062,
+            0.18015970580410062
+        ]
+    }
+}

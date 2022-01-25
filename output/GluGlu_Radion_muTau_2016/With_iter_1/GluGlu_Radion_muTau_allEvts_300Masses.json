@@ -1,0 +1,40 @@
+{
+    "M-300": {
+        "best_paths": [
+            " HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1  ||  HLT_Mu30_TkMu11 == 1  ||  HLT_IsoMu24 == 1 ",
+            "HLT_Mu17_Mu8_SameSign_DZ",
+            "HLT_DoubleMu8_Mass8_PFHT300",
+            "HLT_Mu27_TkMu8",
+            "HLT_DoubleJet90_Double30_TripleBTagCSV_p087",
+            "HLT_HT430to450",
+            "HLT_HT550to650",
+            "HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ",
+            "HLT_Mu25_TkMu0_dEta18_Onia",
+            "HLT_TkMu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ"
+        ],
+        "best_eff": [
+            0.8610466559227304,
+            0.9124300551322165,
+            0.924287762642098,
+            0.9353597249783514,
+            0.9393122941483119,
+            0.9432648633182723,
+            0.9472174324882328,
+            0.9511700016581932,
+            0.9523545802440904,
+            0.9533039771711223
+        ],
+        "best_eff_err": [
+            0.05833820760100321,
+            0.06005366687939159,
+            0.06044262829155348,
+            0.06080356907100224,
+            0.060931903095303545,
+            0.061059967391563386,
+            0.061187763653381765,
+            0.06131529355670923,
+            0.06135346243484096,
+            0.061384036277906014
+        ]
+    }
+}

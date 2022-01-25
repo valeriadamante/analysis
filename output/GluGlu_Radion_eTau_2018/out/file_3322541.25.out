@@ -1,0 +1,20 @@
+Running with following options: 
+ channel = eTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2018 
+ nTriggers = -1 
+ iter = iter_2Ext 
+ nEvts = -1 
+ mass_points = [3000] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 3000
+filtering for channel eTau
+filtered for channel eTau
+current baseline path are ['HLT_Ele32_WPTight_Gsf', 'HLT_Ele35_WPTight_Gsf', 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTauHPS30_eta2p1_CrossL1', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg', 'HLT_Ele28_eta2p1_WPTight_Gsf_HT150', 'HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165', 'HLT_Photon35_TwoProngs35', 'HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1', 'HLT_Diphoton30_18_R9IdL_AND_HE_AND_IsoCaloId_NoPixelVeto', 'HLT_Mu17_Photon30_IsoCaloId', 'HLT_Ele115_CaloIdVT_GsfTrkIdT'] 
+
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_eTau_2018//With_iter_2Ext//GluGlu_Radion_eTau_allEvts_3000Masses.json

@@ -1,0 +1,40 @@
+{
+    "M-750": {
+        "best_paths": [
+            " HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1  ||  HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1 == 1  ||  HLT_PFMETNoMu120_PFMHTNoMu120_IDTight == 1  ||  HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET100 == 1 ",
+            "HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4",
+            "HLT_PFHT330PT30_QuadPFJet_75_60_45_40_TriplePFBTagDeepCSV_4p5",
+            "HLT_RsqMR300_Rsq0p09_MR200",
+            "HLT_DoublePFJets116MaxDeta1p6_DoubleCaloBTagDeepCSV_p71",
+            "HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1",
+            "HLT_Mu50",
+            "HLT_HT650_DisplacedDijet60_Inclusive",
+            "HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165",
+            "HLT_VBF_DoubleLooseChargedIsoPFTauHPS20_Trk1_eta2p1"
+        ],
+        "best_eff": [
+            0.7157351554254258,
+            0.7555132459266259,
+            0.7768245125806239,
+            0.7937834251877907,
+            0.8060784713427062,
+            0.8151760441941751,
+            0.8237037606670082,
+            0.8303909741639424,
+            0.8355654683800335,
+            0.8401872901960665
+        ],
+        "best_eff_err": [
+            0.00546679115015104,
+            0.005616649840926234,
+            0.005695315253156531,
+            0.0057571470329919935,
+            0.005801562418125569,
+            0.00583420939429763,
+            0.005864646403864176,
+            0.005888404257180085,
+            0.005906722251439357,
+            0.005923035856713113
+        ]
+    }
+}

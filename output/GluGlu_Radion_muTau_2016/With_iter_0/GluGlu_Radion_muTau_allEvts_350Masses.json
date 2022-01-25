@@ -1,0 +1,40 @@
+{
+    "M-350": {
+        "best_paths": [
+            "HLT_IsoMu19_eta2p1_LooseIsoPFTau20",
+            "HLT_DoubleMu8_Mass8_PFHT300",
+            "HLT_L2DoubleMu28_NoVertex_2Cha_Angle2p5_Mass10",
+            "HLT_DiMu9_Ele9_CaloIdL_TrackIdL",
+            "HLT_Mu38NoFiltersNoVtx_DisplacedJet60_Loose",
+            "HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL",
+            "HLT_HT410to430",
+            "HLT_IsoMu20",
+            "HLT_LooseIsoPFTau50_Trk30_eta2p1_MET80",
+            "HLT_Mu20_Mu10"
+        ],
+        "best_eff": [
+            0.6,
+            0.775,
+            0.825,
+            0.85,
+            0.875,
+            0.8942624074581849,
+            0.9034274746366877,
+            0.9101590348231422,
+            0.9164998629010146,
+            0.9180696462846175
+        ],
+        "best_eff_err": [
+            0.1224744871391589,
+            0.13919410907075053,
+            0.1436140661634507,
+            0.14577379737113252,
+            0.1479019945774904,
+            0.14952110281313008,
+            0.1502853514681893,
+            0.15084421059682257,
+            0.1513687437106002,
+            0.15149832064123825
+        ]
+    }
+}

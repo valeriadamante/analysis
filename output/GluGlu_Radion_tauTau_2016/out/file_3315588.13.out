@@ -1,0 +1,18 @@
+Running with following options: 
+ channel = tauTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2016 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [650] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 650
+['root://xrootd-cms.infn.it///store/mc/RunIISummer16NanoAODv3/GluGluToRadionToHHTo2B2Tau_M-650_narrow_13TeV-madgraph/NANOAODSIM/PUMoriond17_94X_mcRun2_asymptotic_v3-v2/260000/60608ABF-406A-E911-A923-B02628272910.root']
+filtering for channel tauTau
+filtered for channel tauTau

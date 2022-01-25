@@ -1,0 +1,26 @@
+Running with following options: 
+ channel = eTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2017 
+ nTriggers = 9 
+ iter = iter_1 
+ nEvts = -1 
+ mass_points = [1000] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 1000
+filtering for channel eTau
+filtered for channel eTau
+before any filling, baseline path are [] 
+
+nEvt is 0
+nEvt is 0
+nEvt is 0
+nEvt is 0
+nEvt is 0
+nEvt is 0
+nEvt is 0

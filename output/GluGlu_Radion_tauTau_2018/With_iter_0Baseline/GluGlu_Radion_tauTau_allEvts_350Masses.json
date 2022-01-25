@@ -1,0 +1,40 @@
+{
+    "M-350": {
+        "best_paths": [
+            " HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1 ",
+            "HLT_PFHT330PT30_QuadPFJet_75_60_45_40_TriplePFBTagDeepCSV_4p5",
+            "HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1",
+            "HLT_Photon35_TwoProngs35",
+            "HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4",
+            "HLT_PFHT400_SixPFJet32_DoublePFBTagDeepCSV_2p94",
+            "HLT_Diphoton30_18_R9IdL_AND_HE_AND_IsoCaloId_NoPixelVeto",
+            "HLT_PFMETNoMu120_PFMHTNoMu120_IDTight",
+            "HLT_Mu17_Photon30_IsoCaloId",
+            "HLT_VBF_DoubleLooseChargedIsoPFTauHPS20_Trk1_eta2p1"
+        ],
+        "best_eff": [
+            0.23085147243125093,
+            0.25086706470443015,
+            0.26191180461658314,
+            0.27092056834534556,
+            0.2793214559637864,
+            0.2861948090309162,
+            0.29263020867523215,
+            0.2977854286578363,
+            0.3028215166655558,
+            0.30722580115517295
+        ],
+        "best_eff_err": [
+            0.0033053433230541187,
+            0.0034456572577288122,
+            0.0035206900098705947,
+            0.0035807272429656126,
+            0.0036358202155810384,
+            0.003680282254698768,
+            0.0037214297912507143,
+            0.0037540665986829174,
+            0.003785677523840096,
+            0.0038131078951338976
+        ]
+    }
+}

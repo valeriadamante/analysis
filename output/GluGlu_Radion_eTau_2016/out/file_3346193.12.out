@@ -1,0 +1,20 @@
+Running with following options: 
+ channel = eTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2016 
+ nTriggers = -1 
+ iter = iter_2 
+ nEvts = -1 
+ mass_points = [600] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 600
+filtering for channel eTau
+filtered for channel eTau
+current baseline path are ['HLT_Ele25_eta2p1_WPTight_Gsf', 'HLT_Ele23_CaloIdL_TrackIdL_IsoVL_PFJet30', 'HLT_Ele27_eta2p1_WPLoose_Gsf_HT200', 'HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165', 'HLT_Ele24_eta2p1_WPLoose_Gsf_LooseIsoPFTau30', 'HLT_LooseIsoPFTau50_Trk30_eta2p1'] 
+
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_eTau_2016//With_iter_2//GluGlu_Radion_eTau_allEvts_600Masses.json

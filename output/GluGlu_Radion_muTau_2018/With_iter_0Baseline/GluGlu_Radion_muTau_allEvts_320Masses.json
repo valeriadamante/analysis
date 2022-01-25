@@ -1,0 +1,37 @@
+{
+    "M-320": {
+        "best_paths": [
+            " HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ",
+            "HLT_DoubleL2Mu23NoVtx_2Cha",
+            "HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8",
+            "HLT_Mu18_Mu9_SameSign",
+            "HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight",
+            "HLT_Mu50",
+            "HLT_Mu12_DoublePhoton20",
+            "HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed",
+            "HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1"
+        ],
+        "best_eff": [
+            0.6845667578534007,
+            0.7926590923089154,
+            0.8467048839735158,
+            0.8782311576208497,
+            0.9007499245118024,
+            0.914261184646374,
+            0.923268691402755,
+            0.9366132014956393,
+            0.9411169548738298
+        ],
+        "best_eff_err": [
+            0.05553047851751944,
+            0.05975396599257627,
+            0.06175747698736297,
+            0.06289671060953285,
+            0.06369797557533133,
+            0.06417393259364129, 
+            0.0647973086457783,
+            0.06495366336947819,
+            0.06510964262299962
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+000 (3314889.000.000) 01/12 10:56:57 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3314889.000.000) 01/12 10:57:44 Started transferring input files
+	Transferring to host: <128.142.58.145:9618?addrs=128.142.58.145-9618&alias=b7s03p1993.cern.ch&noUDP&sock=slot1_4_5061_aea7_27109>
+...
+040 (3314889.000.000) 01/12 10:57:44 Finished transferring input files
+...
+001 (3314889.000.000) 01/12 10:57:45 Job executing on host: <128.142.58.145:9618?addrs=128.142.58.145-9618&alias=b7s03p1993.cern.ch&noUDP&sock=startd_4683_ba1a>
+...
+006 (3314889.000.000) 01/12 10:57:54 Image size of job updated: 1256192
+	155  -  MemoryUsage of job (MB)
+	157824  -  ResidentSetSize of job (KB)
+...
+006 (3314889.000.000) 01/12 11:02:55 Image size of job updated: 2134320
+	662  -  MemoryUsage of job (MB)
+	677000  -  ResidentSetSize of job (KB)
+...
+006 (3314889.000.000) 01/12 11:07:56 Image size of job updated: 2429664
+	953  -  MemoryUsage of job (MB)
+	975000  -  ResidentSetSize of job (KB)
+...
+006 (3314889.000.000) 01/12 11:12:56 Image size of job updated: 2670256
+	1178  -  MemoryUsage of job (MB)
+	1206044  -  ResidentSetSize of job (KB)
+...
+006 (3314889.000.000) 01/12 11:17:56 Image size of job updated: 3097800
+	1414  -  MemoryUsage of job (MB)
+	1447240  -  ResidentSetSize of job (KB)
+...
+040 (3314889.000.000) 01/12 11:18:23 Started transferring output files
+...
+040 (3314889.000.000) 01/12 11:18:23 Finished transferring output files
+...
+004 (3314889.000.000) 01/12 11:18:23 Job was evicted.
+	(0) CPU times
+		Usr 0 00:04:51, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	115106  -  Run Bytes Sent By Job
+	10532  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.04        4         4 
+	   Disk (KB)            :   147           1   1318078 
+	   Memory (MB)          :  1414        8000      8000 
+...
+009 (3314889.000.000) 01/12 11:18:23 Job was aborted.
+	via condor_rm (by user vdamante)
+...

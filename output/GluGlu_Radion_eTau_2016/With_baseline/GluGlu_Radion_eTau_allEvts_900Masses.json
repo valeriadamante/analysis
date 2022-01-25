@@ -1,0 +1,13 @@
+{
+    "M-900": {
+        "best_paths": [
+            " HLT_Ele25_eta2p1_WPTight_Gsf == 1 "
+        ],
+        "best_eff": [
+            0.8125
+        ],
+        "best_eff_err": [
+            0.07511565157216644
+        ]
+    }
+}

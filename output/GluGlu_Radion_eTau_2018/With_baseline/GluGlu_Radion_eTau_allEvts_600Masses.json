@@ -1,0 +1,13 @@
+{
+    "M-600": {
+        "best_paths": [
+            " HLT_Ele32_WPTight_Gsf == 1  ||  HLT_Ele35_WPTight_Gsf == 1  ||  HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTauHPS30_eta2p1_CrossL1 == 1 "
+        ],
+        "best_eff": [
+            0.6318779357472625
+        ],
+        "best_eff_err": [
+            0.05524989062647983
+        ]
+    }
+}

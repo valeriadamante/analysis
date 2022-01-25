@@ -1,0 +1,22 @@
+Running with following options: 
+ channel = muTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2018 
+ nTriggers = 9 
+ iter = iter_1 
+ nEvts = -1 
+ mass_points = [600] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 600
+filtering for channel muTau
+filtered for channel muTau
+before any filling, baseline path are [] 
+
+best_paths_dict 
+ {'M-600': {'best_paths': [' HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1  ||  HLT_Mu50 == 1  ||  HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight == 1  ||  HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1 == 1 ', 'HLT_DoubleMu4_Mass3p8_DZ_PFHT350', 'HLT_Mu18_Mu9_SameSign', 'HLT_DoubleL2Mu23NoVtx_2Cha', 'HLT_Mu37_TkMu27', 'HLT_RsqMR300_Rsq0p09_MR200', 'HLT_OldMu100', 'HLT_PFHT330PT30_QuadPFJet_75_60_45_40_TriplePFBTagDeepCSV_4p5', 'HLT_Mu12_DoublePFJets200_CaloBTagDeepCSV_p71', 'HLT_DiMu9_Ele9_CaloIdL_TrackIdL_DZ'], 'best_eff': [0.919200383601941, 0.9675033369219197, 0.9789587574125033, 0.9820778284687688, 0.9845852265610562, 0.9870926246533436, 0.9893963879020955, 0.9917001511508474, 0.9928608697589995, 0.9930645046025349], 'best_eff_err': [0.04602144319885954, 0.04721514970400119, 0.04749384528189043, 0.04756944543852661, 0.04763013283928723, 0.04769074301420912, 0.04774636299759298, 0.04780191826431755, 0.047829884555448766, 0.04783478923645596]}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_muTau_2018//With_iter_1//GluGlu_Radion_muTau_allEvts_600Masses.json

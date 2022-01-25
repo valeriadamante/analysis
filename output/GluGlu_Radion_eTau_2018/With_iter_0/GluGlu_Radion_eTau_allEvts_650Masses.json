@@ -1,0 +1,40 @@
+{
+    "M-650": {
+        "best_paths": [
+            "HLT_Ele28_eta2p1_WPTight_Gsf_HT150",
+            "HLT_PFMET120_PFMHT120_IDTight",
+            "HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg",
+            "HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165",
+            "HLT_PFHT330PT30_QuadPFJet_75_60_45_40_TriplePFBTagDeepCSV_4p5",
+            "HLT_Mu12_DoublePhoton20",
+            "HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ",
+            "HLT_RsqMR300_Rsq0p09_MR200",
+            "HLT_Ele115_CaloIdVT_GsfTrkIdT",
+            "HLT_Mu17_Photon30_IsoCaloId"
+        ],
+        "best_eff": [
+            0.6410414138488708,
+            0.7749903659963943,
+            0.8467487332182818,
+            0.8754520801070368,
+            0.899371535847666,
+            0.9137232092920435,
+            0.9232909915882952,
+            0.9328587738845469,
+            0.9376426650326727,
+            0.9424265561807985
+        ],
+        "best_eff_err": [
+            0.055382161372773776,
+            0.06089407093946696,
+            0.06365083931529904,
+            0.06472067624435403,
+            0.06559888025096328,
+            0.06612020405422579,
+            0.06646548161891215,
+            0.06680897476758224,
+            0.06698006077054712,
+            0.06715071088348158
+        ]
+    }
+}

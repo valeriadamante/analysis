@@ -1,0 +1,35 @@
+input_line_93:2:119: error: use of undeclared identifier 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1'
+auto lambda9 = [](const Bool_t var0, const Bool_t var1, const Bool_t var2){return ( var0 == 1 ) || ( var1 == 1 ) || ( HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1 == 1 ) || ( var2 == 1 )
+                                                                                                                      ^
+input_line_97:2:119: error: use of undeclared identifier 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1'
+auto lambda9 = [](const Bool_t var0, const Bool_t var1, const Bool_t var2){return ( var0 == 1 ) || ( var1 == 1 ) || ( HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1 == 1 ) || ( var2 == 1 )
+                                                                                                                      ^
+input_line_98:2:119: error: use of undeclared identifier 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1'
+auto lambda9 = [](const Bool_t var0, const Bool_t var1, const Bool_t var2){return ( var0 == 1 ) || ( var1 == 1 ) || ( HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1 == 1 ) || ( var2 == 1 )
+                                                                                                                      ^
+TClass::Init:0: RuntimeWarning: no dictionary for class edm::Hash<1> is available
+TClass::Init:0: RuntimeWarning: no dictionary for class edm::ProcessHistory is available
+TClass::Init:0: RuntimeWarning: no dictionary for class edm::ProcessConfiguration is available
+TClass::Init:0: RuntimeWarning: no dictionary for class edm::ParameterSetBlob is available
+TClass::Init:0: RuntimeWarning: no dictionary for class pair<edm::Hash<1>,edm::ParameterSetBlob> is available
+Traceback (most recent call last):
+  File "/afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py", line 1345, in <module>
+    n_evt = getWeight(df_channel, current_paths)
+  File "/afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py", line 1149, in getWeight
+    n_evt = df_channel.Filter(filter_str).Define("weight", weight_def).Sum("weight")
+cppyy.gbl.std.runtime_error: Template method resolution failed:
+  ROOT::RDF::RInterface<ROOT::Detail::RDF::RJittedFilter,void> ROOT::RDF::RInterface<ROOT::Detail::RDF::RJittedFilter,void>::Filter(basic_string_view<char,char_traits<char> > expression, basic_string_view<char,char_traits<char> > name = "") =>
+    runtime_error: 
+RDataFrame: An error occurred during just-in-time compilation. The lines above might indicate the cause of the crash
+ All RDF objects that have not run an event loop yet should be considered in an invalid state.
+
+  ROOT::RDF::RInterface<ROOT::Detail::RDF::RJittedFilter,void> ROOT::RDF::RInterface<ROOT::Detail::RDF::RJittedFilter,void>::Filter(basic_string_view<char,char_traits<char> > expression, basic_string_view<char,char_traits<char> > name = "") =>
+    runtime_error: 
+RDataFrame: An error occurred during just-in-time compilation. The lines above might indicate the cause of the crash
+ All RDF objects that have not run an event loop yet should be considered in an invalid state.
+
+  ROOT::RDF::RInterface<ROOT::Detail::RDF::RJittedFilter,void> ROOT::RDF::RInterface<ROOT::Detail::RDF::RJittedFilter,void>::Filter(basic_string_view<char,char_traits<char> > expression, basic_string_view<char,char_traits<char> > name = "") =>
+    runtime_error: 
+RDataFrame: An error occurred during just-in-time compilation. The lines above might indicate the cause of the crash
+ All RDF objects that have not run an event loop yet should be considered in an invalid state.
+

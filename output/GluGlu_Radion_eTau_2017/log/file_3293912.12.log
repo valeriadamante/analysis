@@ -1,0 +1,42 @@
+000 (3293912.012.000) 01/10 14:24:00 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3293912.012.000) 01/10 14:26:39 Started transferring input files
+	Transferring to host: <188.184.165.194:9618?addrs=188.184.165.194-9618&alias=b7s14p4436.cern.ch&noUDP&sock=slot1_39_4460_392e_24720>
+...
+040 (3293912.012.000) 01/10 14:26:39 Finished transferring input files
+...
+001 (3293912.012.000) 01/10 14:26:40 Job executing on host: <188.184.165.194:9618?addrs=188.184.165.194-9618&alias=b7s14p4436.cern.ch&noUDP&sock=startd_4230_01b3>
+...
+006 (3293912.012.000) 01/10 14:26:49 Image size of job updated: 320064
+	214  -  MemoryUsage of job (MB)
+	218664  -  ResidentSetSize of job (KB)
+...
+006 (3293912.012.000) 01/10 14:31:50 Image size of job updated: 2489516
+	981  -  MemoryUsage of job (MB)
+	1004060  -  ResidentSetSize of job (KB)
+...
+006 (3293912.012.000) 01/10 14:36:50 Image size of job updated: 2788512
+	981  -  MemoryUsage of job (MB)
+	1004060  -  ResidentSetSize of job (KB)
+...
+040 (3293912.012.000) 01/10 14:38:03 Started transferring output files
+...
+040 (3293912.012.000) 01/10 14:38:05 Finished transferring output files
+...
+005 (3293912.012.000) 01/10 14:38:05 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:11:01, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:11:01, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	26481424  -  Run Bytes Sent By Job
+	10521  -  Run Bytes Received By Job
+	26481424  -  Total Bytes Sent By Job
+	10521  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        4         4 
+	   Disk (KB)            : 25892           1   2991743 
+	   Memory (MB)          :   981        8000      8000 
+
+	Job terminated of its own accord at 2022-01-10T13:38:03Z.
+...

@@ -1,0 +1,17 @@
+Running with following options: 
+ channel = eTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2016 
+ nTriggers = -1 
+ iter = iter_2 
+ nEvts = -1 
+ mass_points = [650] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 650
+filtering for channel eTau
+filtered for channel eTau

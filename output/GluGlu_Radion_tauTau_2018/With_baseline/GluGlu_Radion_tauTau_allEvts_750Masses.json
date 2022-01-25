@@ -1,0 +1,13 @@
+{
+    "M-750": {
+        "best_paths": [
+            " HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg == 1  ||  HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg == 1 "
+        ],
+        "best_eff": [
+            0.5384295555016948
+        ],
+        "best_eff_err": [
+            0.004741554574674104
+        ]
+    }
+}

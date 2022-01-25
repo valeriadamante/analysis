@@ -1,0 +1,40 @@
+{
+    "M-500": {
+        "best_paths": [
+            " HLT_Ele25_eta2p1_WPTight_Gsf == 1  ||  HLT_Ele23_CaloIdL_TrackIdL_IsoVL_PFJet30 == 1  ||  HLT_Ele27_eta2p1_WPLoose_Gsf_HT200 == 1  ||  HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165 == 1 ",
+            "HLT_HT550to650",
+            "HLT_DoubleJetsC112_DoubleBTagCSV_p014_DoublePFJetsC112MaxDeta1p6",
+            "HLT_Photon50_R9Id90_HE10_IsoM",
+            "HLT_AK4CaloJet100",
+            "HLT_AK4CaloJet30",
+            "HLT_AK4CaloJet40",
+            "HLT_AK4CaloJet50",
+            "HLT_AK4CaloJet80",
+            "HLT_AK4PFJet100"
+        ],
+        "best_eff": [
+            0.9033392005802382,
+            0.9355689165642109,
+            0.9516979488222754,
+            0.9518907276860344,
+            0.9518907276860344,
+            0.9518907276860344,
+            0.9518907276860344,
+            0.9518907276860344,
+            0.9518907276860344,
+            0.9518907276860344
+        ],
+        "best_eff_err": [
+            0.12070620160593604,
+            0.12284063348463581,
+            0.12389498341937948,
+            0.1239075310584492,
+            0.1239075310584492,
+            0.1239075310584492,
+            0.1239075310584492,
+            0.1239075310584492,
+            0.1239075310584492,
+            0.1239075310584492
+        ]
+    }
+}

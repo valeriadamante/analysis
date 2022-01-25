@@ -1,0 +1,49 @@
+000 (3340598.002.000) 01/20 15:14:42 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3340598.002.000) 01/20 15:28:29 Started transferring input files
+	Transferring to host: <128.142.248.50:9618?addrs=128.142.248.50-9618+[2001-1458-301-73--100-122]-9618&alias=b7g23p4729.cern.ch&noUDP&sock=slot1_4_4247_2546_35192>
+...
+040 (3340598.002.000) 01/20 15:28:29 Finished transferring input files
+...
+001 (3340598.002.000) 01/20 15:28:30 Job executing on host: <128.142.248.50:9618?addrs=128.142.248.50-9618+[2001-1458-301-73--100-122]-9618&alias=b7g23p4729.cern.ch&noUDP&sock=startd_3530_dd67>
+...
+006 (3340598.002.000) 01/20 15:28:38 Image size of job updated: 279444
+	195  -  MemoryUsage of job (MB)
+	199008  -  ResidentSetSize of job (KB)
+...
+006 (3340598.002.000) 01/20 15:33:38 Image size of job updated: 1740392
+	279  -  MemoryUsage of job (MB)
+	285348  -  ResidentSetSize of job (KB)
+...
+006 (3340598.002.000) 01/20 15:38:39 Image size of job updated: 2464120
+	708  -  MemoryUsage of job (MB)
+	724296  -  ResidentSetSize of job (KB)
+...
+006 (3340598.002.000) 01/20 15:53:40 Image size of job updated: 2464120
+	708  -  MemoryUsage of job (MB)
+	724304  -  ResidentSetSize of job (KB)
+...
+006 (3340598.002.000) 01/20 16:23:43 Image size of job updated: 2464120
+	708  -  MemoryUsage of job (MB)
+	724312  -  ResidentSetSize of job (KB)
+...
+006 (3340598.002.000) 01/20 16:43:45 Image size of job updated: 2464120
+	727  -  MemoryUsage of job (MB)
+	743836  -  ResidentSetSize of job (KB)
+...
+006 (3340598.002.000) 01/20 16:48:46 Image size of job updated: 2890988
+	1054  -  MemoryUsage of job (MB)
+	1078424  -  ResidentSetSize of job (KB)
+...
+006 (3340598.002.000) 01/20 16:53:46 Image size of job updated: 2890988
+	1054  -  MemoryUsage of job (MB)
+	1078428  -  ResidentSetSize of job (KB)
+...
+006 (3340598.002.000) 01/20 17:38:51 Image size of job updated: 2890988
+	1054  -  MemoryUsage of job (MB)
+	1078432  -  ResidentSetSize of job (KB)
+...
+006 (3340598.002.000) 01/20 18:48:57 Image size of job updated: 3290768
+	1765  -  MemoryUsage of job (MB)
+	1807008  -  ResidentSetSize of job (KB)
+...

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py", line 1172, in <module>
+    columns = sorted([ str(c) for c in df.GetColumnNames() ])
+cppyy.gbl.std.runtime_error: vector<string> ROOT::RDF::RInterface<ROOT::Detail::RDF::RLoopManager,void>::GetColumnNames() =>
+    runtime_error: GetBranchNames: error in opening the tree Events

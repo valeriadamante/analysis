@@ -1,0 +1,40 @@
+{
+    "M-280": {
+        "best_paths": [
+            "HLT_PFHT400_SixJet30_DoubleBTagCSV_p056",
+            "HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg",
+            "HLT_QuadJet45_TripleBTagCSV_p087",
+            "HLT_HT650",
+            "HLT_HT550to650",
+            "HLT_Diphoton30EB_18EB_R9Id_OR_IsoCaloId_AND_HE_R9Id_DoublePixelVeto_Mass55",
+            "HLT_VBF_DisplacedJet40_VTightID_Hadronic",
+            "HLT_HT450to470",
+            "HLT_HT500to550",
+            "HLT_QuadPFJet_BTagCSV_p016_p11_VBF_Mqq200"
+        ],
+        "best_eff": [
+            0.0469963220269718,
+            0.08635846605564663,
+            0.11360670732834681,
+            0.1276475035490544,
+            0.14013578122161918,
+            0.15049860441412857,
+            0.16007166573530576,
+            0.1679317461076952,
+            0.17499018680535264,
+            0.18151580717125848
+        ],
+        "best_eff_err": [
+            0.004382429625976137,
+            0.005940670640304688,
+            0.006813731278137471,
+            0.007222527067525175,
+            0.0075675889571436466,
+            0.00784240473194411,
+            0.008087983330246774,
+            0.008284177909741643,
+            0.008456484607614445,
+            0.00861271826343293
+        ]
+    }
+}

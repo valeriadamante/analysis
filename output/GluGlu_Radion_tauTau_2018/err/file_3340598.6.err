@@ -1,0 +1,257 @@
+Error in <TNetXNGFile::ReadBuffer>: [ERROR] Invalid session
+Error in <TBranch::GetBasket>: File: root://xrootd-cms.infn.it//store/mc/RunIIAutumn18NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-340_narrow_TuneCP5_PSWeights_13TeV-madgraph-pythia8/NANOAODSIM/Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/120000/DCCC5002-B79C-CE48-BB6C-5537B2BF14E7.root at byte:1830471, branch:L1_ETMHF120, entry:1008, badread=1, nerrors=1, basketnumber=1
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 6 (Thread 0x2b7da409c700 (LWP 521) "python3"):
+#0  0x00002b7d65d53b3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b7d65d53bcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b7d65d53c6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b7da3839c66 in XrdSysSemaphore::Wait (this=0x9510ca0) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x9593318) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0x9593300) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b7da3839d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2b7da3e9b700 (LWP 520) "python3"):
+#0  0x00002b7d65d53b3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b7d65d53bcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b7d65d53c6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b7da3839c66 in XrdSysSemaphore::Wait (this=0x9510ca0) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x9593318) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0x9593300) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b7da3839d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2b7d898b5700 (LWP 519) "python3"):
+#0  0x00002b7d65d53b3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b7d65d53bcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b7d65d53c6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b7da3839c66 in XrdSysSemaphore::Wait (this=0x9510ca0) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x9593318) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0x9593300) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b7da3839d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2b7d89ab6700 (LWP 518) "python3"):
+#0  0x00002b7d65d54e9d in nanosleep () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b7da36b2960 in XrdSysTimer::Wait (mills=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002b7da37d2db6 in XrdCl::TaskManager::RunTasks (this=0x950d410) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClTaskManager.cc:246
+#3  0x00002b7da37d2ea9 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClTaskManager.cc:38
+#4  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#5  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2b7d91cb7700 (LWP 517) "python3"):
+#0  0x00002b7d6676a0e3 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b7da36ad102 in XrdSys::IOEvents::PollE::Begin (this=0x9545590, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysIOEventsPollE.icc:212
+#2  0x00002b7da36a9bad in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffe3f5a9030) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002b7da36b2148 in XrdSysThread_Xeq (myargs=0x951d0b0) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#5  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2b7d655b4540 (LWP 491) "python3"):
+#0  0x00002b7d66730659 in waitpid () from /lib64/libc.so.6
+#1  0x00002b7d666adf62 in do_system () from /lib64/libc.so.6
+#2  0x00002b7d666ae311 in system () from /lib64/libc.so.6
+#3  0x00002b7d6e39f00c in TUnixSystem::StackTrace() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libCore.so
+#4  0x00002b7d6df3ccd2 in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libcppyy_backend3_8.so
+#5  0x00002b7d6e39c491 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libCore.so
+#6  <signal handler called>
+#7  0x00002b7da6ce41c2 in ?? ()
+#8  0x00007ffe3f5a9490 in ?? ()
+#9  0x00002b7da41bbc5c in ?? ()
+#10 0x0000000048494310 in ?? ()
+#11 0x000000000ddc64e0 in ?? ()
+#12 0x0000000022c038d0 in ?? ()
+#13 0x00000000000003f0 in ?? ()
+#14 0x000000000ddc64e0 in ?? ()
+#15 0x0000000022183e60 in ?? ()
+#16 0x0000000000000008 in ?? ()
+#17 0x00002b7d8625b2d9 in TBranch::GetEntry(long long, int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTree.so
+#18 0x00002b7da2a92241 in ROOT::Internal::TTreeReaderValueBase::EReadStatus ROOT::Internal::TTreeReaderValueBase::ProxyReadTemplate<&ROOT::Detail::TBranchProxy::ReadNoParentNoBranchCountNoCollection>() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTreePlayer.so
+#19 0x00002b7da2a8e7d3 in ROOT::Internal::TTreeReaderValueBase::GetAddress() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTreePlayer.so
+#20 0x00002b7da41c06aa in ?? ()
+#21 0x000000000ddc69a0 in ?? ()
+#22 0x0000000049712248 in ?? ()
+#23 0x0000000049712260 in ?? ()
+#24 0x000000000ddc69a0 in ?? ()
+#25 0x0000000049712260 in ?? ()
+#26 0x000000000ddc69a0 in ?? ()
+#27 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum https://root.cern.ch/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern.ch/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#7  0x00002b7da6ce41c2 in ?? ()
+#8  0x00007ffe3f5a9490 in ?? ()
+#9  0x00002b7da41bbc5c in ?? ()
+#10 0x0000000048494310 in ?? ()
+#11 0x000000000ddc64e0 in ?? ()
+#12 0x0000000022c038d0 in ?? ()
+#13 0x00000000000003f0 in ?? ()
+#14 0x000000000ddc64e0 in ?? ()
+#15 0x0000000022183e60 in ?? ()
+#16 0x0000000000000008 in ?? ()
+#17 0x00002b7d8625b2d9 in TBranch::GetEntry(long long, int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTree.so
+#18 0x00002b7da2a92241 in ROOT::Internal::TTreeReaderValueBase::EReadStatus ROOT::Internal::TTreeReaderValueBase::ProxyReadTemplate<&ROOT::Detail::TBranchProxy::ReadNoParentNoBranchCountNoCollection>() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTreePlayer.so
+#19 0x00002b7da2a8e7d3 in ROOT::Internal::TTreeReaderValueBase::GetAddress() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTreePlayer.so
+#20 0x00002b7da41c06aa in ?? ()
+#21 0x000000000ddc69a0 in ?? ()
+#22 0x0000000049712248 in ?? ()
+#23 0x0000000049712260 in ?? ()
+#24 0x000000000ddc69a0 in ?? ()
+#25 0x0000000049712260 in ?? ()
+#26 0x000000000ddc69a0 in ?? ()
+#27 0x0000000000000000 in ?? ()
+===========================================================
+
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 6 (Thread 0x2b7da409c700 (LWP 521) "python3"):
+#0  0x00002b7d65d53b3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b7d65d53bcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b7d65d53c6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b7da3839c66 in XrdSysSemaphore::Wait (this=0x9510ca0) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x9593318) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0x9593300) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b7da3839d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2b7da3e9b700 (LWP 520) "python3"):
+#0  0x00002b7d65d53b3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b7d65d53bcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b7d65d53c6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b7da3839c66 in XrdSysSemaphore::Wait (this=0x9510ca0) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x9593318) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0x9593300) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b7da3839d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2b7d898b5700 (LWP 519) "python3"):
+#0  0x00002b7d65d53b3b in do_futex_wait.constprop () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b7d65d53bcf in __new_sem_wait_slow.constprop.0 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#2  0x00002b7d65d53c6b in sem_wait
+
+GLIBC_2.2.5 () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#3  0x00002b7da3839c66 in XrdSysSemaphore::Wait (this=0x9510ca0) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysPthread.hh:421
+#4  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x9593318) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#5  XrdCl::JobManager::RunJobs (this=0x9593300) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:147
+#6  0x00002b7da3839d09 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClJobManager.cc:34
+#7  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#8  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2b7d89ab6700 (LWP 518) "python3"):
+#0  0x00002b7d65d54e9d in nanosleep () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#1  0x00002b7da36b2960 in XrdSysTimer::Wait (mills=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002b7da37d2db6 in XrdCl::TaskManager::RunTasks (this=0x950d410) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClTaskManager.cc:246
+#3  0x00002b7da37d2ea9 in RunRunnerThread (arg=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdCl/XrdClTaskManager.cc:38
+#4  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#5  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2b7d91cb7700 (LWP 517) "python3"):
+#0  0x00002b7d6676a0e3 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b7da36ad102 in XrdSys::IOEvents::PollE::Begin (this=0x9545590, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/./XrdSys/XrdSysIOEventsPollE.icc:212
+#2  0x00002b7da36a9bad in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffe3f5a9030) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002b7da36b2148 in XrdSysThread_Xeq (myargs=0x951d0b0) at /build/jenkins/workspace/lcg_release_pipeline/build/externals/xrootd-5.1.1/src/xrootd/5.1.1/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002b7d65d4dea5 in start_thread () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/julia/libpthread.so.0
+#5  0x00002b7d66769b0d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2b7d655b4540 (LWP 491) "python3"):
+#0  0x00002b7d66730659 in waitpid () from /lib64/libc.so.6
+#1  0x00002b7d666adf62 in do_system () from /lib64/libc.so.6
+#2  0x00002b7d666ae311 in system () from /lib64/libc.so.6
+#3  0x00002b7d6e39f00c in TUnixSystem::StackTrace() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libCore.so
+#4  0x00002b7d6df3cb5a in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libcppyy_backend3_8.so
+#5  0x00002b7d6e39c491 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libCore.so
+#6  <signal handler called>
+#7  0x00002b7da6ce41c2 in ?? ()
+#8  0x00007ffe3f5a9490 in ?? ()
+#9  0x00002b7da41bbc5c in ?? ()
+#10 0x0000000048494310 in ?? ()
+#11 0x000000000ddc64e0 in ?? ()
+#12 0x0000000022c038d0 in ?? ()
+#13 0x00000000000003f0 in ?? ()
+#14 0x000000000ddc64e0 in ?? ()
+#15 0x0000000022183e60 in ?? ()
+#16 0x0000000000000008 in ?? ()
+#17 0x00002b7d8625b2d9 in TBranch::GetEntry(long long, int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTree.so
+#18 0x00002b7da2a92241 in ROOT::Internal::TTreeReaderValueBase::EReadStatus ROOT::Internal::TTreeReaderValueBase::ProxyReadTemplate<&ROOT::Detail::TBranchProxy::ReadNoParentNoBranchCountNoCollection>() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTreePlayer.so
+#19 0x00002b7da2a8e7d3 in ROOT::Internal::TTreeReaderValueBase::GetAddress() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTreePlayer.so
+#20 0x00002b7da41c06aa in ?? ()
+#21 0x000000000ddc69a0 in ?? ()
+#22 0x0000000049712248 in ?? ()
+#23 0x0000000049712260 in ?? ()
+#24 0x000000000ddc69a0 in ?? ()
+#25 0x0000000049712260 in ?? ()
+#26 0x000000000ddc69a0 in ?? ()
+#27 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum https://root.cern.ch/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern.ch/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#7  0x00002b7da6ce41c2 in ?? ()
+#8  0x00007ffe3f5a9490 in ?? ()
+#9  0x00002b7da41bbc5c in ?? ()
+#10 0x0000000048494310 in ?? ()
+#11 0x000000000ddc64e0 in ?? ()
+#12 0x0000000022c038d0 in ?? ()
+#13 0x00000000000003f0 in ?? ()
+#14 0x000000000ddc64e0 in ?? ()
+#15 0x0000000022183e60 in ?? ()
+#16 0x0000000000000008 in ?? ()
+#17 0x00002b7d8625b2d9 in TBranch::GetEntry(long long, int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTree.so
+#18 0x00002b7da2a92241 in ROOT::Internal::TTreeReaderValueBase::EReadStatus ROOT::Internal::TTreeReaderValueBase::ProxyReadTemplate<&ROOT::Detail::TBranchProxy::ReadNoParentNoBranchCountNoCollection>() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTreePlayer.so
+#19 0x00002b7da2a8e7d3 in ROOT::Internal::TTreeReaderValueBase::GetAddress() () from /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/lib/libTreePlayer.so
+#20 0x00002b7da41c06aa in ?? ()
+#21 0x000000000ddc69a0 in ?? ()
+#22 0x0000000049712248 in ?? ()
+#23 0x0000000049712260 in ?? ()
+#24 0x000000000ddc69a0 in ?? ()
+#25 0x0000000049712260 in ?? ()
+#26 0x000000000ddc69a0 in ?? ()
+#27 0x0000000000000000 in ?? ()
+===========================================================
+
+
+Error in <TNetXNGFile::Close>: [ERROR] Invalid session

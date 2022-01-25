@@ -1,0 +1,40 @@
+{
+    "M-600": {
+        "best_paths": [
+            " HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1 == 1 ",
+            "HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8",
+            "HLT_DoubleMu8_Mass8_PFHT350",
+            "HLT_Mu50",
+            "HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg",
+            "HLT_Mu12_DoublePFJets40MaxDeta1p6_DoubleCaloBTagCSV_p33",
+            "HLT_DoubleMu3_DZ_PFMET50_PFMHT60",
+            "HLT_HT430_DisplacedDijet40_DisplacedTrack",
+            "HLT_OldMu100",
+            "HLT_IsoMu24_eta2p1"
+        ],
+        "best_eff": [
+            0.7829977628635347,
+            0.901565995525727,
+            0.9352119032462716,
+            0.9588730950142124,
+            0.9655845044101855,
+            0.9695428464949556,
+            0.9715220175373406,
+            0.9735011885797256,
+            0.9754803596221107,
+            0.9770540025570355
+        ],
+        "best_eff_err": [
+            0.041852990903511654,
+            0.044910201118310365,
+            0.04574053619665663,
+            0.04631554778338207,
+            0.04647735260498601,
+            0.04657252040193088,
+            0.04662003144892012,
+            0.04666749412608668,
+            0.046714908580862795,
+            0.046752573594525136
+        ]
+    }
+}

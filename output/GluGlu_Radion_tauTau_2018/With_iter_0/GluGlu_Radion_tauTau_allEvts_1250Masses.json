@@ -1,0 +1,40 @@
+{
+    "M-1250": {
+        "best_paths": [
+            "HLT_AK8PFJet330_TrimMass30_PFAK8BoostedDoubleB_np4",
+            "HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg",
+            "HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1",
+            "HLT_PFMET120_PFMHT120_IDTight",
+            "HLT_AK8PFJet400_TrimMass30",
+            "HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1",
+            "HLT_HT650_DisplacedDijet60_Inclusive",
+            "HLT_PFHT330PT30_QuadPFJet_75_60_45_40_TriplePFBTagDeepCSV_4p5",
+            "HLT_Mu50",
+            "HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET100"
+        ],
+        "best_eff": [
+            0.710459677744644,
+            0.8506993415363512,
+            0.8932312729572245,
+            0.9243777738642985,
+            0.93137772589985,
+            0.9371759477868395,
+            0.9415527684228404,
+            0.9451180678603742,
+            0.9479809349117602,
+            0.9504888520756027
+        ],
+        "best_eff_err": [
+            0.009603102849527806,
+            0.01050823826011297,
+            0.010767721711742445,
+            0.010953845478715956,
+            0.010995241854772646,
+            0.011029413778640841,
+            0.011055138689133963,
+            0.011076049698738115,
+            0.011092812303542792,
+            0.01110747582579467
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+
+            executable              = /afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_tauTau_2018/run_TSA.sh
+            arguments               = --mass_point 14
+            log                     = /afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_tauTau_2018/log/file_allOR_Mass14.log
+            output                  = /afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_tauTau_2018/out/file_allOR_Mass14.out
+            error                   = /afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_tauTau_2018/err/file_allOR_Mass14.err
+            +MaxRuntime             = 10800
+            x509userproxy           = /afs/cern.ch/work/v/vdamante/public/analysis/x509up_u127699
+            RequestCPUs             = 4
+            queue 1
+            

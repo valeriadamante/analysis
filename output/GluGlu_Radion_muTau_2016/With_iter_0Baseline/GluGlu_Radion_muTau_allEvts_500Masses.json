@@ -1,0 +1,40 @@
+{
+    "M-500": {
+        "best_paths": [
+            " HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1 ",
+            "HLT_Mu30_TkMu11",
+            "HLT_MonoCentralPFJet80_PFMETNoMu110_PFMHTNoMu110_IDTight",
+            "HLT_DoubleJet90_Double30_TripleBTagCSV_p087",
+            "HLT_Mu38NoFiltersNoVtxDisplaced_DisplacedJet60_Loose",
+            "HLT_Mu17_Mu8_SameSign_DZ",
+            "HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL",
+            "HLT_IsoMu24",
+            "HLT_Mu17",
+            "HLT_AK4CaloJet100"
+        ],
+        "best_eff": [
+            0.7869692687351038,
+            0.9289897562450344,
+            0.9546371921424704,
+            0.9674577049629832,
+            0.9802782177834961,
+            0.9866820639373421,
+            0.9919656479157438,
+            0.9924630711578888,
+            0.9925140438576139,
+            0.9925140438576139
+        ],
+        "best_eff_err": [
+            0.07102587415571876,
+            0.07716905169841257,
+            0.07822703612179392,
+            0.07875056796551323,
+            0.0792706422919695,
+            0.07952914575952248,
+            0.07974179677751216,
+            0.07976178761683203,
+            0.07976383586505717,
+            0.07976383586505717
+        ]
+    }
+}

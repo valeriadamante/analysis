@@ -1,0 +1,13 @@
+{
+    "M-340": {
+        "best_paths": [
+            " HLT_Ele25_eta2p1_WPTight_Gsf == 1  ||  HLT_Ele23_CaloIdL_TrackIdL_IsoVL_PFJet30 == 1  ||  HLT_Ele27_eta2p1_WPLoose_Gsf_HT200 == 1  ||  HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165 == 1  ||  HLT_Ele24_eta2p1_WPLoose_Gsf_LooseIsoPFTau30 == 1  ||  HLT_LooseIsoPFTau50_Trk30_eta2p1 == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_Ele17_CaloIdM_TrackIdM_PFJet30 == 1 "
+        ],
+        "best_eff": [
+            0.706295746705592
+        ],
+        "best_eff_err": [
+            0.20383034276020023
+        ]
+    }
+}

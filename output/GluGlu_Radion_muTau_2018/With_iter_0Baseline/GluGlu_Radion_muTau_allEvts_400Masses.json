@@ -1,0 +1,40 @@
+{
+    "M-400": {
+        "best_paths": [
+            " HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ",
+            "HLT_DoubleL2Mu23NoVtx_2Cha",
+            "HLT_Mu18_Mu9_SameSign",
+            "HLT_Mu50",
+            "HLT_DoubleMu3_DZ_PFMET50_PFMHT60",
+            "HLT_QuadPFJet103_88_75_15_DoublePFBTagDeepCSV_1p3_7p7_VBF1",
+            "HLT_Mu12_DoublePhoton20",
+            "HLT_IsoTrackHB",
+            "HLT_DoubleL2Mu23NoVtx_2Cha_CosmicSeed_NoL2Matched",
+            "HLT_PFHT330PT30_QuadPFJet_75_60_45_40_TriplePFBTagDeepCSV_4p5"
+        ],
+        "best_eff": [
+            0.7609296290229638,
+            0.8553111363941533,
+            0.896603168841056,
+            0.9201985456838533,
+            0.9377264836941566,
+            0.9457939392508433,
+            0.9516931523775642,
+            0.9573126464904024,
+            0.9608916237863268,
+            0.9641016850608186
+        ],
+        "best_eff_err": [
+            0.04737752815532948,
+            0.05022988851548188,
+            0.05142807701757697,
+            0.05210038375355794,
+            0.05259424701577925,
+            0.052820002112446286,
+            0.05298447349735794,
+            0.05314067284661681,
+            0.053239915155279656,
+            0.05332877059374951
+        ]
+    }
+}

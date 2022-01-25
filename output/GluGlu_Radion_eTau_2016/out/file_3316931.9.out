@@ -1,0 +1,32 @@
+Running with following options: 
+ channel = eTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2016 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [450] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 450
+['root://xrootd-cms.infn.it///store/mc/RunIISummer16NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-450_narrow_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/130000/9120788F-0B5E-B148-BF0C-9265BD76E958.root']
+filtering for channel eTau
+filtered for channel eTau
+before any filling, baseline path are [] 
+
+['HLT_Ele32_WPTight_Gsf', 'HLT_Ele35_WPTight_Gsf', 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTauHPS30_eta2p1_CrossL1']
+current baseline path are ['HLT_Ele25_eta2p1_WPTight_Gsf'] 
+
+nTriggers=1, best_paths_baseline=['HLT_Ele25_eta2p1_WPTight_Gsf'], best_paths=['HLT_Ele25_eta2p1_WPTight_Gsf'] 
+
+current paths = [('HLT_Ele25_eta2p1_WPTight_Gsf', 1.0)] 
+ HLT_Ele25_eta2p1_WPTight_Gsf == 1 
+[(' HLT_Ele25_eta2p1_WPTight_Gsf == 1 ', 0.6491228070175439, 0.10671513211049508)]
+nPaths = 1 
+best_paths_dict 
+ {'M-450': {'best_paths': [' HLT_Ele25_eta2p1_WPTight_Gsf == 1 '], 'best_eff': [0.6491228070175439], 'best_eff_err': [0.10671513211049508]}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_eTau_2016//With_baseline//GluGlu_Radion_eTau_allEvts_450Masses.json

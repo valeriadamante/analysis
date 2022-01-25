@@ -1,0 +1,94 @@
+000 (3339246.000.000) 01/20 08:14:51 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3339246.000.000) 01/20 08:24:28 Started transferring input files
+	Transferring to host: <188.184.165.167:9618?addrs=188.184.165.167-9618&alias=b7s14p8920.cern.ch&noUDP&sock=slot1_4_3469_f966_34544>
+...
+040 (3339246.000.000) 01/20 08:24:28 Finished transferring input files
+...
+001 (3339246.000.000) 01/20 08:24:29 Job executing on host: <188.184.165.167:9618?addrs=188.184.165.167-9618&alias=b7s14p8920.cern.ch&noUDP&sock=startd_2839_e576>
+...
+006 (3339246.000.000) 01/20 08:24:38 Image size of job updated: 320076
+	191  -  MemoryUsage of job (MB)
+	194700  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 08:29:38 Image size of job updated: 1733828
+	274  -  MemoryUsage of job (MB)
+	280368  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 08:49:39 Image size of job updated: 1733828
+	274  -  MemoryUsage of job (MB)
+	280372  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 08:54:40 Image size of job updated: 2460752
+	709  -  MemoryUsage of job (MB)
+	725228  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 12:05:01 Image size of job updated: 2460752
+	709  -  MemoryUsage of job (MB)
+	725312  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 12:10:01 Image size of job updated: 2460752
+	718  -  MemoryUsage of job (MB)
+	734296  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 12:15:01 Image size of job updated: 2962020
+	1246  -  MemoryUsage of job (MB)
+	1275476  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 12:50:04 Image size of job updated: 3424444
+	1907  -  MemoryUsage of job (MB)
+	1952492  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 13:40:09 Image size of job updated: 3889340
+	1956  -  MemoryUsage of job (MB)
+	2002456  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 13:55:11 Image size of job updated: 3889340
+	1956  -  MemoryUsage of job (MB)
+	2002460  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 14:40:16 Image size of job updated: 4351572
+	2813  -  MemoryUsage of job (MB)
+	2880480  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 15:50:23 Image size of job updated: 4910452
+	2845  -  MemoryUsage of job (MB)
+	2913036  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 16:05:25 Image size of job updated: 4910452
+	2845  -  MemoryUsage of job (MB)
+	2913040  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 16:35:27 Image size of job updated: 4910452
+	2849  -  MemoryUsage of job (MB)
+	2916784  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 16:40:28 Image size of job updated: 5497744
+	3285  -  MemoryUsage of job (MB)
+	3363356  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 16:45:28 Image size of job updated: 5497744
+	3285  -  MemoryUsage of job (MB)
+	3363368  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 16:50:29 Image size of job updated: 5497744
+	3285  -  MemoryUsage of job (MB)
+	3363376  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 17:25:33 Image size of job updated: 6161812
+	3788  -  MemoryUsage of job (MB)
+	3878536  -  ResidentSetSize of job (KB)
+...
+006 (3339246.000.000) 01/20 17:55:35 Image size of job updated: 6161812
+	3788  -  MemoryUsage of job (MB)
+	3878540  -  ResidentSetSize of job (KB)
+...
+040 (3339246.000.000) 01/20 18:24:58 Started transferring output files
+...
+040 (3339246.000.000) 01/20 18:24:59 Finished transferring output files
+...
+009 (3339246.000.000) 01/20 18:25:00 Job was aborted.
+	Job removed by SYSTEM_PERIODIC_REMOVE due to wall time exceeded allowed max.
+...
+000 (3342607.000.000) 01/20 18:48:24 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...

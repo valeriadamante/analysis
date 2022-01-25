@@ -1,0 +1,40 @@
+{
+    "M-350": {
+        "best_paths": [
+            " HLT_Ele25_eta2p1_WPTight_Gsf == 1  ||  HLT_Ele23_CaloIdL_TrackIdL_IsoVL_PFJet30 == 1  ||  HLT_Ele27_eta2p1_WPLoose_Gsf_HT200 == 1  ||  HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165 == 1 ",
+            "HLT_HT550to650",
+            "HLT_DiMu9_Ele9_CaloIdL_TrackIdL",
+            "HLT_VBF_DisplacedJet40_TightID_Hadronic",
+            "HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg",
+            "HLT_Ele17_CaloIdL_TrackIdL_IsoVL_PFJet30",
+            "HLT_IsoTrackHE",
+            "HLT_Ele17_CaloIdM_TrackIdM_PFJet30",
+            "HLT_AK4CaloJet100",
+            "HLT_AK4CaloJet30"
+        ],
+        "best_eff": [
+            0.6926456940372486,
+            0.7695011706144144,
+            0.8078951087300416,
+            0.8345723566260994,
+            0.8437431186855371,
+            0.8438694606736833,
+            0.843891185589842,
+            0.8438955094809221,
+            0.8438955094809221,
+            0.8438955094809221
+        ],
+        "best_eff_err": [
+            0.16321831699117795,
+            0.17203545817588062,
+            0.17627503736294964,
+            0.17916176152659227,
+            0.1801434384344381,
+            0.18015692525745045,
+            0.18015924425884175,
+            0.18015970580410062,
+            0.18015970580410062,
+            0.18015970580410062
+        ]
+    }
+}

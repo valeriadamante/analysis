@@ -1,0 +1,40 @@
+{
+    "M-400": {
+        "best_paths": [
+            "HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8",
+            "HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1",
+            "HLT_IsoMu27",
+            "HLT_DoubleMu4_Mass8_DZ_PFHT350",
+            "HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg",
+            "HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight",
+            "HLT_Mu50",
+            "HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1",
+            "HLT_Mu17_Photon30_IsoCaloId",
+            "HLT_Mu12_DoublePFJets40MaxDeta1p6_DoubleCaloBTagCSV_p33"
+        ],
+        "best_eff": [
+            0.643646408839779,
+            0.861878453038674,
+            0.8950276243093923,
+            0.9072470919329567,
+            0.9182968156898628,
+            0.9269026459220561,
+            0.9327460452150228,
+            0.9382709070934758,
+            0.943683383120044,
+            0.94857117016947
+        ],
+        "best_eff_err": [
+            0.04216667823887776,
+            0.04879425892998811,
+            0.049723756906077346,
+            0.05006203587828691,
+            0.05036597596646837,
+            0.05060142830737104,
+            0.05076067901184101,
+            0.05091079043907243,
+            0.051057420365356904,
+            0.051189474978109
+        ]
+    }
+}

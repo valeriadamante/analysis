@@ -1,0 +1,21 @@
+Running with following options: 
+ channel = eTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2016 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [280] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 280
+['root://xrootd-cms.infn.it///store/mc/RunIISummer16NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-280_narrow_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/110000/459751F4-CB34-8A49-95D8-2FB496307BF9.root']
+filtering for channel eTau
+filtered for channel eTau
+current baseline path are ['HLT_Ele25_eta2p1_WPTight_Gsf_v']
+nTriggers=1, best_paths_baseline=['HLT_Ele25_eta2p1_WPTight_Gsf_v'], best_paths=['HLT_Ele25_eta2p1_WPTight_Gsf_v'] 
+

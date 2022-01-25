@@ -1,0 +1,40 @@
+{
+    "M-500": {
+        "best_paths": [
+            " HLT_IsoMu24 == 1  ||  HLT_IsoMu27 == 1  ||  HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1 == 1 ",
+            "HLT_DoubleL2Mu23NoVtx_2Cha",
+            "HLT_Mu50",
+            "HLT_Mu18_Mu9_SameSign",
+            "HLT_DoubleMu4_Mass3p8_DZ_PFHT350",
+            "HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight",
+            "HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8",
+            "HLT_Mu37_TkMu27",
+            "HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1",
+            "HLT_Mu20_TkMu0_Phi"
+        ],
+        "best_eff": [
+            0.8286262613803099,
+            0.9108062402586394,
+            0.9496125536131864,
+            0.9655916238179999,
+            0.9759963695698715,
+            0.9828445425147916,
+            0.9876121470171951,
+            0.9923793708117409,
+            0.99258114597634,
+            0.992782921140939
+        ],
+        "best_eff_err": [
+            0.04349529606069029,
+            0.045601165576774065,
+            0.046562486949235066,
+            0.046952604681129946,
+            0.0472048960768885,
+            0.047370215448925355,
+            0.047484968710781686,
+            0.04759943619470931,
+            0.04760427501754419,
+            0.04760911334857813
+        ]
+    }
+}

@@ -1,0 +1,45 @@
+Running with following options: 
+ channel = muTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2016 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [450] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 450
+['root://xrootd-cms.infn.it///store/mc/RunIISummer16NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-450_narrow_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/130000/9120788F-0B5E-B148-BF0C-9265BD76E958.root']
+filtering for channel muTau
+filtered for channel muTau
+current baseline path are ['HLT_IsoMu22', 'HLT_IsoMu22_eta2p1', 'HLT_IsoTkMu22', 'HLT_IsoTkMu22_eta2p1', 'HLT_IsoMu19_eta2p1_LooseIsoPFTau20', 'HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1']
+nTriggers=6, best_paths_baseline=['HLT_IsoMu22', 'HLT_IsoMu22_eta2p1', 'HLT_IsoTkMu22', 'HLT_IsoTkMu22_eta2p1', 'HLT_IsoMu19_eta2p1_LooseIsoPFTau20', 'HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1'], best_paths=['HLT_IsoMu22', 'HLT_IsoMu22_eta2p1', 'HLT_IsoTkMu22', 'HLT_IsoTkMu22_eta2p1', 'HLT_IsoMu19_eta2p1_LooseIsoPFTau20', 'HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1'] 
+
+current paths = [('HLT_IsoMu22', 0.7948999177406088), ('HLT_IsoMu22_eta2p1', 0.9224019742253908), ('HLT_IsoTkMu22', 0.7948999177406088), ('HLT_IsoTkMu22_eta2p1', 0.9224019742253908), ('HLT_IsoMu19_eta2p1_LooseIsoPFTau20', 1.0), ('HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1', 1.0)] 
+all l1 seeds are 0 for the path HLT_IsoMu22
+all l1 seeds are 0 for the path HLT_IsoTkMu22
+ HLT_IsoMu22 == 1 
+all l1 seeds are 0 for the path HLT_IsoMu22
+all l1 seeds are 0 for the path HLT_IsoTkMu22
+ HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1 
+all l1 seeds are 0 for the path HLT_IsoMu22
+all l1 seeds are 0 for the path HLT_IsoTkMu22
+ HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1 
+all l1 seeds are 0 for the path HLT_IsoMu22
+all l1 seeds are 0 for the path HLT_IsoTkMu22
+ HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1 
+all l1 seeds are 0 for the path HLT_IsoMu22
+all l1 seeds are 0 for the path HLT_IsoTkMu22
+ HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1 
+all l1 seeds are 0 for the path HLT_IsoMu22
+all l1 seeds are 0 for the path HLT_IsoTkMu22
+ HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1 
+[(' HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1 ', 0.8238810569991866, 0.08251626721662328), (' HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1 ', 0.8238810569991866, 0.08251626721662328), (' HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1 ', 0.8238810569991866, 0.08251626721662328), (' HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1 ', 0.8238810569991866, 0.08251626721662328), (' HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1 ', 0.8238810569991866, 0.08251626721662328), (' HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1 ', 0.8238810569991866, 0.08251626721662328)]
+nPaths = 6 
+best_paths_dict 
+ {'M-450': {'best_paths': [' HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1 '], 'best_eff': [0.8238810569991866], 'best_eff_err': [0.08251626721662328]}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_muTau_2016//With_baseline//GluGlu_Radion_muTau_allEvts_450Masses.json

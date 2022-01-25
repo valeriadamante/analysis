@@ -1,0 +1,47 @@
+000 (3314882.007.000) 01/12 10:53:21 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3314882.007.000) 01/12 10:54:12 Started transferring input files
+	Transferring to host: <188.184.162.174:9618?addrs=188.184.162.174-9618+[2001-1458-301-4a--100-a8]-9618&alias=b7s11p1337.cern.ch&noUDP&sock=slot1_14_3519_3428_26322>
+...
+040 (3314882.007.000) 01/12 10:54:12 Finished transferring input files
+...
+001 (3314882.007.000) 01/12 10:54:13 Job executing on host: <188.184.162.174:9618?addrs=188.184.162.174-9618+[2001-1458-301-4a--100-a8]-9618&alias=b7s11p1337.cern.ch&noUDP&sock=startd_2920_74a2>
+...
+006 (3314882.007.000) 01/12 10:54:22 Image size of job updated: 453984
+	155  -  MemoryUsage of job (MB)
+	157844  -  ResidentSetSize of job (KB)
+...
+006 (3314882.007.000) 01/12 10:59:23 Image size of job updated: 1784188
+	302  -  MemoryUsage of job (MB)
+	308860  -  ResidentSetSize of job (KB)
+...
+006 (3314882.007.000) 01/12 11:04:23 Image size of job updated: 1789528
+	339  -  MemoryUsage of job (MB)
+	346796  -  ResidentSetSize of job (KB)
+...
+006 (3314882.007.000) 01/12 11:09:23 Image size of job updated: 2489228
+	727  -  MemoryUsage of job (MB)
+	743520  -  ResidentSetSize of job (KB)
+...
+006 (3314882.007.000) 01/12 11:14:24 Image size of job updated: 2489228
+	727  -  MemoryUsage of job (MB)
+	743524  -  ResidentSetSize of job (KB)
+...
+040 (3314882.007.000) 01/12 11:18:19 Started transferring output files
+...
+040 (3314882.007.000) 01/12 11:18:19 Finished transferring output files
+...
+004 (3314882.007.000) 01/12 11:18:19 Job was evicted.
+	(0) CPU times
+		Usr 0 00:02:22, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	8220  -  Run Bytes Sent By Job
+	10531  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.05        4         4 
+	   Disk (KB)            :    42           1   2976280 
+	   Memory (MB)          :   727        8000      8000 
+...
+009 (3314882.007.000) 01/12 11:18:19 Job was aborted.
+	via condor_rm (by user vdamante)
+...

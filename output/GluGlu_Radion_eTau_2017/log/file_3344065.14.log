@@ -1,0 +1,54 @@
+000 (3344065.014.000) 01/23 18:27:48 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+022 (3344065.014.000) 01/23 18:29:19 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_1@b7s01p1273.cern.ch <128.142.56.121:9618?addrs=128.142.56.121-9618+[2001-1458-301-6--100-78]-9618&alias=b7s01p1273.cern.ch&noUDP&sock=startd_2819_2d91>
+...
+024 (3344065.014.000) 01/23 18:29:19 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_1@b7s01p1273.cern.ch, rescheduling job
+...
+022 (3344065.014.000) 01/23 18:30:44 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_4@b7s13p1909.cern.ch <188.184.164.121:9618?addrs=188.184.164.121-9618+[2001-1458-301-4e--100-73]-9618&alias=b7s13p1909.cern.ch&noUDP&sock=startd_4564_1a54>
+...
+024 (3344065.014.000) 01/23 18:30:44 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_4@b7s13p1909.cern.ch, rescheduling job
+...
+040 (3344065.014.000) 01/23 18:31:01 Started transferring input files
+	Transferring to host: <128.142.61.100:9618?addrs=128.142.61.100-9618+[2001-1458-301-23--100-63]-9618&alias=b7s06p9018.cern.ch&noUDP&sock=slot1_5_4607_cc54_10625>
+...
+040 (3344065.014.000) 01/23 18:31:01 Finished transferring input files
+...
+001 (3344065.014.000) 01/23 18:31:02 Job executing on host: <128.142.61.100:9618?addrs=128.142.61.100-9618+[2001-1458-301-23--100-63]-9618&alias=b7s06p9018.cern.ch&noUDP&sock=startd_4188_32b8>
+...
+006 (3344065.014.000) 01/23 18:31:11 Image size of job updated: 1662996
+	227  -  MemoryUsage of job (MB)
+	231660  -  ResidentSetSize of job (KB)
+...
+006 (3344065.014.000) 01/23 18:32:35 Image size of job updated: 1735444
+	227  -  MemoryUsage of job (MB)
+	231824  -  ResidentSetSize of job (KB)
+...
+040 (3344065.014.000) 01/23 18:32:36 Started transferring output files
+...
+040 (3344065.014.000) 01/23 18:32:36 Finished transferring output files
+...
+005 (3344065.014.000) 01/23 18:32:36 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:17, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:17, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	6222  -  Run Bytes Sent By Job
+	11205  -  Run Bytes Received By Job
+	6222  -  Total Bytes Sent By Job
+	11205  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :       32        1   1202303 
+	   Memory (MB)          :      227     8000      8000 
+
+	Job terminated of its own accord at 2022-01-23T17:32:35Z.
+...

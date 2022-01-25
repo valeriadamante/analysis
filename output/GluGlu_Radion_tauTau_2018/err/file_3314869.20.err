@@ -1,0 +1,4 @@
+  File "/afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py", line 1312
+    elif(option = 'iter_0Baseline'):
+                ^
+SyntaxError: invalid syntax

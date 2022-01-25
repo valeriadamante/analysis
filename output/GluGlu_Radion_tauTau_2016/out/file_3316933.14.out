@@ -1,0 +1,33 @@
+Running with following options: 
+ channel = tauTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2016 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [800] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 800
+['root://xrootd-cms.infn.it///store/mc/RunIISummer16NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-800_narrow_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/120000/7AA15753-EC93-6E40-8F23-6513A5EEB60D.root']
+filtering for channel tauTau
+filtered for channel tauTau
+before any filling, baseline path are [] 
+
+['HLT_Ele32_WPTight_Gsf', 'HLT_Ele35_WPTight_Gsf', 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTauHPS30_eta2p1_CrossL1']
+current baseline path are ['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg'] 
+
+nTriggers=2, best_paths_baseline=['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg'], best_paths=['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg'] 
+
+current paths = [('HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 0.7598025774609268), ('HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg', 0.24019742253907322)] 
+column not found HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg
+ HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 
+[(' HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 ', 0.14918422361666528, 0.0035953380313800557)]
+nPaths = 2 
+best_paths_dict 
+ {'M-800': {'best_paths': [' HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 '], 'best_eff': [0.14918422361666528], 'best_eff_err': [0.0035953380313800557]}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_tauTau_2016//With_baseline//GluGlu_Radion_tauTau_allEvts_800Masses.json

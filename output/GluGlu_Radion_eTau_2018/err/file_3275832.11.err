@@ -1,0 +1,4 @@
+  File "/afs/cern.ch/work/v/vdamante/public/analysis/triggerStudiesAnalysis.py", line 1358
+    baseline_paths_dict['2016']['tauTau']['recommended'] = []
+    ^
+IndentationError: unexpected indent

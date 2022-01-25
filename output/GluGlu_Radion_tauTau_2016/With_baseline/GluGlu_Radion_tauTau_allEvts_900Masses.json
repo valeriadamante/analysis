@@ -1,0 +1,13 @@
+{
+    "M-900": {
+        "best_paths": [
+            " HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 "
+        ],
+        "best_eff": [
+            0.15668412984069735
+        ],
+        "best_eff_err": [
+            0.003644251230604086
+        ]
+    }
+}

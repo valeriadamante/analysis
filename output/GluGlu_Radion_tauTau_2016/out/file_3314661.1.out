@@ -1,0 +1,29 @@
+Running with following options: 
+ channel = tauTau 
+ machine = lxplus 
+ prodMode = GluGlu 
+ sample = Radion 
+ year = 2016 
+ nTriggers = -1 
+ iter = baseline 
+ nEvts = -1 
+ mass_points = [260] 
+ best_path_baseline =  
+ verbose = 0 
+ reco = True 
+ 
+evaluating for mass 260
+['root://xrootd-cms.infn.it///store/mc/RunIISummer16NanoAODv7/GluGluToRadionToHHTo2B2Tau_M-260_narrow_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/270000/47BB0D79-DE01-9145-97B7-A532ABC87903.root']
+filtering for channel tauTau
+filtered for channel tauTau
+current baseline path are ['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg']
+nTriggers=2, best_paths_baseline=['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg'], best_paths=['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg'] 
+
+current paths = [('HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 0.7598025774609268), ('HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg', 0.24019742253907322)] 
+column not found HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg
+ HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 
+[(' HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 ', 0.03843553984685283, 0.0039762530317242785)]
+nPaths = 2 
+best_paths_dict 
+ {'M-260': {'best_paths': [' HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 '], 'best_eff': [0.03843553984685283], 'best_eff_err': [0.0039762530317242785]}}
+dict name = /afs/cern.ch/work/v/vdamante/public//analysis/output/GluGlu_Radion_tauTau_2016//With_baseline//GluGlu_Radion_tauTau_allEvts_260Masses.json

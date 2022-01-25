@@ -1,0 +1,13 @@
+{
+    "M-550": {
+        "best_paths": [
+            " HLT_Ele25_eta2p1_WPTight_Gsf == 1 "
+        ],
+        "best_eff": [
+            0.6933333333333334
+        ],
+        "best_eff_err": [
+            0.09614803401237304
+        ]
+    }
+}

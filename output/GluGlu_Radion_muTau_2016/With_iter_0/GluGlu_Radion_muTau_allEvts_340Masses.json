@@ -1,0 +1,40 @@
+{
+    "M-340": {
+        "best_paths": [
+            "HLT_Mu30_TkMu11",
+            "HLT_IsoMu19_eta2p1_LooseIsoPFTau20",
+            "HLT_AK4CaloJet100",
+            "HLT_AK4CaloJet80",
+            "HLT_AK4PFJet100",
+            "HLT_AK4PFJet80",
+            "HLT_AK8DiPFJet250_200_TrimMass30",
+            "HLT_AK8DiPFJet250_200_TrimMass30_BTagCSV_p20",
+            "HLT_AK8DiPFJet280_200_TrimMass30",
+            "HLT_AK8DiPFJet280_200_TrimMass30_BTagCSV_p087"
+        ],
+        "best_eff": [
+            0.7567567567567568,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+        ],
+        "best_eff_err": [
+            0.14301358438186976,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573
+        ]
+    }
+}

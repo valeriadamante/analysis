@@ -1,0 +1,11 @@
+
+            executable              = /afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_eTau_2018/run_TSA_iter_2Ext.sh
+            arguments               = --mass_point 5
+            log                     = /afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_eTau_2018/log/file_iter_2Ext_Mass5.log
+            output                  = /afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_eTau_2018/out/file_iter_2Ext_Mass5.out
+            error                   = /afs/cern.ch/work/v/vdamante/public/analysis/output/GluGlu_Radion_eTau_2018/err/file_iter_2Ext_Mass5.err
+            +MaxRuntime             = 18000
+            x509userproxy           = /afs/cern.ch/work/v/vdamante/public/analysis/x509up_u127699
+            RequestCPUs             = 4
+            queue 1
+            

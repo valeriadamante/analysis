@@ -1,0 +1,49 @@
+000 (3314893.000.000) 01/12 11:05:03 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3314893.000.000) 01/12 11:05:47 Started transferring input files
+	Transferring to host: <128.142.56.115:9618?addrs=128.142.56.115-9618&alias=b7s01p7942.cern.ch&noUDP&sock=slot1_8_4603_fad4_26290>
+...
+040 (3314893.000.000) 01/12 11:05:47 Finished transferring input files
+...
+001 (3314893.000.000) 01/12 11:05:48 Job executing on host: <128.142.56.115:9618?addrs=128.142.56.115-9618&alias=b7s01p7942.cern.ch&noUDP&sock=startd_4243_ec6e>
+...
+006 (3314893.000.000) 01/12 11:05:57 Image size of job updated: 751384
+	155  -  MemoryUsage of job (MB)
+	157832  -  ResidentSetSize of job (KB)
+...
+006 (3314893.000.000) 01/12 11:10:58 Image size of job updated: 1920916
+	454  -  MemoryUsage of job (MB)
+	464708  -  ResidentSetSize of job (KB)
+...
+006 (3314893.000.000) 01/12 11:15:58 Image size of job updated: 1920916
+	455  -  MemoryUsage of job (MB)
+	465112  -  ResidentSetSize of job (KB)
+...
+040 (3314893.000.000) 01/12 11:18:25 Started transferring output files
+...
+040 (3314893.000.000) 01/12 11:18:26 Finished transferring output files
+...
+004 (3314893.000.000) 01/12 11:18:26 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:41, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	10524  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.21        4         4 
+	   Disk (KB)            :    34           1   1286783 
+	   Memory (MB)          :   455        8000      8000 
+...
+009 (3314893.000.000) 01/12 11:18:26 Job was aborted.
+	via condor_rm (by user vdamante)
+...
+000 (3314894.000.000) 01/12 11:42:14 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+009 (3314894.000.000) 01/12 11:42:24 Job was aborted.
+	via condor_rm (by user vdamante)
+...
+000 (3314900.000.000) 01/12 11:42:57 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+009 (3314900.000.000) 01/12 16:58:22 Job was aborted.
+	via condor_rm (by user vdamante)
+...

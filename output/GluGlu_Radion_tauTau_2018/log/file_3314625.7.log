@@ -1,0 +1,96 @@
+000 (3314625.007.000) 01/11 10:41:43 Job submitted from host: <188.185.70.244:9618?addrs=188.185.70.244-9618+[2001-1458-d00-7--100-2ee]-9618&alias=bigbird10.cern.ch&noUDP&sock=schedd_7001_aea1>
+...
+040 (3314625.007.000) 01/11 11:36:29 Started transferring input files
+	Transferring to host: <128.142.60.137:9618?addrs=128.142.60.137-9618+[2001-1458-301-22--100-88]-9618&alias=b7s05p7197.cern.ch&noUDP&sock=slot1_24_6081_5d50_25351>
+...
+040 (3314625.007.000) 01/11 11:36:29 Finished transferring input files
+...
+001 (3314625.007.000) 01/11 11:36:30 Job executing on host: <128.142.60.137:9618?addrs=128.142.60.137-9618+[2001-1458-301-22--100-88]-9618&alias=b7s05p7197.cern.ch&noUDP&sock=startd_6034_668d>
+...
+006 (3314625.007.000) 01/11 11:36:39 Image size of job updated: 372272
+	119  -  MemoryUsage of job (MB)
+	121512  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 11:41:40 Image size of job updated: 1756684
+	290  -  MemoryUsage of job (MB)
+	296860  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 11:46:41 Image size of job updated: 1862188
+	402  -  MemoryUsage of job (MB)
+	410640  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 11:51:41 Image size of job updated: 1985580
+	509  -  MemoryUsage of job (MB)
+	521204  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 11:56:42 Image size of job updated: 2160260
+	623  -  MemoryUsage of job (MB)
+	637900  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 12:01:43 Image size of job updated: 8202432
+	6257  -  MemoryUsage of job (MB)
+	6406844  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 12:06:43 Image size of job updated: 12179532
+	6257  -  MemoryUsage of job (MB)
+	6406844  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 12:56:48 Image size of job updated: 12179532
+	8724  -  MemoryUsage of job (MB)
+	8933116  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 13:01:49 Image size of job updated: 14743448
+	9186  -  MemoryUsage of job (MB)
+	9406144  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 14:06:57 Image size of job updated: 14743448
+	11332  -  MemoryUsage of job (MB)
+	11603332  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 14:11:58 Image size of job updated: 19667296
+	11332  -  MemoryUsage of job (MB)
+	11603332  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 15:27:05 Image size of job updated: 19667296
+	11688  -  MemoryUsage of job (MB)
+	11968088  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 15:32:06 Image size of job updated: 19667296
+	11840  -  MemoryUsage of job (MB)
+	12123740  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 15:37:06 Image size of job updated: 20931908
+	14771  -  MemoryUsage of job (MB)
+	15124504  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 15:42:07 Image size of job updated: 20931908
+	14771  -  MemoryUsage of job (MB)
+	15124616  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 16:47:14 Image size of job updated: 23936296
+	17178  -  MemoryUsage of job (MB)
+	17589976  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 18:12:25 Image size of job updated: 28136028
+	17178  -  MemoryUsage of job (MB)
+	17589976  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 19:42:33 Image size of job updated: 30239956
+	18349  -  MemoryUsage of job (MB)
+	18789188  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 21:22:45 Image size of job updated: 30239956
+	19133  -  MemoryUsage of job (MB)
+	19591672  -  ResidentSetSize of job (KB)
+...
+006 (3314625.007.000) 01/11 21:27:46 Image size of job updated: 30239956
+	19197  -  MemoryUsage of job (MB)
+	19657212  -  ResidentSetSize of job (KB)
+...
+040 (3314625.007.000) 01/11 21:37:02 Started transferring output files
+...
+040 (3314625.007.000) 01/11 21:37:02 Finished transferring output files
+...
+009 (3314625.007.000) 01/11 21:37:02 Job was aborted.
+	Job removed by SYSTEM_PERIODIC_REMOVE due to wall time exceeded allowed max.
+...

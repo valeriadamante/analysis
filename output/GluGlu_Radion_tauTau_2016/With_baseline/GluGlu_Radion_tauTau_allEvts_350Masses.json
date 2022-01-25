@@ -1,0 +1,13 @@
+{
+    "M-350": {
+        "best_paths": [
+            " HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg == 1  ||  HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg == 1 "
+        ],
+        "best_eff": [
+            0.0641029228126248
+        ],
+        "best_eff_err": [
+            0.004486257502372128
+        ]
+    }
+}

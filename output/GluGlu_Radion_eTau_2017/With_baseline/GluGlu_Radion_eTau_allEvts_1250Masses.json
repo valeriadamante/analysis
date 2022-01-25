@@ -1,0 +1,13 @@
+{
+    "M-1250": {
+        "best_paths": [
+            " HLT_Ele32_WPTight_Gsf == 1  ||  HLT_Ele35_WPTight_Gsf == 1  ||  HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1 == 1  ||  HLT_Ele32_WPTight_Gsf_L1DoubleEG == 1 "
+        ],
+        "best_eff": [
+            0.6379310344827587
+        ],
+        "best_eff_err": [
+            0.060549734211797344
+        ]
+    }
+}

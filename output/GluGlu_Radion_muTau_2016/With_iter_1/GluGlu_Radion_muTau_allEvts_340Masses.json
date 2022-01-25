@@ -1,0 +1,40 @@
+{
+    "M-340": {
+        "best_paths": [
+            " HLT_IsoMu22 == 1  ||  HLT_IsoMu22_eta2p1 == 1  ||  HLT_IsoTkMu22 == 1  ||  HLT_IsoTkMu22_eta2p1 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20 == 1  ||  HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1 == 1  ||  HLT_Mu30_TkMu11 == 1  ||  HLT_IsoMu24 == 1 ",
+            "HLT_AK4CaloJet100",
+            "HLT_AK4CaloJet30",
+            "HLT_AK4CaloJet40",
+            "HLT_AK4CaloJet50",
+            "HLT_AK4CaloJet80",
+            "HLT_AK4PFJet100",
+            "HLT_AK4PFJet30",
+            "HLT_AK4PFJet50",
+            "HLT_AK4PFJet80"
+        ],
+        "best_eff": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+        ],
+        "best_eff_err": [
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573,
+            0.1643989873053573
+        ]
+    }
+}
