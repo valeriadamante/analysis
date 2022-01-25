@@ -807,71 +807,26 @@ ROOT.gInterpreter.Declare(
         return reordered_vs_jet;
       }
 
-      bool JetFilter(EvtInfo& evt_info, const vec_i& indices, const vec_f&  Tau_phi, const vec_f&  Muon_eta, const vec_f&  Muon_phi, const vec_f&  Electron_eta, const vec_f&  Electron_phi, const vec_f&  Tau_eta, const vec_f&  FatJet_pt, const vec_f&  FatJet_eta, const vec_f&  FatJet_phi, const vec_f& FatJet_msoftdrop, const vec_f&  Jet_eta, const vec_f&  Jet_phi, const vec_f&  Jet_pt, const vec_i&  Jet_jetId, const int& is2017){
+      bool JetFilter(EvtInfo& evt_info, const vec_i& indices, const LorentzVectorM& leg1_p4, const LorentzVectorM& leg2_p4, const vec_f&  FatJet_pt, const vec_f&  FatJet_eta, const vec_f&  FatJet_phi, const vec_f& FatJet_msoftdrop, const vec_f&  Jet_eta, const vec_f&  Jet_phi, const vec_f&  Jet_pt, const vec_i&  Jet_jetId, const int& is2017){
         int nFatJetsAdd=0;
         int nJetsAdd=0;
-        vec_i mu_indices ;
-        vec_i el_indices ;
-        vec_i tau_indices ;
-        if(evt_info.channel == Channel::tauTau){
-            tau_indices = indices;
-        }
-        else{
-            tau_indices.push_back(indices[1]);
-            if(evt_info.channel == Channel::muTau){
-                mu_indices.push_back(indices[0]);
-            }
-            if(evt_info.channel == Channel::eTau){
-                el_indices.push_back(indices[0]);
-            }
-        }
+
         for (size_t jet_idx =0 ; jet_idx < Jet_pt.size(); jet_idx++){
             if(Jet_pt.at(jet_idx)>20 && std::abs(Jet_eta.at(jet_idx)) < 2.5 && ( (Jet_jetId.at(jet_idx))&(1<<1) || is2017 == 1) ) {
-                if (evt_info.channel == Channel::tauTau){
-                    for(auto & tau_idx : tau_indices ){
-                        float current_dR = DeltaR(Tau_phi[tau_idx], Tau_eta[tau_idx],Jet_phi[jet_idx], Jet_eta[jet_idx]);
-                        if(current_dR > 0.5 ){
-                            nJetsAdd +=1;
-                          }
-
-                          //std::cout <<"current dr with jet " << jet_idx << " = " << current_dR << std::endl;
-                         //std::cout<<"nJetsAdd == " <<nJetsAdd<<std::endl;
-                    }
-                }
-                else if(evt_info.channel == Channel::muTau){
-                    for(auto & tau_idx : tau_indices ){
-                        float current_dR_tauJet = DeltaR(Tau_phi[tau_idx], Tau_eta[tau_idx],Jet_phi[jet_idx], Jet_eta[jet_idx]);
-                        for(auto & mu_idx : mu_indices){
-                            float current_dR_muJet = DeltaR(Muon_phi[tau_idx], Muon_eta[tau_idx],Jet_phi[jet_idx], Jet_eta[jet_idx]);
-                            if(current_dR_tauJet > 0.5 && current_dR_muJet>0.5){
-                                nJetsAdd +=1;
-                            }
-                        }
-                    }
-                }
-                else if(evt_info.channel == Channel::eTau){
-                    for(auto & tau_idx : tau_indices ){
-                        float current_dR_tauJet = DeltaR(Tau_phi[tau_idx], Tau_eta[tau_idx],Jet_phi[jet_idx], Jet_eta[jet_idx]);
-                        for(auto & el_idx : el_indices){
-                            float current_dR_elJet = DeltaR(Electron_phi[tau_idx], Electron_eta[tau_idx],Jet_phi[jet_idx], Jet_eta[jet_idx]);
-                            if(current_dR_tauJet > 0.5 && current_dR_elJet>0.5){
-                                nJetsAdd +=1;
-                            }
-                        }
-                    }
-                }
+                float dr1 = DeltaR(leg1_p4.phi(), leg1_p4.eta(),Jet_phi[jet_idx], Jet_eta[jet_idx]);
+                float dr2 = DeltaR(leg2_p4.phi(), leg2_p4.eta(),Jet_phi[jet_idx], Jet_eta[jet_idx]);
+                if(dr1 > 0.5 && dr2 >0.5 ){
+                    nJetsAdd +=1;
+                  }
             }
         }
         for (size_t fatjet_idx =0 ; fatjet_idx < FatJet_pt.size(); fatjet_idx++){
             if(FatJet_msoftdrop.at(fatjet_idx)>30 && std::abs(FatJet_eta.at(fatjet_idx)) < 2.5) {
-                for(auto & tau_idx : tau_indices ){
-                    float current_dR = DeltaR(Tau_phi[tau_idx], Tau_eta[tau_idx],FatJet_phi[fatjet_idx], FatJet_eta[fatjet_idx]);
-                    if(current_dR > 0.5 ){
-                        nFatJetsAdd +=1;
-                      }
-                      //std::cout <<"current dr with fat jet " << fatjet_idx << " = " << current_dR << std::endl;
-                     //std::cout<<"nFatJets == " <<nFatJetsAdd<<std::endl;
-                }
+                float dr1 = DeltaR(leg1_p4.phi(), leg1_p4.eta(),FatJet_phi[fatjet_idx], FatJet_eta[fatjet_idx]);
+                float dr2 = DeltaR(leg2_p4.phi(), leg2_p4.eta(),FatJet_phi[fatjet_idx], FatJet_eta[fatjet_idx]);
+                if(dr1 > 0.5 && dr2 >0.5 ){
+                    nFatJetsAdd +=1;
+                  }
             }
         }
         //std::cout << nFatJetsAdd << "\t" <<nJetsAdd << std::endl;
@@ -1233,14 +1188,15 @@ for mass in all_masses:
         df_channel = df_channel.Define('reorderedVsJet', 'ReorderVSJet(evt_info, reco_tau_indices, Tau_rawDeepTau2017v2p1VSjet)')
         is2017 = 0 if args.year!=2017 else 1
         channelLegs = {
-            'eTau': [ 'Ele', 'Tau' ],
+            'eTau': [ 'Electron', 'Tau' ],
             'muTau': [ 'Muon', 'Tau' ],
             'tauTau': [ 'Tau', 'Tau' ],
         }
 
         for n in range(2):
-            df = df.Define('leg{}_p4'.format(n+1), 'LorentzVectorM({0}_pt[reco_tau_indices[{1}]], {0}_eta[reco_tau_indices[{1}]],{0}_phi[reco_tau_indices[{1}]], {0}_mass[reco_tau_indices[{1}]]'.format(channelLegs[args.channel][n],n))
-        df_channel = df_channel.Filter((' JetFilter( evt_info,reco_tau_indices,  Tau_phi,  Tau_eta,  Muon_phi,  Muon_eta,  Electron_phi,  Electron_eta, FatJet_pt,  FatJet_eta,  FatJet_phi, FatJet_msoftdrop,  Jet_eta,  Jet_phi, Jet_pt,  Jet_jetId, {})').format(is2017))
+            df_channel = df_channel.Define('leg{}_p4'.format(n+1), 'LorentzVectorM({0}_pt[reco_tau_indices[{1}]], {0}_eta[reco_tau_indices[{1}]],{0}_phi[reco_tau_indices[{1}]], {0}_mass[reco_tau_indices[{1}]])'.format(channelLegs[args.channel][n],n))
+
+        df_channel = df_channel.Filter((' JetFilter( evt_info,reco_tau_indices,  leg1_p4, leg2_p4, FatJet_pt,  FatJet_eta,  FatJet_phi, FatJet_msoftdrop,  Jet_eta,  Jet_phi, Jet_pt,  Jet_jetId, {})').format(is2017))
         #print(("after jet cut there are {} events").format(df_channel.Count().GetValue()))
         df_channel = df_channel.Filter(' MuonVeto(evt_info,reco_tau_indices, Muon_pt, Muon_dz, Muon_dxy, Muon_eta, Muon_tightId, Muon_mediumId ,  Muon_pfRelIso04_all)')
         #print(("after mu veto cut there are {} events").format(df_channel.Count().GetValue()))
