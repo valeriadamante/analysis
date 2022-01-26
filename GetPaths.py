@@ -236,7 +236,7 @@ if(diff_type =='fp'): # end of the current iter and point by point with the iter
             number = all_data_iter_diff[massValue]["best_eff"][iterdiff_idx]-all_data[massValue]["best_eff"][final_idx]
             number_str = str(number).replace('.',',')
             if(iterdiff_idx == final_idx_iterdiff ):
-                print(("{} \t {} \t {}").format(str(all_data[massValue]["best_eff"][final_idx]).replace('.',','), str(all_data[massValue]["best_eff_err"][final_idx]).replace('.',','),  number_str))
+                print(("{} \t {}").format(str(all_data[massValue]["best_eff"][final_idx]).replace('.',','),  number_str))
             else:
                 print(("\t \t {}").format( number_str ))
         print()
@@ -253,7 +253,7 @@ elif( diff_type=='pf' ):
             number_str = str(number).replace('.',',')
             final_idx =  ( len(all_data[massValue]["best_paths"]) -2) if (str(args.year)=='2018' and args.iter=='iter_1' and args.channel=='tauTau') else  ( len(all_data[massValue]["best_paths"]) -1)
             if(iter_idx == final_idx ):
-                print(("{} \t {} \t {}").format(str(all_data[massValue]["best_eff"][final_idx]).replace('.',','), str(all_data[massValue]["best_eff_err"][final_idx]).replace('.',','),  number_str))
+                print(("{}  \t {}").format(str(all_data[massValue]["best_eff"][final_idx]).replace('.',','), number_str))
             else:
                 print(("\t \t {}").format( number_str ))
         print()
@@ -270,7 +270,7 @@ elif( diff_type=='ff' ):
         #    print()
         number = all_data_iter_diff[massValue]["best_eff"][final_idx_iterdiff]-all_data[massValue]["best_eff"][final_idx]
         number_str = str(number).replace('.',',')
-        print(("{} \t {} \t {}").format(str(all_data[massValue]["best_eff"][final_idx]).replace('.',','), str(all_data[massValue]["best_eff_err"][final_idx]).replace('.',','),  number_str))
+        print(("{} \t {}").format(str(all_data[massValue]["best_eff"][final_idx]).replace('.',','), number_str))
 
         print()
 else:
@@ -280,7 +280,7 @@ else:
         print(("{}").format(massValue))
         #if(args.iter=='iter_2Ext'):
         #    print("\n\n\n\n\n\n\n")
-        for path,eff,err in zip(all_data[massValue]["best_paths"], all_data[massValue]["best_eff"], all_data[massValue]["best_eff_err"]):
+        for path,eff in zip(all_data[massValue]["best_paths"], all_data[massValue]["best_eff"]):
             k=all_data[massValue]["best_paths"].index(path)
             if(str(args.year)=='2018' and (args.iter=='iter_1' or args.iter_diff=='iter_1') and args.channel=='tauTau'):
                 if(k==10): break
@@ -290,19 +290,19 @@ else:
             difference_pp = eff-all_data_iter_diff[massValue]["best_eff"][k]
             difference_pp_str = str(difference_pp).replace('.',',')
             #if(prev_eff>0):
-                #print(("\t {} \t {} \t {} \t {}").format(str(path), str(eff).replace('.',','), str(err).replace('.',','), str(eff-prev_eff).replace('.',',')))
+                #print(("\t {} \t {} \t {}").format(str(path), str(eff).replace('.',','),  str(eff-prev_eff).replace('.',',')))
             #else:
             if(diff_type=='no'):
                 if(len(all_data[massValue]["best_paths"])<5 or final_idx_iterdiff < 5):
                     print("\n\n\n\n\n\n\n")
                 path2 = path
                 path = 'baseline' if " == 1" in path2 else path2
-                print(("\t {} \t {} \t {} ").format(str(path), str(eff).replace('.',','), str(err).replace('.',',')))
+                print(("\t {} \t {} \t {} ").format(str(path), str(eff).replace('.',',')))
             else:
                 #if(len(all_data[massValue]["best_paths"])<5 and final_idx_iterdiff < 5):
                 #    print("\n\n\n\n\n\n\n")
                 if(k==0):
-                    print(("\t baseline \t {} \t {} \t {} \t {}").format(str(eff).replace('.',','), str(err).replace('.',','), difference_pp_str, difference_pf_str))
+                    print(("\t baseline \t {} \t {} \t {}").format(str(eff).replace('.',',') difference_pp_str, difference_pf_str))
                 else:
-                    print(("\t {} \t {} \t {} \t {} \t {}").format(str(path), str(eff).replace('.',','), str(err).replace('.',','),  difference_pp_str, difference_pf_str))
+                    print(("\t {} \t {} \t {} \t {}").format(str(path), str(eff).replace('.',',')  difference_pp_str, difference_pf_str))
         print()

@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--channel', required=False, type=str, default="tauTau", choices=["eTau","muTau", "tauTau", "eE", "muMu", "eMu"])
 parser.add_argument('--year', required=False, type=int, default=2018, choices=[2016, 2017, 2018])
 parser.add_argument('--nTriggers', required=False, type=int, default=-1)
-parser.add_argument('--iter', required=False, type=str, default='iter_0', choices=['iter_0', 'best_paths.eseline', 'iter_1','iter_2','iter_2Ext', 'allOR', 'Louis','baseline','recomLouis'])
+parser.add_argument('--iter', required=False, type=str, default='iter_0', choices=['iter_0', 'iter_0Beseline', 'iter_1','iter_2','iter_2Ext', 'allOR', 'Louis','baseline','recomLouis'])
 parser.add_argument('--nEvts', required=False, type=int, default=-1)
 parser.add_argument('--mass_points', required=False, type=str, default='0')
 parser.add_argument('--best_path_baseline', required=False, type=str, default='') #insert path separated by comma
@@ -557,7 +557,7 @@ ROOT.gInterpreter.Declare(
         // 2. muons
         vec_s Muon_indices;
         for(size_t i=0; i< Muon_pt.size(); i++ ){
-            //std::cout << Muon_pt[i] << Muon_tightId[i] <<Muon_eta[i] <<Muon_dz[i] <<Muon_dxy[i] << std::endl;
+            //std::cout << Muon_pt[i] <<"\t"<< Muon_tightId[i] <<"\t"<< Muon_eta[i] <<"\t"<< Muon_dz[i] <<"\t"<< Muon_dxy[i]<<"\t"<< isolation_variable_muon[i] << std::endl;
             if(Muon_tightId[i]==1 && Muon_pt[i] > 20 && std::abs(Muon_eta[i])<2.3 && std::abs(Muon_dz[i])<0.2 &&  std::abs(Muon_dxy[i])<0.045  && isolation_variable_muon[i]<0.15){
                 Muon_indices.push_back(i);
             }
@@ -631,7 +631,8 @@ ROOT.gInterpreter.Declare(
                  size_t cand2 = tau_indices.at(j);
                  float current_dR = DeltaR(Muon_phi[cand1], Muon_eta[cand1],Tau_phi[cand2], Tau_eta[cand2]);
                  //std::cout<<"current_dR = " << current_dR << std::endl;
-                 if(i!=j && current_dR > 0.5){
+                 if(current_dR > 0.5){
+                     //std::cout<<"current_dR = " << current_dR << std::endl;
                      pairs.push_back(std::make_pair(cand1, cand2));
                  }
              }
@@ -715,7 +716,7 @@ ROOT.gInterpreter.Declare(
                    size_t cand2 = tau_indices.at(j);
                    float current_dR = DeltaR(Electron_phi[cand1], Electron_eta[cand1],Tau_phi[cand2], Tau_eta[cand2]);
                   // std::cout<<"current_dR between electron " << i << " and tau " << j << " is " << current_dR << std::endl;
-                   if(i!=j && current_dR > 0.5){
+                   if(current_dR > 0.5){
                        pairs.push_back(std::make_pair(cand1, cand2));
                    }
                }
@@ -788,7 +789,7 @@ ROOT.gInterpreter.Declare(
                   }
               }
            } // closes if channel == eTau
-
+         //std::cout << "final indices size == " << final_indices.size() << std::endl;
         return final_indices;
 
   }
@@ -890,7 +891,7 @@ total_lumi['2016'] = 36.47
 
 #paths
 absolute_path={}
-absolute_path['local'] = "/Users/valeriadamante/Desktop/Dottorato/"
+absolute_path['local'] = "/Users/valeriadamante/Desktop/Dottorato/public/"
 absolute_path['lxplus'] = "/afs/cern.ch/work/v/vdamante/public/"
 absolute_path['gridui']= "/home/users/damante/"
 
@@ -1036,7 +1037,7 @@ def load_file(mass):
           files.append(("root://xrootd-cms.infn.it//{}").format(k))
       #print(files)
   else:
-      files = absolute_path[args.machine]+("/rootfiles/signalRadionTest{}.root").format(mass)
+      files = absolute_path[args.machine]+("SignalRadionTest{}.root").format(mass)
   #files = ('{}/rootfiles/radionSignalTest.root').format(absolute_path[args.machine])
   if(args.verbose>VerbosityLevel.low):
       print(files)
@@ -1172,6 +1173,7 @@ for mass in all_masses:
     df = df.Filter('PassAcceptance(evt_info)')
     print(("filtering for channel {}").format(args.channel))
     df_channel = df.Filter(('evt_info.channel == Channel::{}').format(args.channel))
+
     print(("filtered for channel {}").format(args.channel))
     #print(("after channel cut there are {} events").format(df_channel.Count().GetValue()))
 
@@ -1184,23 +1186,32 @@ for mass in all_masses:
         #df_channel = df_initial.Filter("nGenVisTau >= 2")
         #df_channel = df_initial#.Filter("nGenVisTau >= 2")
         df_channel = df_channel.Define('reco_tau_indices', 'RecoTauSelectedIndices( event, evt_info, Tau_dz, Tau_eta, Tau_phi, Tau_pt, Tau_idDeepTau2017v2p1VSjet,  Tau_idDeepTau2017v2p1VSmu, Tau_idDeepTau2017v2p1VSe, Tau_decayMode, Tau_charge, Tau_rawDeepTau2017v2p1VSjet, Muon_dz,  Muon_dxy, Muon_eta, Muon_phi, Muon_pt, Muon_tightId, Muon_charge, Muon_pfRelIso04_all, Electron_dz, Electron_dxy, Electron_eta, Electron_phi, Electron_pt, Electron_mvaFall17V2Iso_WP80, Electron_charge, Electron_pfRelIso03_all)').Filter('reco_tau_indices.size()==2')
+        #print(df_channel.Count().GetValue())
+
         #print(("after 2 reco tau indices cut there are {} events").format(df_channel.Count().GetValue()))
         df_channel = df_channel.Define('reorderedVsJet', 'ReorderVSJet(evt_info, reco_tau_indices, Tau_rawDeepTau2017v2p1VSjet)')
+        #print(df_channel.Count().GetValue())
+
         is2017 = 0 if args.year!=2017 else 1
         channelLegs = {
             'eTau': [ 'Electron', 'Tau' ],
             'muTau': [ 'Muon', 'Tau' ],
             'tauTau': [ 'Tau', 'Tau' ],
         }
+        #print(df_channel.Count().GetValue())
+
 
         for n in range(2):
             df_channel = df_channel.Define('leg{}_p4'.format(n+1), 'LorentzVectorM({0}_pt[reco_tau_indices[{1}]], {0}_eta[reco_tau_indices[{1}]],{0}_phi[reco_tau_indices[{1}]], {0}_mass[reco_tau_indices[{1}]])'.format(channelLegs[args.channel][n],n))
 
         df_channel = df_channel.Filter((' JetFilter( evt_info,reco_tau_indices,  leg1_p4, leg2_p4, FatJet_pt,  FatJet_eta,  FatJet_phi, FatJet_msoftdrop,  Jet_eta,  Jet_phi, Jet_pt,  Jet_jetId, {})').format(is2017))
+        #print(df_channel.Count().GetValue())
         #print(("after jet cut there are {} events").format(df_channel.Count().GetValue()))
         df_channel = df_channel.Filter(' MuonVeto(evt_info,reco_tau_indices, Muon_pt, Muon_dz, Muon_dxy, Muon_eta, Muon_tightId, Muon_mediumId ,  Muon_pfRelIso04_all)')
+        #print(df_channel.Count().GetValue())
         #print(("after mu veto cut there are {} events").format(df_channel.Count().GetValue()))
         df_channel = df_channel.Filter(' ElectronVeto(evt_info,reco_tau_indices, Electron_pt, Electron_dz, Electron_dxy, Electron_eta, Electron_mvaFall17V2Iso_WP90, Electron_mvaFall17V2noIso_WP90 ,  Electron_pfRelIso03_all) ')
+        #print(df_channel.Count().GetValue())
         #print(("after ele veto cut there are {} events").format(df_channel.Count().GetValue()))        #df_channel.Display({'reco_tau_indices', 'event', 'reorderedVsJet'}).Print()
         #df_channel.Display({'event'}).Print()
     else:
