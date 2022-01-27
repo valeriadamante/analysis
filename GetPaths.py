@@ -31,7 +31,8 @@ masses = {
             "2016":[250, 260, 270, 280, 300, 320, 340, 350, 400, 450, 500, 550, 600,  800, 900],
             "2017":[250, 260, 270, 300, 320, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 1000, 1250, 1500, 1750, 2000, 2500, 3000],
             #"2017":[250, 260, 270, 280, 300, 320, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 1000, 1250, 1500, 1750, 2000, 2500, 3000],
-            "2018":[250, 260, 270, 280, 300, 320, 340, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 1000, 1250, 1500, 1750, 2000, 2500, 3000],
+            "2018":[250, 260, 270, 280, 300, 340, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 1000, 1250, 1500, 1750, 2000, 2500, 3000],
+            #"2018":[250, 260, 270, 280, 300, 320, 340, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 1000, 1250, 1500, 1750, 2000, 2500, 3000],
 
         },
         "BulkGraviton":{
@@ -238,7 +239,7 @@ if(diff_type =='fp'): # end of the current iter and point by point with the iter
             if(iterdiff_idx == final_idx_iterdiff ):
                 print(("{} \t {}").format(str(all_data[massValue]["best_eff"][final_idx]).replace('.',','),  number_str))
             else:
-                print(("\t \t {}").format( number_str ))
+                print(("\t {}").format( number_str ))
         print()
 elif( diff_type=='pf' ):
     for massValue in all_data:
@@ -255,7 +256,7 @@ elif( diff_type=='pf' ):
             if(iter_idx == final_idx ):
                 print(("{}  \t {}").format(str(all_data[massValue]["best_eff"][final_idx]).replace('.',','), number_str))
             else:
-                print(("\t \t {}").format( number_str ))
+                print(("\t {}").format( number_str ))
         print()
 elif( diff_type=='ff' ):
     for massValue in all_data:
@@ -297,12 +298,12 @@ else:
                     print("\n\n\n\n\n\n\n")
                 path2 = path
                 path = 'baseline' if " == 1" in path2 else path2
-                print(("\t {} \t {} \t {} ").format(str(path), str(eff).replace('.',',')))
+                print(("\t {} \t {} ").format(str(path), str(eff).replace('.',',')))
             else:
                 #if(len(all_data[massValue]["best_paths"])<5 and final_idx_iterdiff < 5):
                 #    print("\n\n\n\n\n\n\n")
                 if(k==0):
-                    print(("\t baseline \t {} \t {} \t {}").format(str(eff).replace('.',',') difference_pp_str, difference_pf_str))
+                    print(("\t baseline \t {} \t {} \t {}").format(str(eff).replace('.',',') , difference_pp_str, difference_pf_str))
                 else:
-                    print(("\t {} \t {} \t {} \t {}").format(str(path), str(eff).replace('.',',')  difference_pp_str, difference_pf_str))
+                    print(("\t {} \t {} \t {} \t {}").format(str(path), str(eff).replace('.',',')  ,difference_pp_str, difference_pf_str))
         print()

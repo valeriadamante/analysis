@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--channel', required=False, type=str, default="tauTau", choices=["eTau","muTau", "tauTau", "eE", "muMu", "eMu"])
 parser.add_argument('--year', required=False, type=int, default=2018, choices=[2016, 2017, 2018])
 parser.add_argument('--nTriggers', required=False, type=int, default=-1)
-parser.add_argument('--iter', required=False, type=str, default='iter_0', choices=['iter_0', 'iter_0Beseline', 'iter_1','iter_2','iter_2Ext', 'allOR', 'Louis','baseline','recomLouis'])
+parser.add_argument('--iter', required=False, type=str, default='iter_0', choices=['iter_0', 'iter_0Baseline', 'iter_1','iter_2','iter_2Ext', 'allOR', 'Louis','baseline','recomLouis'])
 parser.add_argument('--nEvts', required=False, type=int, default=-1)
 parser.add_argument('--mass_points', required=False, type=str, default='0')
 parser.add_argument('--best_path_baseline', required=False, type=str, default='') #insert path separated by comma
@@ -532,7 +532,7 @@ ROOT.gInterpreter.Declare(
     }
 
 
-    vec_s RecoTauSelectedIndices(int event, EvtInfo& evt_info, const vec_f& Tau_dz, const vec_f& Tau_eta, const vec_f& Tau_phi, const vec_f& Tau_pt, const vec_uc& Tau_idDeepTau2017v2p1VSjet, const vec_uc&  Tau_idDeepTau2017v2p1VSmu, const vec_uc& Tau_idDeepTau2017v2p1VSe, const vec_i& Tau_decayMode, const vec_i& Tau_charge, const vec_f& isolation_variable_tau,const vec_f& Muon_dz,  const vec_f& Muon_dxy, const vec_f& Muon_eta, const vec_f& Muon_phi, const vec_f& Muon_pt, const vec_uc& Muon_tightId, const vec_i& Muon_charge, const vec_f& isolation_variable_muon, const vec_f& Electron_dz, const vec_f& Electron_dxy, const vec_f& Electron_eta, const vec_f& Electron_phi, const vec_f& Electron_pt, const vec_uc& Electron_mvaFall17V2Iso_WP90, const vec_i& Electron_charge, const vec_f& isolation_variable_electron){
+    vec_s RecoTauSelectedIndices(int event, EvtInfo& evt_info, const vec_f& Tau_dz, const vec_f& Tau_eta, const vec_f& Tau_phi, const vec_f& Tau_pt, const vec_uc& Tau_idDeepTau2017v2p1VSjet, const vec_uc&  Tau_idDeepTau2017v2p1VSmu, const vec_uc& Tau_idDeepTau2017v2p1VSe, const vec_i& Tau_decayMode, const vec_i& Tau_charge, const vec_f& isolation_variable_tau,const vec_f& Muon_dz,  const vec_f& Muon_dxy, const vec_f& Muon_eta, const vec_f& Muon_phi, const vec_f& Muon_pt, const vec_uc& Muon_tightId, const vec_uc& Muon_highPtId, const vec_i& Muon_charge, const vec_f& isolation_variable_muon, const vec_f& Electron_dz, const vec_f& Electron_dxy, const vec_f& Electron_eta, const vec_f& Electron_phi, const vec_f& Electron_pt, const vec_uc& Electron_mvaFall17V2Iso_WP90, const vec_i& Electron_charge, const vec_f& isolation_variable_electron){
         vec_s final_indices ;
         std::vector<std::pair<size_t, size_t>> pairs;
 
@@ -558,7 +558,7 @@ ROOT.gInterpreter.Declare(
         vec_s Muon_indices;
         for(size_t i=0; i< Muon_pt.size(); i++ ){
             //std::cout << Muon_pt[i] <<"\t"<< Muon_tightId[i] <<"\t"<< Muon_eta[i] <<"\t"<< Muon_dz[i] <<"\t"<< Muon_dxy[i]<<"\t"<< isolation_variable_muon[i] << std::endl;
-            if(Muon_tightId[i]==1 && Muon_pt[i] > 20 && std::abs(Muon_eta[i])<2.3 && std::abs(Muon_dz[i])<0.2 &&  std::abs(Muon_dxy[i])<0.045  && isolation_variable_muon[i]<0.15){
+            if(Muon_pt[i] > 20 && std::abs(Muon_eta[i])<2.3 && std::abs(Muon_dz[i])<0.2 &&  std::abs(Muon_dxy[i])<0.045  && ( ( Muon_tightId[i]==1  && isolation_variable_muon[i]<0.15) || (Muon_highPtId[i]==1 && isolation_variable_muon[i]<0.1) ) ){
                 Muon_indices.push_back(i);
             }
         }
@@ -1185,7 +1185,7 @@ for mass in all_masses:
         # this was for debugging
         #df_channel = df_initial.Filter("nGenVisTau >= 2")
         #df_channel = df_initial#.Filter("nGenVisTau >= 2")
-        df_channel = df_channel.Define('reco_tau_indices', 'RecoTauSelectedIndices( event, evt_info, Tau_dz, Tau_eta, Tau_phi, Tau_pt, Tau_idDeepTau2017v2p1VSjet,  Tau_idDeepTau2017v2p1VSmu, Tau_idDeepTau2017v2p1VSe, Tau_decayMode, Tau_charge, Tau_rawDeepTau2017v2p1VSjet, Muon_dz,  Muon_dxy, Muon_eta, Muon_phi, Muon_pt, Muon_tightId, Muon_charge, Muon_pfRelIso04_all, Electron_dz, Electron_dxy, Electron_eta, Electron_phi, Electron_pt, Electron_mvaFall17V2Iso_WP80, Electron_charge, Electron_pfRelIso03_all)').Filter('reco_tau_indices.size()==2')
+        df_channel = df_channel.Define('reco_tau_indices', 'RecoTauSelectedIndices( event, evt_info, Tau_dz, Tau_eta, Tau_phi, Tau_pt, Tau_idDeepTau2017v2p1VSjet,  Tau_idDeepTau2017v2p1VSmu, Tau_idDeepTau2017v2p1VSe, Tau_decayMode, Tau_charge, Tau_rawDeepTau2017v2p1VSjet, Muon_dz,  Muon_dxy, Muon_eta, Muon_phi, Muon_pt, Muon_tightId, Muon_highPtId, Muon_charge, Muon_pfRelIso04_all, Electron_dz, Electron_dxy, Electron_eta, Electron_phi, Electron_pt, Electron_mvaFall17V2Iso_WP80, Electron_charge, Electron_pfRelIso03_all)').Filter('reco_tau_indices.size()==2')
         #print(df_channel.Count().GetValue())
 
         #print(("after 2 reco tau indices cut there are {} events").format(df_channel.Count().GetValue()))
@@ -1247,7 +1247,7 @@ for mass in all_masses:
     #print(('before any filling, baseline path are {} \n').format(baseline_paths_dict[str(args.year)][args.channel][args.iter]))
 
     #baseline_paths_dict['2018']['tauTau']['baseline'] = [ 'HLT_DoubleTightChargedIsoPFTauHPS35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTauHPS40_Trk1_eta2p1_Reg' , 'HLT_DoubleMediumChargedIsoPFTauHPS40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg' ] # 'HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg_v', 'HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg_v', 'HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg_v' , 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg_v'
-    baseline_paths_dict['2018']['tauTau']['baseline'] = [ 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg' ]
+    baseline_paths_dict['2018']['tauTau']['baseline'] = [ 'HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg' ] #confirmed
 
     baseline_paths_dict['2018']['tauTau']['iter_0Baseline'].extend(baseline_paths_dict['2018']['tauTau']['baseline'])
     baseline_paths_dict['2018']['tauTau']['iter_1'].extend(baseline_paths_dict['2018']['tauTau']['baseline'])
@@ -1271,10 +1271,10 @@ for mass in all_masses:
     baseline_paths_dict['2018']['tauTau']['recomLouis'].extend(baseline_paths_dict['2018']['tauTau']['baseline'])
     baseline_paths_dict['2018']['tauTau']['recomLouis'].extend(baseline_paths_dict['2018']['tauTau']['Louis'])
 
-    baseline_paths_dict['2018']['muTau']['baseline'] = [ 'HLT_IsoMu24', 'HLT_IsoMu27',  'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1'] # there is also 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1',
+    baseline_paths_dict['2018']['muTau']['baseline'] = [ 'HLT_IsoMu24', 'HLT_Mu50',  'HLT_TkMu100', 'HLT_OldMu100'] # confirmed
     baseline_paths_dict['2018']['muTau']['iter_0Baseline'].extend(baseline_paths_dict['2018']['muTau']['baseline'])
     baseline_paths_dict['2018']['muTau']['iter_1'].extend(baseline_paths_dict['2018']['muTau']['baseline'])
-    baseline_paths_dict['2018']['muTau']['iter_1'].extend(['HLT_Mu50','HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight','HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1'])
+    baseline_paths_dict['2018']['muTau']['iter_1'].extend(['HLT_IsoMu20_eta2p1_LooseChargedIsoPFTauHPS27_eta2p1_CrossL1','HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight','HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1'])
     baseline_paths_dict['2018']['muTau']['iter_2'].extend(baseline_paths_dict['2018']['muTau']['iter_1'])
     baseline_paths_dict['2018']['muTau']['iter_2'].extend(['HLT_DoubleL2Mu23NoVtx_2Cha','HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8','HLT_Mu17_Photon30_IsoCaloId'])
     baseline_paths_dict['2018']['muTau']['iter_2Ext'].extend(baseline_paths_dict['2018']['muTau']['iter_2'])
@@ -1282,17 +1282,18 @@ for mass in all_masses:
 
 
 
-    baseline_paths_dict['2018']['eTau']['baseline'] = [ 'HLT_Ele32_WPTight_Gsf', 'HLT_Ele35_WPTight_Gsf', 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTauHPS30_eta2p1_CrossL1'] #  there is also  'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1',
+    baseline_paths_dict['2018']['eTau']['baseline'] = [ 'HLT_Ele32_WPTight_Gsf', 'HLT_Ele35_WPTight_Gsf', 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTauHPS30_eta2p1_CrossL1'] #  confirmed
     baseline_paths_dict['2018']['eTau']['iter_0Baseline'].extend(baseline_paths_dict['2018']['eTau']['baseline'])
     baseline_paths_dict['2018']['eTau']['iter_1'].extend(baseline_paths_dict['2018']['eTau']['baseline'])
-    baseline_paths_dict['2018']['eTau']['iter_1'].extend(['HLT_Ele28_eta2p1_WPTight_Gsf_HT150','HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165']) # correct
+    baseline_paths_dict['2018']['eTau']['iter_1'].extend(['HLT_Ele28_eta2p1_WPTight_Gsf_HT150','HLT_Ele32_WPTight_Gsf_L1DoubleEG']) # confirmed
     baseline_paths_dict['2018']['eTau']['iter_2'].extend(baseline_paths_dict['2018']['eTau']['iter_1'])
-    baseline_paths_dict['2018']['eTau']['iter_2'].extend(['HLT_Photon35_TwoProngs35','HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight','HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1'])
+    baseline_paths_dict['2018']['eTau']['iter_2'].extend(['HLT_PFMET120_PFMHT120_IDTight','HLT_Diphoton30_18_R9IdL_AND_HE_AND_IsoCaloId_NoPixelVeto','HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1', 'HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165']) # confirmed
     baseline_paths_dict['2018']['eTau']['iter_2Ext'].extend(baseline_paths_dict['2018']['eTau']['iter_2'])
-    baseline_paths_dict['2018']['eTau']['iter_2Ext'].extend(['HLT_Diphoton30_18_R9IdL_AND_HE_AND_IsoCaloId_NoPixelVeto','HLT_Mu17_Photon30_IsoCaloId','HLT_Ele115_CaloIdVT_GsfTrkIdT'])
+    baseline_paths_dict['2018']['eTau']['iter_2Ext'].extend(['HLT_DoubleMediumChargedIsoPFTauHPS35_Trk1_eta2p1_Reg','HLT_PFHT330PT30_QuadPFJet_75_60_45_40_TriplePFBTagDeepCSV_4p5']) # confirmed
 
 
-    baseline_paths_dict['2017']['tauTau']['baseline'] = ['HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg']
+
+    baseline_paths_dict['2017']['tauTau']['baseline'] = ['HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg', 'HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg'] # confirmed
     baseline_paths_dict['2017']['tauTau']['iter_0Baseline'].extend(baseline_paths_dict['2017']['tauTau']['baseline'])
     baseline_paths_dict['2017']['tauTau']['Louis'].extend(['HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1', # y # no in 2016
         'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1_1pr', # y # no in 2016
@@ -1306,53 +1307,54 @@ for mass in all_masses:
     baseline_paths_dict['2017']['tauTau']['recomLouis'].extend(baseline_paths_dict['2017']['tauTau']['baseline'])
     baseline_paths_dict['2017']['tauTau']['recomLouis'].extend(baseline_paths_dict['2017']['tauTau']['Louis'])
     baseline_paths_dict['2017']['tauTau']['iter_1'].extend(baseline_paths_dict['2017']['tauTau']['baseline'])
-    baseline_paths_dict['2017']['tauTau']['iter_1'].extend(['HLT_PFHT300PT30_QuadPFJet_75_60_45_40_TriplePFBTagCSV_3p0','HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET90','HLT_PFMETTypeOne120_PFMHT120_IDTight', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1'])
+    baseline_paths_dict['2017']['tauTau']['iter_1'].extend(['HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET90', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1']) # confirmed
     baseline_paths_dict['2017']['tauTau']['iter_2'].extend(baseline_paths_dict['2017']['tauTau']['iter_1'])
-    baseline_paths_dict['2017']['tauTau']['iter_2'].extend(['HLT_DoubleMediumChargedIsoPFTau35_Trk1_eta2p1_Reg','HLT_DoublePFJets100MaxDeta1p6_DoubleCaloBTagCSV_p33'])
+    baseline_paths_dict['2017']['tauTau']['iter_2'].extend(['HLT_PFMETTypeOne120_PFMHT120_IDTight','HLT_PFHT300PT30_QuadPFJet_75_60_45_40_TriplePFBTagCSV_3p0','HLT_DoubleMediumChargedIsoPFTau35_Trk1_eta2p1_Reg','HLT_DoublePFJets100MaxDeta1p6_DoubleCaloBTagCSV_p33'])
     baseline_paths_dict['2017']['tauTau']['iter_2Ext'].extend(baseline_paths_dict['2017']['tauTau']['iter_2'])
     baseline_paths_dict['2017']['tauTau']['iter_2Ext'].extend(['HLT_PFHT380_SixPFJet32_DoublePFBTagCSV_2p2','HLT_AK8PFJet360_TrimMass30'])
 
-    baseline_paths_dict['2017']['muTau']['baseline'] = ['HLT_IsoMu24', 'HLT_IsoMu27', 'HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1']
+    baseline_paths_dict['2017']['muTau']['baseline'] = ['HLT_Mu50','HLT_TkMu100', 'HLT_OldMu100','HLT_IsoMu27'] # confirmed
     baseline_paths_dict['2017']['muTau']['iter_0Baseline'].extend(baseline_paths_dict['2017']['muTau']['baseline'])
     baseline_paths_dict['2017']['muTau']['iter_1'].extend(baseline_paths_dict['2017']['muTau']['baseline'])
-    baseline_paths_dict['2017']['muTau']['iter_1'].extend(['HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8','HLT_Mu50','HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1'])
+    baseline_paths_dict['2017']['muTau']['iter_1'].extend(['HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1','HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8','HLT_Mu50','HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1'])
     baseline_paths_dict['2017']['muTau']['iter_2'].extend(baseline_paths_dict['2017']['muTau']['iter_1'])
     baseline_paths_dict['2017']['muTau']['iter_2'].extend(['HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight','HLT_Mu20'])
     baseline_paths_dict['2017']['muTau']['iter_2Ext'].extend(baseline_paths_dict['2017']['muTau']['iter_2'])
     baseline_paths_dict['2017']['muTau']['iter_2Ext'].extend(['HLT_DoubleMu4_Mass8_DZ_PFHT350','HLT_Mu37_TkMu27'])
 
-    baseline_paths_dict['2017']['eTau']['baseline'] = ['HLT_Ele32_WPTight_Gsf', 'HLT_Ele35_WPTight_Gsf', 'HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1', 'HLT_Ele32_WPTight_Gsf_L1DoubleEG']
+    baseline_paths_dict['2017']['eTau']['baseline'] = ['HLT_Ele32_WPTight_Gsf', 'HLT_Ele35_WPTight_Gsf', 'HLT_Ele32_WPTight_Gsf_L1DoubleEG'] # confirmed
     baseline_paths_dict['2017']['eTau']['iter_0Baseline'].extend(baseline_paths_dict['2017']['eTau']['baseline'])
     baseline_paths_dict['2017']['eTau']['iter_1'].extend(baseline_paths_dict['2017']['eTau']['baseline'])
-    baseline_paths_dict['2017']['eTau']['iter_1'].extend(['HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg','HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165','HLT_PFHT500_PFMET100_PFMHT100_IDTight'])
+    baseline_paths_dict['2017']['eTau']['iter_1'].extend(['HLT_Ele28_eta2p1_WPTight_Gsf_HT150','HLT_PFMETTypeOne120_PFMHT120_IDTight']) # confirmed
+
     baseline_paths_dict['2017']['eTau']['iter_2'].extend(baseline_paths_dict['2017']['eTau']['iter_1'])
     baseline_paths_dict['2017']['eTau']['iter_2'].extend(['HLT_MediumChargedIsoPFTau50_Trk30_eta2p1_1pr_MET90', 'HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1'])
     baseline_paths_dict['2017']['eTau']['iter_2Ext'].extend(baseline_paths_dict['2017']['eTau']['iter_2'])
     baseline_paths_dict['2017']['eTau']['iter_2Ext'].extend(['HLT_MonoCentralPFJet80_PFMETNoMu120_PFMHTNoMu120_IDTight', 'HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ', 'HLT_Photon60_R9Id90_CaloIdL_IsoL_DisplacedIdL_PFHT350MinPFJet15'])
 
-    baseline_paths_dict['2016']['tauTau']['baseline'] = ['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg']
+    baseline_paths_dict['2016']['tauTau']['baseline'] = ['HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg', 'HLT_DoubleMediumCombinedIsoPFTau35_Trk1_eta2p1_Reg'] # confirmed
     baseline_paths_dict['2016']['tauTau']['iter_0Baseline'].extend(baseline_paths_dict['2016']['tauTau']['baseline'])
     baseline_paths_dict['2016']['tauTau']['iter_1'].extend(baseline_paths_dict['2016']['tauTau']['baseline'])
-    baseline_paths_dict['2016']['tauTau']['iter_1'].extend(['HLT_QuadJet45_TripleBTagCSV_p087','HLT_Diphoton30EB_18EB_R9Id_OR_IsoCaloId_AND_HE_R9Id_DoublePixelVeto_Mass55'])
+    baseline_paths_dict['2016']['tauTau']['iter_1'].extend(['HLT_QuadJet45_TripleBTagCSV_p087']) # confirmed
     baseline_paths_dict['2016']['tauTau']['iter_2'].extend(baseline_paths_dict['2016']['tauTau']['iter_1'])
-    baseline_paths_dict['2016']['tauTau']['iter_2'].extend(['HLT_PFHT300_PFMET110','HLT_Mu17_Photon30_CaloIdL_L1ISO','HLT_VLooseIsoPFTau140_Trk50_eta2p1'])
+    baseline_paths_dict['2016']['tauTau']['iter_2'].extend(['HLT_HT650','HLT_HT550to650','HLT_HT500to550']) # confirmed
     baseline_paths_dict['2016']['tauTau']['iter_2Ext'].extend(baseline_paths_dict['2016']['tauTau']['iter_2'])
-    baseline_paths_dict['2016']['tauTau']['iter_2Ext'].extend(['HLT_QuadPFJet_BTagCSV_p016_p11_VBF_Mqq200'])
+    baseline_paths_dict['2016']['tauTau']['iter_2Ext'].extend(['HLT_PFHT400_SixJet30_DoubleBTagCSV_p056']) # confirmed
 
 
-    baseline_paths_dict['2016']['muTau']['baseline'] = ['HLT_IsoMu22', 'HLT_IsoMu22_eta2p1', 'HLT_IsoTkMu22', 'HLT_IsoTkMu22_eta2p1', 'HLT_IsoMu19_eta2p1_LooseIsoPFTau20', 'HLT_IsoMu19_eta2p1_LooseIsoPFTau20_SingleL1']
+    baseline_paths_dict['2016']['muTau']['baseline'] = ['HLT_IsoMu24', 'HLT_IsoTkMu24', 'HLT_IsoMu50', 'HLT_IsoTkMu50'] #confirmed
     baseline_paths_dict['2016']['muTau']['iter_0Baseline'].extend(baseline_paths_dict['2016']['muTau']['baseline'])
     baseline_paths_dict['2016']['muTau']['iter_1'].extend(baseline_paths_dict['2016']['muTau']['baseline'])
-    baseline_paths_dict['2016']['muTau']['iter_1'].extend(['HLT_Mu30_TkMu11','HLT_IsoMu24'])
+    baseline_paths_dict['2016']['muTau']['iter_1'].extend(['HLT_IsoMu19_eta2p1_LooseIsoPFTau20','HLT_LooseIsoPFTau50_Trk30_eta2p1_MET90'])
     baseline_paths_dict['2016']['muTau']['iter_2'].extend(baseline_paths_dict['2016']['muTau']['iter_1'])
-    baseline_paths_dict['2016']['muTau']['iter_2'].extend(['HLT_DoubleMu8_Mass8_PFHT300','HLT_PFMET90_PFMHT90_IDTight','HLT_Mu17'])
-    baseline_paths_dict['2016']['muTau']['iter_2Ext'].extend(baseline_paths_dict['2016']['muTau']['iter_2'])
-    baseline_paths_dict['2016']['muTau']['iter_2Ext'].extend(['HLT_AK4CaloJet100','HLT_Mu17_Mu8_SameSign_DZ','HLT_DoubleMu8_Mass8_PFHT300','HLT_PFMET90_PFMHT90_IDTight','HLT_Mu17','HLT_MonoCentralPFJet80_PFMETNoMu110_PFMHTNoMu110_IDTight'])
+    baseline_paths_dict['2016']['muTau']['iter_2'].extend(['HLT_Mu17_Photon30_CaloIdL_L1ISO','HLT_MonoCentralPFJet80_PFMETNoMu110_PFMHTNoMu110_IDTight'])
+    baseline_paths_dict['2016']['muTau']['iter_2Ext'].extend(baseline_paths_dict['2016']['muTau']['iter_2Ext'])
+    #baseline_paths_dict['2016']['muTau']['iter_2Ext'].extend()
 
-    baseline_paths_dict['2016']['eTau']['baseline'] = ['HLT_Ele25_eta2p1_WPTight_Gsf']
+    baseline_paths_dict['2016']['eTau']['baseline'] = ['HLT_Ele25_eta2p1_WPTight_Gsf'] # confirmed
     baseline_paths_dict['2016']['eTau']['iter_0Baseline'].extend(baseline_paths_dict['2016']['eTau']['baseline'])
     baseline_paths_dict['2016']['eTau']['iter_1'].extend(baseline_paths_dict['2016']['eTau']['baseline'])
-    baseline_paths_dict['2016']['eTau']['iter_1'].extend(['HLT_Ele23_CaloIdL_TrackIdL_IsoVL_PFJet30','HLT_Ele27_eta2p1_WPLoose_Gsf_HT200','HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165'])
+    baseline_paths_dict['2016']['eTau']['iter_1'].extend(['HLT_Ele27_eta2p1_WPLoose_Gsf_HT200','HLT_Ele24_eta2p1_WPLoose_Gsf_LooseIsoPFTau30']) #confirmed
     baseline_paths_dict['2016']['eTau']['iter_2'].extend(baseline_paths_dict['2016']['eTau']['iter_1'])
     baseline_paths_dict['2016']['eTau']['iter_2'].extend(['HLT_Ele24_eta2p1_WPLoose_Gsf_LooseIsoPFTau30','HLT_LooseIsoPFTau50_Trk30_eta2p1'])
     baseline_paths_dict['2016']['eTau']['iter_2Ext'].extend(baseline_paths_dict['2016']['eTau']['iter_2'])
